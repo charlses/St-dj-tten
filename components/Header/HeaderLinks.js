@@ -109,7 +109,6 @@ export default function HeaderLinks(props) {
           navDropdown
           hoverColor={dropdownHoverColor}
           buttonText='Våra Tjänster'
-          href='/vara-tjanster'
           buttonProps={{
             className: classes.navLink,
             color: 'transparent'
@@ -155,6 +154,52 @@ export default function HeaderLinks(props) {
             </Link>,
             <Link href='vara-tjanster/bortforsling'>
               <a className={classes.dropdownLink}>Bortforsling</a>
+            </Link>
+          ]}
+        />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <CustomDropdown
+          noLiPadding
+          navDropdown
+          hoverColor={dropdownHoverColor}
+          buttonText='Om oss'
+          buttonProps={{
+            className: classes.navLink,
+            color: 'transparent'
+          }}
+          dropdownList={[
+            <Link href='om-oss/samarbetspartners'>
+              <a className={classes.dropdownLink}>Samarbetspartners</a>
+            </Link>,
+            <Link href='om-oss/miljopolicy'>
+              <a className={classes.dropdownLink}>Miljöpolicy</a>
+            </Link>,
+            <Link href='om-oss/nyheter'>
+              <a className={classes.dropdownLink}>Våra Nyheter</a>
+            </Link>,
+            <Link href='om-oss/rut'>
+              <a className={classes.dropdownLink}>Rut avdrag</a>
+            </Link>
+          ]}
+        />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <CustomDropdown
+          noLiPadding
+          navDropdown
+          hoverColor={dropdownHoverColor}
+          buttonText='Här finns vi'
+          buttonProps={{
+            className: classes.navLink,
+            color: 'transparent'
+          }}
+          dropdownList={[
+            <Link href='stockholm'>
+              <a className={classes.dropdownLink}>Stockholm</a>
+            </Link>,
+            <Link href='goteborg'>
+              <a className={classes.dropdownLink}>Göteborg</a>
             </Link>
           ]}
         />

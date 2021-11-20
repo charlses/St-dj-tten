@@ -32,7 +32,6 @@ export default function Index() {
   return (
     <div>
       <Header
-        brand='NextJS Material Kit PRO'
         links={<HeaderLinks dropdownHoverColor='primary' />}
         fixed
         color='transparent'

@@ -17,6 +17,8 @@ import Menu from '@material-ui/icons/Menu'
 import Close from '@material-ui/icons/Close'
 // core components
 import styles from 'styles/jss/nextjs-material-kit-pro/components/headerStyle.js'
+import LogoWhite from '../../public/img/logo-white.png'
+import Image from 'next/image'
 
 const useStyles = makeStyles(styles)
 
@@ -56,7 +58,7 @@ export default function Header(props) {
         .classList.remove(classes[changeColorOnScroll.color])
     }
   }
-  const { color, links, brand, fixed, absolute } = props
+  const { color, links, fixed, absolute } = props
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
@@ -68,7 +70,12 @@ export default function Header(props) {
       <Toolbar className={classes.containerFluid}>
         <Button className={classes.title}>
           <Link href='/'>
-            <a>{brand}</a>
+            <Image
+              src={LogoWhite}
+              height='37'
+              width='200'
+              alt='Städjätten logga(Vit)'
+            />
           </Link>
         </Button>
         <Hidden smDown implementation='css' className={classes.hidden}>
@@ -126,7 +133,6 @@ Header.propTypes = {
     'dark'
   ]),
   links: PropTypes.node,
-  brand: PropTypes.string,
   fixed: PropTypes.bool,
   absolute: PropTypes.bool,
   // this will cause the sidebar to change the color from
