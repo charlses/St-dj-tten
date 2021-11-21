@@ -56,6 +56,23 @@ export default function SectionProducts() {
               </CardBody>
             </Card>
           </GridItem>
+          <GridItem md={12} sm={12}>
+            <Card background style={{ backgroundImage: "url('/img/dg1.jpg')" }}>
+              <CardBody background>
+                <a href='#pablo'>
+                  <h3 className={classes.cardTitle}>Allla våra tjänster</h3>
+                </a>
+                <p className={classes.description}>
+                  Don{"'"}t be scared of the truth because we need to restart
+                  the human foundation in truth And I love you like Kanye loves
+                  Kanye I love Rick Owens’ bed design but the back is...
+                </p>
+                <Button href='#' round color='primary'>
+                  Se alla våra tjänster
+                </Button>
+              </CardBody>
+            </Card>
+          </GridItem>
         </GridContainer>
       </div>
     </div>

@@ -4,8 +4,6 @@ import React from 'react'
 import classNames from 'classnames'
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
 // core components
 import Header from 'components/Header/Header.js'
 import HeaderLinks from 'components/Header/HeaderLinks.js'
@@ -59,6 +57,7 @@ export default function Index() {
       </Parallax>
       <div className={classNames(classes.main)}>
         <SectionProduct />
+
         <SectionProducts />
         <SectionTestimonials />
         <SectionPills />

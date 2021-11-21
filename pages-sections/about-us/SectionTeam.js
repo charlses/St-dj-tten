@@ -1,169 +1,63 @@
-import React from "react";
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames'
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
-import CardAvatar from "components/Card/CardAvatar.js";
-import CardBody from "components/Card/CardBody.js";
-import CardFooter from "components/Card/CardFooter.js";
-import Button from "components/CustomButtons/Button.js";
+import GridContainer from 'components/Grid/GridContainer.js'
+import GridItem from 'components/Grid/GridItem.js'
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles'
 
-import teamStyle from "styles/jss/nextjs-material-kit-pro/pages/aboutUsSections/teamStyle.js";
+import teamStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsSections/teamStyle.js'
 
-const useStyles = makeStyles(teamStyle);
+const useStyles = makeStyles(teamStyle)
 
 export default function SectionTeam() {
-  const classes = useStyles();
+  const classes = useStyles()
   return (
     <div className={classes.team}>
       <GridContainer>
         <GridItem
-          md={8}
-          sm={8}
+          md={12}
+          sm={12}
           className={classNames(
             classes.mrAuto,
             classes.mlAuto,
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>We are nerd rockstars</h2>
+          <h2 className={classes.title}>Om oss & vårt arbetssätt</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            team. Keep you user engaged by providing meaningful information.
+            Vårt fokus är effektivitet och service, därför använder vi sedan
+            flera år tillbaka tekniska verktyg som ger oss möjlighet att
+            utnyttja våra resurser optimalt. Det som skiljer oss från många
+            andra är vår välstrukturerade planering och flexibla arbetssätt som
+            gör att vi kan hålla mycket konkurrenskraftiga priser på både städ-
+            och flytthjälp.
+          </h5>
+          <h5 className={classes.description}>
+            Vi har en familjär företagskultur där personalen är vald med omsorg.
+            Dessa är skickliga yrkesmänniskor, med både lång erfarenhet och hög
+            servicekänsla. Vi har certifierad personal & SRY-yrkesbevis.
+            Självklart är vi ansvarsförsäkrade för att du som kund ska känna dig
+            trygg med att anlita oss.
+          </h5>
+          <h5 className={classes.description}>
+            Vi strävar alltid efter att förbättra och utveckla oss så att du som
+            kund ska få det bästa alternativet och den mest prisvärda städ- och
+            flytthjälpen.
+          </h5>
+          <h5 className={classes.description}>
+            Ett annat resultat av god planering och struktur är att alla vet vad
+            de ska göra. Då blir det enkelt att hålla hög servicenivå. Förutom
+            att städning eller flytt ska utföras snabbt och effektivt, ska den
+            göras fläckfritt och utifrån kundens behov och önskemål. Du som
+            kund, oavsett privatperson eller företag, ska känna dig trygg med
+            oss som leverantör – oavsett om du har beställt en enskild tjänst
+            eller en helhetslösning med allt från packning till transport och
+            flyttstädning.
           </h5>
         </GridItem>
       </GridContainer>
-      <GridContainer>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-              <a href="#pablo">
-                <img
-                  src="/img/faces/marc.jpg"
-                  alt="profile-pic"
-                  className={classes.img}
-                />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Alec Thompson</h4>
-              <h6 className={classes.textMuted}>CEO / Co-Founder</h6>
-              <p className={classes.cardDescription}>
-                And I love you like Kanye loves Kanye. We need to restart the
-                human foundation.
-              </p>
-            </CardBody>
-            <CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="twitter">
-                <i className="fab fa-twitter" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="facebook">
-                <i className="fab fa-facebook" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="google">
-                <i className="fab fa-google" />
-              </Button>
-            </CardFooter>
-          </Card>
-        </GridItem>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-              <a href="#pablo">
-                <img
-                  src="/img/faces/kendall.jpg"
-                  alt="profile-pic"
-                  className={classes.img}
-                />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Tania Andrew</h4>
-              <h6 className={classes.textMuted}>DESIGNER</h6>
-              <p className={classes.cardDescription}>
-                Don{"'"}t be scared of the truth because we need to restart the
-                human foundation. And I love you like Kanye loves Kanye.
-              </p>
-            </CardBody>
-            <CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="twitter">
-                <i className="fab fa-twitter" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="dribbble">
-                <i className="fab fa-dribbble" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="linkedin">
-                <i className="fab fa-linkedin-in" />
-              </Button>
-            </CardFooter>
-          </Card>
-        </GridItem>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-              <a href="#pablo">
-                <img
-                  src="/img/faces/christian.jpg"
-                  alt="profile-pic"
-                  className={classes.img}
-                />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Christian Mike</h4>
-              <h6 className={classes.textMuted}>Web Developer</h6>
-              <p className={classes.cardDescription}>
-                I love you like Kanye loves Kanye. Don{"'"}t be scared of the
-                truth because we need to restart the human foundation.
-              </p>
-            </CardBody>
-            <CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="facebook">
-                <i className="fab fa-facebook" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="dribbble">
-                <i className="fab fa-dribbble" />
-              </Button>
-            </CardFooter>
-          </Card>
-        </GridItem>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-              <a href="#pablo">
-                <img
-                  src="/img/faces/avatar.jpg"
-                  alt="profile-pic"
-                  className={classes.img}
-                />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Rebecca Stormvile</h4>
-              <h6 className={classes.textMuted}>WEB DEVELOPER</h6>
-              <p className={classes.cardDescription}>
-                And I love you like Kanye loves Kanye. We really need to restart
-                the human foundation.
-              </p>
-            </CardBody>
-            <CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="google">
-                <i className="fab fa-google" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="twitter">
-                <i className="fab fa-twitter" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="dribbble">
-                <i className="fab fa-dribbble" />
-              </Button>
-            </CardFooter>
-          </Card>
-        </GridItem>
-      </GridContainer>
     </div>
-  );
+  )
 }
