@@ -55,7 +55,6 @@ const headerStyle = (theme) => ({
   },
   title: {
     letterSpacing: 'unset',
-    marginRight: '10%',
     '&,& a': {
       ...defaultFont,
       minWidth: 'unset',

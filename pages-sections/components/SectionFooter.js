@@ -76,66 +76,70 @@ export default function SectionFooter() {
               />
             </a>
             <p>
-              Probably the best UI Kit in the world! We know you{"'"}ve been
-              waiting for it, so don{"'"}t be shy!
+              Vi strävar alltid efter att förbättra och utveckla oss så att du
+              som kund ska få det bästa alternativet och den mest prisvärda
+              städ- och flytthjälpen.
             </p>
           </GridItem>
           <GridItem xs={12} sm={2} md={2}>
-            <h5>About</h5>
+            <h5>Om Oss</h5>
             <ul className={classes.linksVertical}>
               <li>
-                <a href='#pablo'>Blog</a>
+                <a href='/om-oss/nyheter'>Våra nyheter</a>
               </li>
               <li>
-                <a href='#pablo'>About us</a>
+                <a href='/om-oss'>Om oss</a>
               </li>
               <li>
-                <a href='#pablo'>Presentation</a>
+                <a href='/offert'>Kostnadsfritt offert</a>
               </li>
               <li>
-                <a href='#pablo'>Contact us</a>
+                <a href='/kontakta-oss'>Kontakta oss</a>
+              </li>
+              <li>
+                <a href='/karriar'>Jobba hos oss</a>
+              </li>
+              <li>
+                <a href='/faq'>FAQ</a>
               </li>
             </ul>
           </GridItem>
           <GridItem xs={12} sm={2} md={2}>
-            <h5>Market</h5>
+            <h5>Våra tjänster</h5>
             <ul className={classes.linksVertical}>
               <li>
-                <a href='#pablo'>Sales FAQ</a>
+                <a href='/stadhjalp'>Städhjälp</a>
               </li>
               <li>
-                <a href='#pablo'>How to register</a>
+                <a href='/flytthjalp'>Flytthjälp</a>
               </li>
               <li>
-                <a href='#pablo'>Sell Goods</a>
+                <a href='/vara-tjanster'>Alla våra tjänster</a>
               </li>
               <li>
-                <a href='#pablo'>Receive Payment</a>
-              </li>
-              <li>
-                <a href='#pablo'>Transactions Issues</a>
+                <a href='/kontakta-oss#kundtjanst'>Kundtjänst</a>
               </li>
             </ul>
           </GridItem>
           <GridItem xs={12} sm={2} md={2}>
-            <h5>Legal</h5>
+            <h5>Legalt</h5>
             <ul className={classes.linksVertical}>
               <li>
-                <a href='#pablo'>Transactions FAQ</a>
+                <a href='/transactions-faq'>Transactions FAQ</a>
               </li>
               <li>
-                <a href='#pablo'>Terms & conditions</a>
+                <a href='/integritetspolicy'>Integritetspolicyn</a>
               </li>
               <li>
-                <a href='#pablo'>Licenses</a>
+                <a href='/foretagsinformation'>Företagsinformation</a>
               </li>
             </ul>
           </GridItem>
           <GridItem xs={12} sm={3} md={3}>
-            <h5>Subscribe to Newsletter</h5>
+            <h5>Vårt nyhetsbrev</h5>
             <p>
-              Join our newsletter and get news in your inbox every week! We hate
-              spam too, so no worries about this.
+              Prenumerera på vårt nyhetsbrev så missar du inte framtida
+              erbjudanden.
             </p>
             <form>
               <CustomInput
@@ -145,7 +149,7 @@ export default function SectionFooter() {
                   className: classes.customFormControl
                 }}
                 inputProps={{
-                  placeholder: 'Your Email...'
+                  placeholder: 'Ditt e-post'
                 }}
               />
               <Button color='primary' justIcon>

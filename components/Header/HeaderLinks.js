@@ -12,28 +12,6 @@ import ListItem from '@material-ui/core/ListItem'
 import Hidden from '@material-ui/core/Hidden'
 
 // @material-ui/icons
-import ShoppingCart from '@material-ui/icons/ShoppingCart'
-import ViewDay from '@material-ui/icons/ViewDay'
-import Dns from '@material-ui/icons/Dns'
-import Build from '@material-ui/icons/Build'
-import ListIcon from '@material-ui/icons/List'
-import People from '@material-ui/icons/People'
-import Assignment from '@material-ui/icons/Assignment'
-import MonetizationOn from '@material-ui/icons/MonetizationOn'
-import Chat from '@material-ui/icons/Chat'
-import Call from '@material-ui/icons/Call'
-import ViewCarousel from '@material-ui/icons/ViewCarousel'
-import AccountBalance from '@material-ui/icons/AccountBalance'
-import ArtTrack from '@material-ui/icons/ArtTrack'
-import ViewQuilt from '@material-ui/icons/ViewQuilt'
-import LocationOn from '@material-ui/icons/LocationOn'
-import Fingerprint from '@material-ui/icons/Fingerprint'
-import AttachMoney from '@material-ui/icons/AttachMoney'
-import Store from '@material-ui/icons/Store'
-import AccountCircle from '@material-ui/icons/AccountCircle'
-import PersonAdd from '@material-ui/icons/PersonAdd'
-import ShoppingBasket from '@material-ui/icons/ShoppingBasket'
-import Error from '@material-ui/icons/Error'
 import Phone from '@material-ui/icons/Phone'
 
 // core components
@@ -82,12 +60,11 @@ export default function HeaderLinks(props) {
     }
     animateScroll()
   }
-  var onClickSections = {}
 
   const { dropdownHoverColor } = props
   const classes = useStyles()
   return (
-    <List className={classes.list + ' ' + classes.mrAuto}>
+    <List className={classes.list + ' ' + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Link href='/'>
           <a className={classes.navLink}>Hem</a>
@@ -378,7 +355,7 @@ export default function HeaderLinks(props) {
         <Hidden mdDown>
           <Button
             href='tel:+460770335051'
-            color={'secondary'}
+            color={'primary'}
             className={classes.navButton}
             round
           >

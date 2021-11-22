@@ -17,8 +17,8 @@ import Menu from '@material-ui/icons/Menu'
 import Close from '@material-ui/icons/Close'
 // core components
 import styles from 'styles/jss/nextjs-material-kit-pro/components/headerStyle.js'
-import LogoWhite from '../../public/img/logo-white.png'
 import Image from 'next/image'
+import LoggaOne from '../../public/img/logo.png'
 
 const useStyles = makeStyles(styles)
 
@@ -71,7 +71,7 @@ export default function Header(props) {
         <Button className={classes.title}>
           <Link href='/'>
             <Image
-              src={LogoWhite}
+              src={LoggaOne}
               height='37'
               width='200'
               alt='Städjätten logga(Vit)'

@@ -1,6 +1,5 @@
 import React from 'react'
 // nodejs library that concatenates classes
-import classNames from 'classnames'
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
@@ -29,11 +28,13 @@ export default function SectionProducts() {
                   <h3 className={classes.cardTitle}>Städhjälp</h3>
                 </a>
                 <p className={classes.description}>
-                  Don{"'"}t be scared of the truth because we need to restart
-                  the human foundation in truth And I love you like Kanye loves
-                  Kanye I love Rick Owens’ bed design but the back is...
+                  Förenkla din vardag genom att boka Städjätten som din
+                  städfirma. Vi hjälper dig med bland annat hemstädning,
+                  storstädning och flyttstädning. I vår städning arbetar vi med
+                  miljövänliga städprodukter samt väljer miljövänliga resor till
+                  våra kunder.
                 </p>
-                <Button href='#' round color='primary'>
+                <Button href='/stadhjalp' round color='primary'>
                   Se mer
                 </Button>
               </CardBody>
@@ -46,11 +47,13 @@ export default function SectionProducts() {
                   <h3 className={classes.cardTitle}>Flytthjälp</h3>
                 </a>
                 <p className={classes.description}>
-                  Don{"'"}t be scared of the truth because we need to restart
-                  the human foundation in truth And I love you like Kanye loves
-                  Kanye I love Rick Owens’ bed design but the back is...
+                  Vi hjälper dig när det är det dags för flytt. Med Städjätten
+                  som flyttfirma sker din flytt på ett snabbt, prisvärt och
+                  effektivt sätt. Städjätten är ansvarsförsäkrade via Trygg
+                  Hansa. Detta gör att du som kund kan känna dig trygg när du
+                  anlitar oss för flytthjälp.
                 </p>
-                <Button href='#' round color='primary'>
+                <Button href='/flytthjalp' round color='primary'>
                   Se mer
                 </Button>
               </CardBody>
@@ -63,11 +66,12 @@ export default function SectionProducts() {
                   <h3 className={classes.cardTitle}>Allla våra tjänster</h3>
                 </a>
                 <p className={classes.description}>
-                  Don{"'"}t be scared of the truth because we need to restart
-                  the human foundation in truth And I love you like Kanye loves
-                  Kanye I love Rick Owens’ bed design but the back is...
+                  Vi erbjuder tilläggstjänster till din hemstädning för att du
+                  ska kunna få en komplett lösning. Vi hjälper dig med
+                  vardagssysslor som kan ta mycket tid och energi och som man
+                  annars inte hinner med i en hektisk vardag.
                 </p>
-                <Button href='#' round color='primary'>
+                <Button href='/vara-tjanster' round color='primary'>
                   Se alla våra tjänster
                 </Button>
               </CardBody>

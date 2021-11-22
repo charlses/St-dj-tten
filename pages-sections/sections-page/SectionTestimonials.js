@@ -1,11 +1,8 @@
 import React from 'react'
 // react component for creating beautiful carousel
-import Carousel from 'react-slick'
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
-import FormatQuote from '@material-ui/icons/FormatQuote'
-import Star from '@material-ui/icons/Star'
 // core components
 import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
@@ -24,7 +21,7 @@ export default function SectionTestimonials({ ...rest }) {
   return (
     <div className='cd-section' {...rest}>
       {/* Testimonials 3 START */}
-      <div className={classes.testimonials}>
+      <div className={classes.testimonials + ' ' + classes.sectionDark}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem
@@ -41,65 +38,51 @@ export default function SectionTestimonials({ ...rest }) {
           <GridContainer>
             <GridItem xs={12} sm={4} md={4}>
               <Card testimonial plain>
-                <CardAvatar testimonial plain>
-                  <a href='#pablo' onClick={(e) => e.preventDefault()}>
-                    <img src='/img/faces/card-profile1-square.jpg' alt='...' />
-                  </a>
-                </CardAvatar>
                 <CardBody plain>
-                  <h4 className={classes.title}>Mike Andrew</h4>
+                  <h4 className={classes.title}>Reyhane T</h4>
                   <Muted>
-                    <h6>CEO @ MARKETING DIGITAL LTD.</h6>
+                    <h6>skrev om Städjätten</h6>
                   </Muted>
                   <h5 className={classes.cardDescription}>
-                    {'"'}I speak yell scream directly at the old guard on behalf
-                    of the future. I gotta say at that time I’d like to meet
-                    Kanye I speak yell scream directly at the old guard on
-                    behalf of the future.{'"'}
+                    {'"'}Jag blev bemött med massa leenden och gott intryck,
+                    Diego och David var väldigt duktiga och gjorde allt
+                    superbra, de uppfyllde alla mina förväntningar jag blev
+                    supernöjd, jag kommer tipsa er till andra som är i behov av
+                    flytt.
+                    {'"'}
                   </h5>
                 </CardBody>
               </Card>
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
               <Card testimonial plain>
-                <CardAvatar testimonial plain>
-                  <a href='#pablo' onClick={(e) => e.preventDefault()}>
-                    <img src='/img/faces/card-profile4-square.jpg' alt='...' />
-                  </a>
-                </CardAvatar>
                 <CardBody plain>
-                  <h4 className={classes.title}>Tina Thompson</h4>
+                  <h4 className={classes.title}>Helena L</h4>
                   <Muted>
-                    <h6>MARKETING @ APPLE INC.</h6>
+                    <h6>skrev om Städjätten</h6>
                   </Muted>
                   <h5 className={classes.cardDescription}>
-                    {'"'}I promise I will never let the people down. I want a
-                    better life for all!!! Pablo Pablo Pablo Pablo! Thank you
-                    Anna for the invite thank you to the whole Vogue team It
-                    wasn’t any Kanyes I love Rick Owens’ bed design but the back
-                    is too high for the beams and angle of the ceiling{'"'}
+                    {'"'}Städjätten är jättebra på att ha dialog med kunden. En
+                    blir vänligt bemött med stor beredvillighet och
+                    flexibilitet. Städpatrullen som jag anlitade var noggranna i
+                    sitt arbete och det utfördes till belåtenhet. De var riktiga
+                    proffs med blick för vad som behövdes göras!{'"'}
                   </h5>
                 </CardBody>
               </Card>
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
               <Card testimonial plain>
-                <CardAvatar testimonial plain>
-                  <a href='#pablo' onClick={(e) => e.preventDefault()}>
-                    <img src='/img/faces/card-profile6-square.jpg' alt='...' />
-                  </a>
-                </CardAvatar>
                 <CardBody plain>
-                  <h4 className={classes.title}>Gina West</h4>
+                  <h4 className={classes.title}>JOHANNA S</h4>
                   <Muted>
-                    <h6>CFO @ APPLE INC.</h6>
+                    <h6>skrev om Städjätten</h6>
                   </Muted>
                   <h5 className={classes.cardDescription}>
-                    {'"'}I{"'"}ve been trying to figure out the bed design for
-                    the master bedroom at our Hidden Hills compound... Royère
-                    doesn
-                    {"'"}t make a Polar bear bed but the Polar bear. This is a
-                    very nice testimonial about this company.{'"'}
+                    {'"'}Fick hjälp snabbt och en tid inom några dagar.
+                    Supertrevlig personal både flytt och städ samt kundtjänst.
+                    Jobbade snabbt och noggrant. Väldigt prisvärt och bra!
+                    Rekommenderar verkligen{'"'}
                   </h5>
                 </CardBody>
               </Card>

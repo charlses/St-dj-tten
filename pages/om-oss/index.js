@@ -4,17 +4,12 @@ import React from 'react'
 import classNames from 'classnames'
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-// @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite'
 // core components
 import Header from 'components/Header/Header.js'
 import HeaderLinks from 'components/Header/HeaderLinks.js'
 import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
 import Parallax from 'components/Parallax/Parallax.js'
-import Footer from 'components/Footer/Footer.js'
 // sections for this page
 import SectionDescription from 'pages-sections/about-us/SectionDescription.js'
 import SectionTeam from 'pages-sections/about-us/SectionTeam.js'

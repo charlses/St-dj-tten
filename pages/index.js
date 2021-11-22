@@ -35,7 +35,7 @@ export default function Index() {
         color='transparent'
         changeColorOnScroll={{
           height: 400,
-          color: 'primary'
+          color: 'light'
         }}
       />
       <Parallax image='/img/nextjs_header.jpg' className={classes.parallax}>
@@ -44,12 +44,10 @@ export default function Index() {
             <GridItem>
               <div className={classes.brand}>
                 <h1>
-                  NextJS Material Kit
-                  <span className={classes.proBadge}>PRO</span>
+                  Städjätten
+                  <span className={classes.proBadge}>AB</span>
                 </h1>
-                <h3 className={classes.title}>
-                  A Badass Material-UI Kit based on Material Design.
-                </h3>
+                <h3 className={classes.title}>Din städfirma i Stockholm</h3>
               </div>
             </GridItem>
           </GridContainer>
