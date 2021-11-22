@@ -10,7 +10,6 @@ import GridItem from 'components/Grid/GridItem.js'
 import InfoArea from 'components/InfoArea/InfoArea.js'
 import Button from 'components/CustomButtons/Button.js'
 import { Grow } from '@material-ui/core'
-import Link from 'next/Link'
 
 import productStyle from 'styles/jss/nextjs-material-kit-pro/pages/landingPageSections/productStyle.js'
 
@@ -83,7 +82,11 @@ export default function SectionProduct() {
               </GridItem>
             </Grow>
 
-            <GridItem xs={12} sm={12} md={12}></GridItem>
+            <GridItem xs={12} sm={12} md={12}>
+              <Button color='primary' round href='/om-oss'>
+                Läs mer om oss
+              </Button>
+            </GridItem>
           </GridContainer>
         </div>
       </div>

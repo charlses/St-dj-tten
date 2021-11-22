@@ -19,8 +19,7 @@ import Footer from 'components/Footer/Footer.js'
 import SectionDescription from 'pages-sections/about-us/SectionDescription.js'
 import SectionTeam from 'pages-sections/about-us/SectionTeam.js'
 import SectionServices from 'pages-sections/about-us/SectionServices.js'
-import SectionOffice from 'pages-sections/about-us/SectionOffice.js'
-import SectionContact from 'pages-sections/about-us/SectionContact.js'
+import SectionFooter from 'pages-sections/components/SectionFooter.js'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -62,72 +61,14 @@ export default function AboutUsPage() {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main)}>
         <div className={classes.container}>
           <SectionDescription />
           <SectionTeam />
           <SectionServices />
-          <SectionOffice />
-          <SectionContact />
         </div>
       </div>
-      <Footer
-        content={
-          <div>
-            <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href='https://www.creative-tim.com/?ref=njsmkp-about-us'
-                    className={classes.block}
-                    target='_blank'
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href='https://www.creative-tim.com/presentation?ref=njsmkp-about-us'
-                    className={classes.block}
-                    target='_blank'
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href='http://blog.creative-tim.com/?ref=njsmkp-about-us'
-                    className={classes.block}
-                    target='_blank'
-                  >
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href='https://www.creative-tim.com/license?ref=njsmkp-about-us'
-                    className={classes.block}
-                    target='_blank'
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{' '}
-              <Favorite className={classes.icon} /> by{' '}
-              <a
-                href='https://www.creative-tim.com?ref=njsmkp-about-us'
-                target='_blank'
-              >
-                Creative Tim
-              </a>{' '}
-              for a better web.
-            </div>
-          </div>
-        }
-      />
+      <SectionFooter />
     </div>
   )
 }
