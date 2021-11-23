@@ -1,47 +1,47 @@
-import React from "react";
+import React from 'react'
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import Accordion from "@material-ui/core/Accordion";
-import AccordionSummary from "@material-ui/core/AccordionSummary";
-import AccordionDetails from "@material-ui/core/AccordionDetails";
+import { makeStyles } from '@material-ui/core/styles'
+import Accordion from '@material-ui/core/Accordion'
+import AccordionSummary from '@material-ui/core/AccordionSummary'
+import AccordionDetails from '@material-ui/core/AccordionDetails'
 
 // @material-ui/icons
-import ExpandMore from "@material-ui/icons/ExpandMore";
+import ExpandMore from '@material-ui/icons/ExpandMore'
 
-import styles from "styles/jss/nextjs-material-kit-pro/components/accordionStyle.js";
+import styles from 'styles/jss/nextjs-material-kit-pro/components/accordionStyle.js'
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
 export default function CustomAccordion(props) {
   const [active, setActive] = React.useState(
     props.active.length === undefined ? [props.active] : props.active
-  );
+  )
   const [single] = React.useState(
     props.active.length === undefined ? true : false
-  );
+  )
   const handleChange = (panel) => () => {
-    let newArray;
+    let newArray
 
     if (single) {
       if (active[0] === panel) {
-        newArray = [];
+        newArray = []
       } else {
-        newArray = [panel];
+        newArray = [panel]
       }
     } else {
       if (active.indexOf(panel) === -1) {
-        newArray = [...active, panel];
+        newArray = [...active, panel]
       } else {
-        newArray = [...active];
-        newArray.splice(active.indexOf(panel), 1);
+        newArray = [...active]
+        newArray.splice(active.indexOf(panel), 1)
       }
     }
-    setActive(newArray);
-  };
-  const { collapses, activeColor } = props;
-  const classes = useStyles();
+    setActive(newArray)
+  }
+  const { collapses, activeColor } = props
+  const classes = useStyles()
   return (
     <div className={classes.root}>
       {collapses.map((prop, key) => {
@@ -52,20 +52,20 @@ export default function CustomAccordion(props) {
             key={key}
             classes={{
               root: classes.accordion,
-              expanded: classes.accordionExpanded,
+              expanded: classes.accordionExpanded
             }}
           >
             <AccordionSummary
-              expandIcon={<ExpandMore />}
+              expandIcon={<ExpandMore color='primary' />}
               classes={{
                 root: `${classes.accordionSummary} ${
-                  classes[activeColor + "AccordionSummary"]
+                  classes[activeColor + 'AccordionSummary']
                 }`,
                 expanded: `${classes.accordionSummaryExpaned} ${
-                  classes[activeColor + "AccordionSummaryExpaned"]
+                  classes[activeColor + 'AccordionSummaryExpaned']
                 }`,
                 content: classes.accordionSummaryContent,
-                expandIcon: classes.accordionSummaryExpandIcon,
+                expandIcon: classes.accordionSummaryExpandIcon
               }}
             >
               <h4 className={classes.title}>{prop.title}</h4>
@@ -74,36 +74,36 @@ export default function CustomAccordion(props) {
               {prop.content}
             </AccordionDetails>
           </Accordion>
-        );
+        )
       })}
     </div>
-  );
+  )
 }
 
 CustomAccordion.defaultProps = {
   active: -1,
-  activeColor: "primary",
-};
+  activeColor: 'primary'
+}
 
 CustomAccordion.propTypes = {
   // index of the default active collapse
   active: PropTypes.oneOfType([
     PropTypes.number,
-    PropTypes.arrayOf(PropTypes.number),
+    PropTypes.arrayOf(PropTypes.number)
   ]),
   collapses: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
-      content: PropTypes.node,
+      content: PropTypes.node
     })
   ).isRequired,
   activeColor: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "warning",
-    "danger",
-    "success",
-    "info",
-    "rose",
-  ]),
-};
+    'primary',
+    'secondary',
+    'warning',
+    'danger',
+    'success',
+    'info',
+    'rose'
+  ])
+}

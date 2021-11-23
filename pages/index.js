@@ -35,7 +35,7 @@ export default function Index() {
         color='transparent'
         changeColorOnScroll={{
           height: 400,
-          color: 'light'
+          color: 'white'
         }}
       />
       <Parallax image='/img/nextjs_header.jpg' className={classes.parallax}>

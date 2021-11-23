@@ -27,48 +27,65 @@ export default function SectionTeam() {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>Hemstädning efter dina önskemål</h2>
+          <h2 className={classes.title}>
+            Vi forslar bort skräp och grovavfall i hela Stockholm & Göteborg
+          </h2>
           <h5 className={classes.description}>
-            För oss är det viktigt att våra kunder är 100% nöjda, vi utför
-            därför städning helt enligt dina önskemål. Oavsett behov finns vi
-            där för dig när du behöver städhjälp. Vi erbjuder flexibla lösningar
-            utifrån dina krav, oavsett om det är städning en gång i veckan eller
-            en gång i månaden. Vi erbjuder även tilläggstjänster till din
-            hemstädning för en komplett lösning för din vardag. Städjätten
-            hjälper dig bland annat med att handla mat, apoteksärenden, plocka
-            ur tvätt, stryka, köra iväg sopor eller passa hunden.
+            Allt ifrån gamla möbler, elektronikskrot till stora förpackningar
+            forslar vi bort på ett ansvarsfullt sätt till närmaste
+            återvinningscentral. Då har du säkert samlat på dig skräp, kompost,
+            rivning och grovavfall du vill bli av med. När du behöver bli av med
+            gamla möbler, elektronikskrot, stora förpackningar och annat
+            skrymmande ska du höra av dig till oss. Vi ordnar med bortforsling i
+            hela Stockholms län samt Göteborgs stad och kan ta hand om allt i
+            avfallsväg. Vi forslar alltid bort på ett ansvarsfullt sätt till
+            närmaste återvinningscentral.
           </h5>
         </GridItem>
         <GridItem
           md={12}
           sm={12}
-          className={classNames(classes.mrAuto, classes.mlAuto)}
+          className={classNames(
+            classes.mrAuto,
+            classes.mlAuto,
+            classes.textCenter
+          )}
         >
-          <h2 className={classes.title + ' ' + classes.textCenter}>
-            Vad ingår i hemstädning?
-          </h2>
+          <h2 className={classes.title}>Bortforsling av möbler på rätt sätt</h2>
           <h5 className={classes.description}>
-            Vi på Städjätten finns för dig som vill förenkla vardagen, därför
-            låter vi dig bestämma hur din städning ska utföras tillsammans med
-            våra experter. Vi har tagit fram en standardlista för vad som ingår
-            i en hemstädning, men självklart anpassar vi den efter just dina
-            behov och önskemål. Listan över vad som ingår i en hemstädning
-            finner du nedan.
-          </h5>
-          <h5 className={classes.description}>
-            <ul>
-              <li>Avtorkning av diskbänk, arbetsbänk och kranar</li>
-              <li>Avtorkning av vitvaror </li>
-              <li>Rengöring av toalettstol, in- och utsida</li>
-              <li>
-                Avtorkning utvändigt av torkskåp, torktumlare och tvättmaskin
-              </li>
-              <li>Våttorkning av golv</li>
-              <li>Avtorkning av golvlister, fönsterbrädor och element</li>
-            </ul>
+            Kroppen kan ta stora skador om man inte har rätt kunskap och verktyg
+            vid lyft. Ibland är tunga möbler och andra föremål alldeles för
+            svåra för att transportera bort på egen hand. Då är det viktigt att
+            ta hjälp av någon som har rätt verktyg och besitter kunskapen om hur
+            bortforslingen ska ske på rätt sätt. Vi hämtar din bortforsling och
+            gör grovjobbet så att du kan lägga din dyrbara tid och energi på
+            andra roliga saker.
           </h5>
         </GridItem>
+
         <GridItem
+          md={12}
+          sm={12}
+          className={classNames(
+            classes.mrAuto,
+            classes.mlAuto,
+            classes.textCenter
+          )}
+        >
+          <h2 className={classes.title + ' ' + classes.textCenter}>
+            Bortforsling för företag
+          </h2>
+          <h5 className={classes.description}>
+            Som företag är det viktigt att ta sitt ansvar för miljö och
+            samhälle. Det är inte ovanligt att företag slarvar med sin
+            bortforsling och inte tar sitt ansvar hos återvinningscentralen,
+            något som kan leda till böter på upp till 500 miljoner kronor.
+            Undvik att riskera böter eller miljöskada som kräver sanering och
+            anlita Städjätten. Vi har rätt kunskap, de tillstånd som krävs och
+            säkerställer att bortforsling sker regelrätt.
+          </h5>
+        </GridItem>
+        {/* <GridItem
           md={12}
           sm={12}
           className={classNames(classes.mrAuto, classes.mlAuto)}
@@ -101,7 +118,7 @@ export default function SectionTeam() {
               }
             ]}
           />
-        </GridItem>
+        </GridItem> */}
       </GridContainer>
     </div>
   )

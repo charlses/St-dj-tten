@@ -9,6 +9,8 @@ import { makeStyles } from '@material-ui/core/styles'
 
 import teamStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsSections/teamStyle.js'
 
+import Accordion from 'components/Accordion/Accordion.js'
+
 const useStyles = makeStyles(teamStyle)
 
 export default function SectionTeam() {
@@ -19,43 +21,78 @@ export default function SectionTeam() {
         <GridItem
           md={12}
           sm={12}
+          className={classNames(classes.mrAuto, classes.mlAuto)}
+        >
+          <h2 className={classes.title}>Vad ingår i flyttstädning?</h2>
+
+          <h5 className={classes.description}>
+            <ul>
+              <li>Rengöring av diskbänk, diskbänkskåp och kranar</li>
+              <li>Rengöring av kyl/frys (ska avfrostas i förväg)</li>
+              <li>Rengöring av tömning av golvbrunn</li>
+              <li>Rengöring av handfat</li>
+              <li>
+                Avtorkning av skåp och inbyggda garderober in- och utvändigt
+              </li>
+              <li>Dammsugning och våttorkning av golv</li>
+            </ul>
+          </h5>
+        </GridItem>
+        <GridItem
+          md={12}
+          sm={12}
           className={classNames(
             classes.mrAuto,
             classes.mlAuto,
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>Om oss & vårt arbetssätt</h2>
+          <h2 className={classes.title}>
+            Nöjd-kund-garanti både för dig och den som flyttar in
+          </h2>
           <h5 className={classes.description}>
-            Vårt fokus är effektivitet och service, därför använder vi sedan
-            flera år tillbaka tekniska verktyg som ger oss möjlighet att
-            utnyttja våra resurser optimalt. Det som skiljer oss från många
-            andra är vår välstrukturerade planering och flexibla arbetssätt som
-            gör att vi kan hålla mycket konkurrenskraftiga priser på både städ-
-            och flytthjälp.
+            Vi ger alltid nöjd kundgaranti på flyttstädningen oavsett om det är
+            ditt nya hem eller kontor. Detta för att du som ny ägare eller
+            hyresgäst ska kunna komma med synpunkter om något inte stämmer med
+            ditt önskemål. Vår kundgaranti gäller i sju dagar från
+            städtillfället. Det här gör vi för att du ska känna dig säker med
+            vårt samarbete redan från start och för att vi strävar efter vårt
+            mål som är 100% kundnöjdhet.
           </h5>
-          <h5 className={classes.description}>
-            Vi har en familjär företagskultur där personalen är vald med omsorg.
-            Dessa är skickliga yrkesmänniskor, med både lång erfarenhet och hög
-            servicekänsla. Vi har certifierad personal & SRY-yrkesbevis.
-            Självklart är vi ansvarsförsäkrade för att du som kund ska känna dig
-            trygg med att anlita oss.
-          </h5>
-          <h5 className={classes.description}>
-            Vi strävar alltid efter att förbättra och utveckla oss så att du som
-            kund ska få det bästa alternativet och den mest prisvärda städ- och
-            flytthjälpen.
-          </h5>
-          <h5 className={classes.description}>
-            Ett annat resultat av god planering och struktur är att alla vet vad
-            de ska göra. Då blir det enkelt att hålla hög servicenivå. Förutom
-            att städning eller flytt ska utföras snabbt och effektivt, ska den
-            göras fläckfritt och utifrån kundens behov och önskemål. Du som
-            kund, oavsett privatperson eller företag, ska känna dig trygg med
-            oss som leverantör – oavsett om du har beställt en enskild tjänst
-            eller en helhetslösning med allt från packning till transport och
-            flyttstädning.
-          </h5>
+        </GridItem>
+        <GridItem
+          md={12}
+          sm={12}
+          className={classNames(classes.mrAuto, classes.mlAuto)}
+        >
+          <div className={classes.title}>
+            <h3>FAQ</h3>
+          </div>
+          <Accordion
+            active={0}
+            activeColor='rose'
+            collapses={[
+              {
+                title: 'Vad kostar flyttstädning? ',
+                content: 'Pris för flyttstädning är från 20 kr/kvm'
+              },
+              {
+                title: 'Har ni garanti? ',
+                content:
+                  ' Ja, vi har sju dagars nöjd-kund-garanti på flyttstädning '
+              },
+              {
+                title: 'Hur bokar jag tid?',
+                content:
+                  ' Vi tittar tillsammans på en tidpunkt som passar dig bra, och skräddarsyr flytten så att vi kan leverera en fulländad tjänst.'
+              },
+              {
+                title: 'Hur lång framförhållning behöver jag ha?',
+                content:
+                  ' Om du vill ha en tid runt månadsskiftet rekommenderar vi att du bokar minst en vecka i förväg. Annars räcker det med några dagar innan. Självklart kan du alltid ringa oss i sista minuten och höra om vi har tider över.'
+              }
+            ]}
+          />
         </GridItem>
       </GridContainer>
     </div>

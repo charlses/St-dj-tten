@@ -66,17 +66,17 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list + ' ' + classes.mlAuto}>
       <ListItem className={classes.listItem}>
-        <Link href='/'>
+        <Link href='/' replace>
           <a className={classes.navLink}>Hem</a>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link href='/stadhjalp'>
+        <Link href='/stadhjalp' replace>
           <a className={classes.navLink}>Städhjälp</a>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link href='/flytthjalp'>
+        <Link href='/flytthjalp' replace>
           <a className={classes.navLink}>Flytthjälp</a>
         </Link>
       </ListItem>
@@ -91,45 +91,45 @@ export default function HeaderLinks(props) {
             color: 'transparent'
           }}
           dropdownList={[
-            <Link href='vara-tjanster/flyttstadning'>
+            <Link href={{ pathname: '/vara-tjanster/flyttstadning' }}>
               <a className={classes.dropdownLink}>Flyttstädning</a>
             </Link>,
-            <Link href='vara-tjanster/hemstadning'>
+            <Link href={{ pathname: '/vara-tjanster/hemstadning' }}>
               <a className={classes.dropdownLink}>Hemstädning</a>
             </Link>,
-            <Link href='vara-tjanster/kontorsstadning'>
+            <Link href={{ pathname: '/vara-tjanster/kontorsstadning' }}>
               <a className={classes.dropdownLink}>Kontorsstädning</a>
             </Link>,
-            <Link href='vara-tjanster/storstadning'>
+            <Link href={{ pathname: '/vara-tjanster/storsstadning' }}>
               <a className={classes.dropdownLink}>Storstädning</a>
             </Link>,
-            <Link href='vara-tjanster/byggstadning'>
+            <Link href={{ pathname: '/vara-tjanster/byggstadning' }}>
               <a className={classes.dropdownLink}>Byggstädning</a>
             </Link>,
-            <Link href='vara-tjanster/packhjalp'>
+            <Link href={{ pathname: '/vara-tjanster/packhjalp' }}>
               <a className={classes.dropdownLink}>Packhjälp</a>
             </Link>,
-            <Link href='vara-tjanster/barhjalp'>
+            <Link href={{ pathname: '/vara-tjanster/barhjalp' }}>
               <a className={classes.dropdownLink}>Bärhjälp</a>
             </Link>,
 
-            <Link href='vara-tjanster/pianoflytt'>
+            <Link href={{ pathname: '/vara-tjanster/pianoflytt' }}>
               <a className={classes.dropdownLink}>Pianoflytt</a>
             </Link>,
-            <Link href='vara-tjanster/visningsstadning'>
+            <Link href={{ pathname: '/vara-tjanster/visningsstadning' }}>
               <a className={classes.dropdownLink}>Visningsstädning</a>
             </Link>,
 
-            <Link href='vara-tjanster/kontorsflytt'>
+            <Link href={{ pathname: '/vara-tjanster/kontorsflytt' }}>
               <a className={classes.dropdownLink}>Kontorsflytt</a>
             </Link>,
-            <Link href='vara-tjanster/sanering'>
+            <Link href={{ pathname: '/vara-tjanster/sanering' }}>
               <a className={classes.dropdownLink}>Snering</a>
             </Link>,
-            <Link href='vara-tjanster/tradgardsskotsel'>
+            <Link href={{ pathname: '/vara-tjanster/tradgardsskotsel' }}>
               <a className={classes.dropdownLink}>Trädgårdsskötsel</a>
             </Link>,
-            <Link href='vara-tjanster/bortforsling'>
+            <Link href={{ pathname: '/vara-tjanster/bortforsling' }}>
               <a className={classes.dropdownLink}>Bortforsling</a>
             </Link>
           ]}
@@ -146,17 +146,21 @@ export default function HeaderLinks(props) {
             color: 'transparent'
           }}
           dropdownList={[
-            <Link href='om-oss/samarbetspartners'>
+            <Link href='om-oss/samarbetspartners' replace>
               <a className={classes.dropdownLink}>Samarbetspartners</a>
             </Link>,
-            <Link href='om-oss/miljopolicy'>
+            <Link href='om-oss/miljopolicy' replace>
               <a className={classes.dropdownLink}>Miljöpolicy</a>
             </Link>,
             <Link href='om-oss/nyheter'>
-              <a className={classes.dropdownLink}>Våra Nyheter</a>
+              <a className={classes.dropdownLink} replace>
+                Våra Nyheter
+              </a>
             </Link>,
             <Link href='om-oss/rut'>
-              <a className={classes.dropdownLink}>Rut avdrag</a>
+              <a className={classes.dropdownLink} replace>
+                Rut avdrag
+              </a>
             </Link>
           ]}
         />
