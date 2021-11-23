@@ -100,7 +100,7 @@ export default function HeaderLinks(props) {
             <Link href={{ pathname: '/vara-tjanster/kontorsstadning' }}>
               <a className={classes.dropdownLink}>Kontorsstädning</a>
             </Link>,
-            <Link href={{ pathname: '/vara-tjanster/storsstadning' }}>
+            <Link href={{ pathname: '/vara-tjanster/storstadning' }}>
               <a className={classes.dropdownLink}>Storstädning</a>
             </Link>,
             <Link href={{ pathname: '/vara-tjanster/byggstadning' }}>
