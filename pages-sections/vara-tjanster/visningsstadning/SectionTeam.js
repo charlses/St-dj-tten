@@ -11,6 +11,7 @@ import teamStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsSections/
 
 import Accordion from 'components/Accordion/Accordion.js'
 
+import Link from 'next/link'
 const useStyles = makeStyles(teamStyle)
 
 export default function SectionTeam() {
@@ -27,16 +28,14 @@ export default function SectionTeam() {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>Hemstädning efter dina önskemål</h2>
+          <h2 className={classes.title}>Anlita oss för visningsstädning</h2>
           <h5 className={classes.description}>
-            För oss är det viktigt att våra kunder är 100% nöjda, vi utför
-            därför städning helt enligt dina önskemål. Oavsett behov finns vi
-            där för dig när du behöver städhjälp. Vi erbjuder flexibla lösningar
-            utifrån dina krav, oavsett om det är städning en gång i veckan eller
-            en gång i månaden. Vi erbjuder även tilläggstjänster till din
-            hemstädning för en komplett lösning för din vardag. Städjätten
-            hjälper dig bland annat med att handla mat, apoteksärenden, plocka
-            ur tvätt, stryka, köra iväg sopor eller passa hunden.
+            En lägenhet eller lokal som är städad är alltid uppskattat och ökar
+            chansen för försäljning. Spekulantens första intryck vid visningen
+            har stor betydelse för slutpriset. En professionell visningsstädning
+            kan ge dig en lyckad affär, ett hem eller företagslokal som känns
+            skinande rent och andas harmoni kan få vilken spekulant som helst
+            att slå till.
           </h5>
         </GridItem>
         <GridItem
@@ -45,26 +44,58 @@ export default function SectionTeam() {
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
           <h2 className={classes.title + ' ' + classes.textCenter}>
-            Vad ingår i hemstädning?
+            Vad ingår i visningsstädning?
           </h2>
           <h5 className={classes.description}>
-            Vi på Städjätten finns för dig som vill förenkla vardagen, därför
-            låter vi dig bestämma hur din städning ska utföras tillsammans med
-            våra experter. Vi har tagit fram en standardlista för vad som ingår
-            i en hemstädning, men självklart anpassar vi den efter just dina
-            behov och önskemål. Listan över vad som ingår i en hemstädning
-            finner du nedan.
+            <ul>
+              <li>Avtorkning av diskbänk, arbetsbänk, kranar</li>
+              <li>Tömning och avtorkning i och runt sopbehållare</li>
+              <li>
+                Avtorkning med fuktig trasa av badkar och/eller duschkabin
+              </li>
+              <li>Avtorkning av kakel och klinkers</li>
+              <li>Dammsugning av golv, golvsocklar, trösklar och mattor</li>
+              <li>
+                Avtorkning med fuktig trasa av fria horisontella ytor på bord,
+                stolar, skåp och hyllor
+              </li>
+            </ul>
           </h5>
+        </GridItem>
+        <GridItem
+          md={12}
+          sm={12}
+          className={classNames(classes.mrAuto, classes.mlAuto)}
+        >
+          <h2 className={classes.title + ' ' + classes.textCenter}>
+            Några snabba tips att tänka på vid en bostadsvisning:
+          </h2>
           <h5 className={classes.description}>
             <ul>
-              <li>Avtorkning av diskbänk, arbetsbänk och kranar</li>
-              <li>Avtorkning av vitvaror </li>
-              <li>Rengöring av toalettstol, in- och utsida</li>
               <li>
-                Avtorkning utvändigt av torkskåp, torktumlare och tvättmaskin
+                Ta bort alla gamla växter. Plocka istället fram en vacker vas
+                med blommor i för att förhöja känslan av ett rent och välstädat
+                hem.
               </li>
-              <li>Våttorkning av golv</li>
-              <li>Avtorkning av golvlister, fönsterbrädor och element</li>
+              <li>
+                {' '}
+                Lägg fram skoskydd för spekulanter att ta på sig, detta för att
+                inte smutsa ner hemmet utan istället bevara det så rent som
+                möjligt.
+              </li>
+              <li>
+                Ställ fram en fruktskål eller dylikt, t ex citron, chili,
+                avokado eller annat.
+              </li>
+              <li>Släng soporna för att undvika dålig lukt i hemmet.</li>
+              <li>
+                Kanske behöver du en mer utförligare städning? Läs mer om vår
+                populära{' '}
+                <Link href={{ pathname: '/vara-tjanster/flyttstadning' }}>
+                  Flyttstädning
+                </Link>
+                !
+              </li>
             </ul>
           </h5>
         </GridItem>

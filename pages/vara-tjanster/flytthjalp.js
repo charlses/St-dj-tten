@@ -11,10 +11,10 @@ import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
 import Parallax from 'components/Parallax/Parallax.js'
 // sections for this page
-import SectionTeam from 'pages-sections/vara-tjanster/visningsstadning/SectionTeam.js'
-import RotateCards from 'pages-sections/vara-tjanster/visningsstadning/RotateCards.js'
+import SectionTeam from 'pages-sections/vara-tjanster/flytthjalp/SectionTeam.js'
+import RotateCards from 'pages-sections/vara-tjanster/flytthjalp/RotateCards.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
-import SectionContact from 'pages-sections/vara-tjanster/visningsstadning/SectionContact.js'
+import SectionContact from 'pages-sections/vara-tjanster/flytthjalp/SectionContact.js'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -49,13 +49,18 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Visningsstädning</h1>
+              <h1 className={classes.title}>Flytthjälp</h1>
               <h4>
-                Har du planer på att sälja din bostad eller lokal inom en snar
-                framtid? Då har du en hel del att tänka på. Visningsdagen är en
-                viktig dag i säljprocessen, när potentiella köpare kommer för
-                att titta på bostaden finns det ett sätt att maximera dina
-                chanser för en god affär.
+                Står du inför en flytt och har ont om tid, eller vill vara säker
+                på att dina saker hamnar tryggt i lådorna? Det finns många
+                fördelar med att hyra oss på Städjätten som flytthjälp. Vi
+                sköter allt det praktiska åt dig på ett effektivt sätt, allt
+                från att ordna med flyttkartonger, packmaterial till att
+                transportera till den nya adressen. Vi på Städjätten vet hur en
+                snabb och smidig flytt ska gå till, vi har rätt verktyg och
+                kunskap för en säker flytt. <br /> Städjätten är
+                ansvarsförsäkrade via Trygg Hansa, detta gör att du som kund kan
+                känna dig extra trygg när du anlitar oss för flytthjälp.
               </h4>
             </GridItem>
           </GridContainer>

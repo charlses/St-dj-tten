@@ -27,47 +27,24 @@ export default function SectionTeam() {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>Hemstädning efter dina önskemål</h2>
-          <h5 className={classes.description}>
-            För oss är det viktigt att våra kunder är 100% nöjda, vi utför
-            därför städning helt enligt dina önskemål. Oavsett behov finns vi
-            där för dig när du behöver städhjälp. Vi erbjuder flexibla lösningar
-            utifrån dina krav, oavsett om det är städning en gång i veckan eller
-            en gång i månaden. Vi erbjuder även tilläggstjänster till din
-            hemstädning för en komplett lösning för din vardag. Städjätten
-            hjälper dig bland annat med att handla mat, apoteksärenden, plocka
-            ur tvätt, stryka, köra iväg sopor eller passa hunden.
-          </h5>
-        </GridItem>
-        <GridItem
-          md={12}
-          sm={12}
-          className={classNames(classes.mrAuto, classes.mlAuto)}
-        >
-          <h2 className={classes.title + ' ' + classes.textCenter}>
-            Vad ingår i hemstädning?
+          <h2 className={classes.title}>
+            Effektiv sanering i Stockholm & Göteborg
           </h2>
           <h5 className={classes.description}>
-            Vi på Städjätten finns för dig som vill förenkla vardagen, därför
-            låter vi dig bestämma hur din städning ska utföras tillsammans med
-            våra experter. Vi har tagit fram en standardlista för vad som ingår
-            i en hemstädning, men självklart anpassar vi den efter just dina
-            behov och önskemål. Listan över vad som ingår i en hemstädning
-            finner du nedan.
-          </h5>
-          <h5 className={classes.description}>
-            <ul>
-              <li>Avtorkning av diskbänk, arbetsbänk och kranar</li>
-              <li>Avtorkning av vitvaror </li>
-              <li>Rengöring av toalettstol, in- och utsida</li>
-              <li>
-                Avtorkning utvändigt av torkskåp, torktumlare och tvättmaskin
-              </li>
-              <li>Våttorkning av golv</li>
-              <li>Avtorkning av golvlister, fönsterbrädor och element</li>
-            </ul>
+            Innan saneringen utförs har vi som rutin att gå igenom bostaden
+            eller byggnaden tillsammans med kunden. Vi tittar närmare på
+            känsliga föremål och värdesaker för att markera saker som ska tas
+            hänsyn till. Därefter går vi igenom steg för steg vilka åtgärder som
+            kommer att utföras för att saneringen ska ge det bästa resultatet.
+            Vi hjälper er med alla era önskemål. Vårt team har den utbildning
+            och de kompetenser som krävs för att ge våra kunder hjälp på ett
+            effektivt sätt. Saneringsjobb kräver kompetent personal med rätt
+            utrustning som vet hur man genomför saneringen på ett säkert sätt.
+            Du som kund ska alltid känna dig trygg och bekväm när jobbet av
+            sanering utförs
           </h5>
         </GridItem>
+
         <GridItem
           md={12}
           sm={12}
@@ -81,23 +58,18 @@ export default function SectionTeam() {
             activeColor='rose'
             collapses={[
               {
-                title: 'Vad kostar hemstädning? ',
-                content: 'Pris för hemstädningen är från 179 kr/h'
+                title: 'Vad kostar sanering? ',
+                content: 'Kontakta oss för att få ett prisförslag'
               },
               {
-                title: 'Vad är skillnaden mellan hemstädning och storstädning?',
+                title: 'Vilken typ av sanering utför ni?',
                 content:
-                  ' En hemstädning är en mer övergripande städning, medan storstädning är en mer grundlig städning. Läs vår checklista här för att få information om vilka områden som ingår. '
+                  'Vi tar hand om alla typer av saneringsjobb, allt från socialsaneringar till specialsaneringar.'
               },
               {
                 title: 'Hur sker hanteringen av nycklar?',
                 content:
-                  'För att vår personal ska kunna komma in behöver antingen någon öppna åt dem eller så behöver de nycklar. Ifall du själv eller någon annan inte kan vara på plats vid den angivna tiden, kan du komma in med nycklar till vårt kontor på Gullmarsvägen 27 eller lämna nycklar med bud.'
-              },
-              {
-                title: 'Behöver jag ha rengöringsprodukter hemma?',
-                content:
-                  ' Vi rekommenderar att du har dina egna rengöringsprodukter hemma. Är du osäker på vilka städprodukter som behövs, kontakta oss så svarar vi på dina frågor!'
+                  'Innan saneringen utförs har vi som rutin att gå igenom bostaden eller byggnaden tillsammans med kunden. Vi tittar närmare på känsliga föremål och värdesaker för att markera saker som ska tas hänsyn till. Därefter går vi igenom steg för steg vilka åtgärder som kommer att utföras för att saneringen ska ge det bästa resultatet. '
               }
             ]}
           />

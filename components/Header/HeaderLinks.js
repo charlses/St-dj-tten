@@ -103,8 +103,14 @@ export default function HeaderLinks(props) {
             <Link href={{ pathname: '/vara-tjanster/storstadning' }}>
               <a className={classes.dropdownLink}>Storstädning</a>
             </Link>,
+            <Link href={{ pathname: '/vara-tjanster/visningsstadning' }}>
+              <a className={classes.dropdownLink}>Visningsstädning</a>
+            </Link>,
             <Link href={{ pathname: '/vara-tjanster/byggstadning' }}>
               <a className={classes.dropdownLink}>Byggstädning</a>
+            </Link>,
+            <Link href={{ pathname: '/vara-tjanster/flytthjalp' }}>
+              <a className={classes.dropdownLink}>Flytthjälp</a>
             </Link>,
             <Link href={{ pathname: '/vara-tjanster/packhjalp' }}>
               <a className={classes.dropdownLink}>Packhjälp</a>
@@ -116,18 +122,12 @@ export default function HeaderLinks(props) {
             <Link href={{ pathname: '/vara-tjanster/pianoflytt' }}>
               <a className={classes.dropdownLink}>Pianoflytt</a>
             </Link>,
-            <Link href={{ pathname: '/vara-tjanster/visningsstadning' }}>
-              <a className={classes.dropdownLink}>Visningsstädning</a>
-            </Link>,
 
             <Link href={{ pathname: '/vara-tjanster/kontorsflytt' }}>
               <a className={classes.dropdownLink}>Kontorsflytt</a>
             </Link>,
             <Link href={{ pathname: '/vara-tjanster/sanering' }}>
               <a className={classes.dropdownLink}>Snering</a>
-            </Link>,
-            <Link href={{ pathname: '/vara-tjanster/tradgardsskotsel' }}>
-              <a className={classes.dropdownLink}>Trädgårdsskötsel</a>
             </Link>,
             <Link href={{ pathname: '/vara-tjanster/bortforsling' }}>
               <a className={classes.dropdownLink}>Bortforsling</a>
@@ -362,6 +362,7 @@ export default function HeaderLinks(props) {
             color={'primary'}
             className={classes.navButton}
             round
+            justIcon
           >
             <Phone className={classes.icons} />
           </Button>
