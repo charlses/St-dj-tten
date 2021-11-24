@@ -146,18 +146,18 @@ export default function HeaderLinks(props) {
             color: 'transparent'
           }}
           dropdownList={[
-            <Link href='om-oss/samarbetspartners' replace>
+            <Link href={{ pathname: '/om-oss/smarbetspartners' }}>
               <a className={classes.dropdownLink}>Samarbetspartners</a>
             </Link>,
-            <Link href='om-oss/miljopolicy' replace>
+            <Link href={{ pathname: '/om-oss/milljopolicy' }}>
               <a className={classes.dropdownLink}>Miljöpolicy</a>
             </Link>,
-            <Link href='om-oss/nyheter'>
+            <Link href={{ pathname: '/om-oss/nyheter' }}>
               <a className={classes.dropdownLink} replace>
                 Våra Nyheter
               </a>
             </Link>,
-            <Link href='om-oss/rut'>
+            <Link href={{ pathname: '/om-oss/rutavdrag' }}>
               <a className={classes.dropdownLink} replace>
                 Rut avdrag
               </a>
