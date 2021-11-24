@@ -25,26 +25,32 @@ export default function SectionTeam() {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>Om oss & vårt arbetssätt</h2>
+          <h2 className={classes.title}>
+            Vill du också bli samarbetspartner med Städjätten?
+          </h2>
           <h5 className={classes.description}>
-            Vårt fokus är effektivitet och service, därför använder vi sedan
-            flera år tillbaka tekniska verktyg som ger oss möjlighet att
-            utnyttja våra resurser optimalt. Det som skiljer oss från många
-            andra är vår välstrukturerade planering och flexibla arbetssätt som
-            gör att vi kan hålla mycket konkurrenskraftiga priser på både städ-
-            och flytthjälp.
+            Idag har vi fantastiska samarbetspartners med mindre privata till
+            större multinationella bolag som gör att vi kan hjälpa fler med våra
+            tjänster runt om i Sverige. Vi arbetar även med flera mäklarfirmor i
+            Stockholm. Bjurfors Bromma, Bjurfors Södermalm, Bjurfors
+            Liljeholmen, Svenska Mäklarhuset Bromma Essingen, ERA Vaxholm och
+            även kommuner som Sollentuna kommun är bara några av våra
+            samarbetspartners.
           </h5>
           <h5 className={classes.description}>
-            Vi har en familjär företagskultur där personalen är vald med omsorg.
-            Dessa är skickliga yrkesmänniskor, med både lång erfarenhet och hög
-            servicekänsla. Vi har certifierad personal & SRY-yrkesbevis.
-            Självklart är vi ansvarsförsäkrade för att du som kund ska känna dig
-            trygg med att anlita oss.
+            Vi arbetar även med 24Storage och City self-storage som gör att vi
+            kan erbjuda våra kunder förmånliga priser på magasinering i samband
+            med våra tjänster. Med hjälp av Golvexperten kan du som kund även få
+            ihop en helhetslösning där vi kan hjälpa dig med golvtjänster som
+            håller en hög kvalité. Kontakta oss så hjälper vi dig ta del av våra
+            erbjudanden.
           </h5>
           <h5 className={classes.description}>
-            Vi strävar alltid efter att förbättra och utveckla oss så att du som
-            kund ska få det bästa alternativet och den mest prisvärda städ- och
-            flytthjälpen.
+            Med höga ambitioner är vår vision att inte bara bli störst och
+            billigast, vi strävar också efter att vara bäst på det vi gör inom
+            flytt och städ i hela Sverige. Tack vare kvaliteten vi håller i
+            utförda arbeten har vi lyckats bygga upp ett starkt varumärke som vi
+            är måna om att behålla.
           </h5>
           <h5 className={classes.description}>
             Ett annat resultat av god planering och struktur är att alla vet vad

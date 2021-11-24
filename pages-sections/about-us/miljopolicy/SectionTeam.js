@@ -25,36 +25,47 @@ export default function SectionTeam() {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>Om oss & vårt arbetssätt</h2>
+          <h2 className={classes.title}>Transporter</h2>
           <h5 className={classes.description}>
-            Vårt fokus är effektivitet och service, därför använder vi sedan
-            flera år tillbaka tekniska verktyg som ger oss möjlighet att
-            utnyttja våra resurser optimalt. Det som skiljer oss från många
-            andra är vår välstrukturerade planering och flexibla arbetssätt som
-            gör att vi kan hålla mycket konkurrenskraftiga priser på både städ-
-            och flytthjälp.
+            De transporter som företaget gör i tätort sker med fordon med låga
+            eller inga emissioner. I de tätorter där det erbjuds möjlighet att
+            göra transporter med dubbfria däck, väljer företaget det.
           </h5>
+          <h2 className={classes.title}>RUT-avdrag</h2>
           <h5 className={classes.description}>
-            Vi har en familjär företagskultur där personalen är vald med omsorg.
-            Dessa är skickliga yrkesmänniskor, med både lång erfarenhet och hög
-            servicekänsla. Vi har certifierad personal & SRY-yrkesbevis.
-            Självklart är vi ansvarsförsäkrade för att du som kund ska känna dig
-            trygg med att anlita oss.
+            När du anlitar oss kan du använda dig av RUT-avdraget. Vi gör det
+            enkelt för dig och sköter all administration. Genom RUT- avdraget
+            har du som privatperson möjlighet att dra av arbetskostnader upp
+            till 75 000 kr per år efter nya regler 2021. Det gör att du kan få
+            50 % skatteavdrag på våra tjänster som exempelvis flytthjälp,
+            flyttstädning och hemstädning.
+            <br />
+            <br />
+            <p>Begreppet RUT är en akronym för:</p>
+            <p>Rengöring</p>
+            <p>Underhåll</p>
+            <p>Tvätt</p>
           </h5>
+          <h2 className={classes.title}>
+            Kan alla använda sig av RUT-avdraget?
+          </h2>
           <h5 className={classes.description}>
-            Vi strävar alltid efter att förbättra och utveckla oss så att du som
-            kund ska få det bästa alternativet och den mest prisvärda städ- och
-            flytthjälpen.
-          </h5>
-          <h5 className={classes.description}>
-            Ett annat resultat av god planering och struktur är att alla vet vad
-            de ska göra. Då blir det enkelt att hålla hög servicenivå. Förutom
-            att städning eller flytt ska utföras snabbt och effektivt, ska den
-            göras fläckfritt och utifrån kundens behov och önskemål. Du som
-            kund, oavsett privatperson eller företag, ska känna dig trygg med
-            oss som leverantör – oavsett om du har beställt en enskild tjänst
-            eller en helhetslösning med allt från packning till transport och
-            flyttstädning.
+            För att ta del av RUT- avdraget behöver du minst vara 18 år och
+            varit obegränsat skattskyldig under året. Om du som kund vill
+            använda dig av rut-avdraget behöver du endast kryssa i rutan i våra
+            formulär “Ja, jag vill använda mig av rut-avdraget för
+            privatpersoner så ansöker vi som företag om detta åt dig”.
+            <p>
+              På följande länk hittar du mer information om Skatteverkets
+              riktlinjer för RUT-avdrag{' '}
+              <a
+                href='https://www.skatteverket.se/privat/fastigheterochbostad/rotochrutarbete/gerarbetetratttillrutavdrag.106.5c1163881590be297b53de7.html'
+                target='_blank'
+              >
+                {' '}
+                skatteverket.se
+              </a>
+            </p>
           </h5>
         </GridItem>
       </GridContainer>

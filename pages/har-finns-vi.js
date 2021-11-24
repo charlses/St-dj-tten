@@ -11,9 +11,7 @@ import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
 import Parallax from 'components/Parallax/Parallax.js'
 // sections for this page
-import SectionDescription from 'pages-sections/about-us/miljopolicy/SectionDescription.js'
-import SectionTeam from 'pages-sections/about-us/miljopolicy/SectionTeam.js'
-import SectionServices from 'pages-sections/about-us/miljopolicy/SectionServices.js'
+import SectionPills from 'pages-sections/har-finns-vi/SectionPills.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
@@ -29,7 +27,6 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand='NextJS Material Kit PRO'
         links={<HeaderLinks dropdownHoverColor='primary' />}
         fixed
         color='transparent'
@@ -50,13 +47,13 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Vår miljöpolicy</h1>
+              <h1 className={classes.title}>Här finns Städjätten</h1>
               <h4>
-                Städjätten lägger stor vikt vid miljöaspekter när vi arbetar med
-                städ- och flytthjälp och väljer därför att arbeta med
-                miljömärkta och miljövänliga produkter. Vi anpassar vårt
-                tillvägagångssätt med målsättningen att minimera vår
-                miljöpåverkan för att främja en grönare värld.
+                Du hittar oss i hela Stockholm, Göteborg och vi fortsätter
+                ständigt att expandera runt om i Sverige. Vi har över 15 års
+                erfarenhet av städ- och flytthjälp. Du som privatperson betalar
+                endast halva kostnaden på både städ- och flytthjälp med
+                RUT-avdraget.
               </h4>
             </GridItem>
           </GridContainer>
@@ -64,7 +61,7 @@ export default function AboutUsPage() {
       </Parallax>
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
-          <SectionTeam />
+          <SectionPills />
         </div>
       </div>
       <SectionFooter />

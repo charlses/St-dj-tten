@@ -26,25 +26,14 @@ export default function SectionTeam() {
           )}
         >
           <h2 className={classes.title}>
-            Kan alla använda sig av RUT-avdraget?
+            Behöver du en flyttfirma i Stockholm?
           </h2>
           <h5 className={classes.description}>
-            För att ta del av RUT- avdraget behöver du minst vara 18 år och
-            varit obegränsat skattskyldig under året. Om du som kund vill
-            använda dig av rut-avdraget behöver du endast kryssa i rutan i våra
-            formulär “Ja, jag vill använda mig av rut-avdraget för
-            privatpersoner så ansöker vi som företag om detta åt dig”.
-            <p>
-              På följande länk hittar du mer information om Skatteverkets
-              riktlinjer för RUT-avdrag{' '}
-              <a
-                href='https://www.skatteverket.se/privat/fastigheterochbostad/rotochrutarbete/gerarbetetratttillrutavdrag.106.5c1163881590be297b53de7.html'
-                target='_blank'
-              >
-                {' '}
-                skatteverket.se
-              </a>
-            </p>
+            Vi hjälper dig när det är det dags för flytt till och från
+            Stockholm. Med Städjätten som flyttfirma sker din flytt på ett
+            snabbt, prisvärt och effektivt sätt. Städjätten är ansvarsförsäkrade
+            via Trygg Hansa. Detta gör att du som kund kan känna dig trygg när
+            du anlitar oss för flytthjälp.
           </h5>
         </GridItem>
       </GridContainer>
