@@ -28,7 +28,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <div id='page-transition'></div>
-          a<Main />
+          <Main />
           <NextScript />
         </body>
       </Html>

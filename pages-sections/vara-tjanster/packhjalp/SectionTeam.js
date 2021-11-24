@@ -27,16 +27,15 @@ export default function SectionTeam() {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>Hemstädning efter dina önskemål</h2>
+          <h2 className={classes.title}>Vi hjälper dig med din montering</h2>
           <h5 className={classes.description}>
-            För oss är det viktigt att våra kunder är 100% nöjda, vi utför
-            därför städning helt enligt dina önskemål. Oavsett behov finns vi
-            där för dig när du behöver städhjälp. Vi erbjuder flexibla lösningar
-            utifrån dina krav, oavsett om det är städning en gång i veckan eller
-            en gång i månaden. Vi erbjuder även tilläggstjänster till din
-            hemstädning för en komplett lösning för din vardag. Städjätten
-            hjälper dig bland annat med att handla mat, apoteksärenden, plocka
-            ur tvätt, stryka, köra iväg sopor eller passa hunden.
+            Att större möbler är svåra att hantera under en flytt är ett faktum,
+            för att undvika att skada sig själv eller skador i hemmet är det
+            bäst att lämna över packhjälpen till oss. Vi gör nedmontering av
+            tunga och komplicerade möbler för att göra din flytt så smidig som
+            möjligt. Det är viktigt att ha rätt verktyg under monteringen annars
+            är det lätt att man gör mer skada än nytta. Passa också på att boka
+            in flytthjälp
           </h5>
         </GridItem>
         <GridItem
@@ -45,8 +44,11 @@ export default function SectionTeam() {
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
           <h2 className={classes.title + ' ' + classes.textCenter}>
-            Vad ingår i hemstädning?
+            Packhjälp som spar tid och kraft
           </h2>
+          <h3 className={classes.title + ' ' + classes.textCenter}>
+            Några tips som underlättar din flytt:
+          </h3>
           <h5 className={classes.description}>
             Vi på Städjätten finns för dig som vill förenkla vardagen, därför
             låter vi dig bestämma hur din städning ska utföras tillsammans med
@@ -56,16 +58,30 @@ export default function SectionTeam() {
             finner du nedan.
           </h5>
           <h5 className={classes.description}>
-            <ul>
-              <li>Avtorkning av diskbänk, arbetsbänk och kranar</li>
-              <li>Avtorkning av vitvaror </li>
-              <li>Rengöring av toalettstol, in- och utsida</li>
+            <ol>
+              <li>
+                Spara alla skruvar och lösa föremål i en påse för att inte tappa
+                bort de.{' '}
+              </li>
+              <li>
+                Förklara för packhjälpen vilka saker som är extra ömtåliga.Vi är
+                noga med att packa rätt och värnar extra mycket om ömtåliga
+                föremål.{' '}
+              </li>
+              <li>
+                Är ni en stor familj? Märk familjemedlemmarnas rum med
+                respektive namn för att förenkla för packhjälpen att veta vilka
+                kartonger som tillhör respektive rum.
+              </li>
               <li>
                 Avtorkning utvändigt av torkskåp, torktumlare och tvättmaskin
               </li>
               <li>Våttorkning av golv</li>
-              <li>Avtorkning av golvlister, fönsterbrädor och element</li>
-            </ul>
+              <h6>
+                Låt oss sköta hela er flytt från packhjälp, bärhjälp till
+                flyttstädning.
+              </h6>
+            </ol>
           </h5>
         </GridItem>
         <GridItem
@@ -81,23 +97,18 @@ export default function SectionTeam() {
             activeColor='rose'
             collapses={[
               {
-                title: 'Vad kostar hemstädning? ',
-                content: 'Pris för hemstädningen är från 179 kr/h'
+                title: 'Vad kostar packhjälp?',
+                content: 'Pris för packhjälp är från 495 kr/h'
               },
               {
                 title: 'Vad är skillnaden mellan hemstädning och storstädning?',
                 content:
-                  ' En hemstädning är en mer övergripande städning, medan storstädning är en mer grundlig städning. Läs vår checklista här för att få information om vilka områden som ingår. '
+                  'Dina flyttkartonger omfattas av vår pack-försäkring och är alltså i trygga händer under hela flytten.'
               },
               {
-                title: 'Hur sker hanteringen av nycklar?',
+                title: 'Kan jag låna flyttkartonger?',
                 content:
-                  'För att vår personal ska kunna komma in behöver antingen någon öppna åt dem eller så behöver de nycklar. Ifall du själv eller någon annan inte kan vara på plats vid den angivna tiden, kan du komma in med nycklar till vårt kontor på Gullmarsvägen 27 eller lämna nycklar med bud.'
-              },
-              {
-                title: 'Behöver jag ha rengöringsprodukter hemma?',
-                content:
-                  ' Vi rekommenderar att du har dina egna rengöringsprodukter hemma. Är du osäker på vilka städprodukter som behövs, kontakta oss så svarar vi på dina frågor!'
+                  'Hos oss ingår alltid lån av flyttkartonger som du kan ha 2 veckor innan och efter utförande av flytten. Kartongerna går att hämta ut eller få utkörda till dig.'
               }
             ]}
           />

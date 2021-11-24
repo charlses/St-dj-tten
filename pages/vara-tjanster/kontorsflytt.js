@@ -29,8 +29,7 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand='NextJS Material Kit PRO'
-        links={<HeaderLinks dropdownHoverColor='info' />}
+        links={<HeaderLinks dropdownHoverColor='primary' />}
         fixed
         color='transparent'
         changeColorOnScroll={{
