@@ -30,6 +30,10 @@ class MyDocument extends Document {
           <div id='page-transition'></div>
           <Main />
           <NextScript />
+          <script
+            src='//code.tidio.co/dvwakpc59m2nef97px9qvaxxg8bmmjod.js'
+            async
+          ></script>
         </body>
       </Html>
     )
