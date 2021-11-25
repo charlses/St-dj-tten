@@ -12,8 +12,6 @@ import GridItem from 'components/Grid/GridItem.js'
 import Button from 'components/CustomButtons/Button.js'
 import CustomInput from 'components/CustomInput/CustomInput.js'
 import Footer from 'components/Footer/Footer.js'
-import Image from 'next/image'
-import LoggaOne from '../../public/img/logo.png'
 
 import styles from 'styles/jss/nextjs-material-kit-pro/pages/componentsSections/footerStyle.js'
 
@@ -68,8 +66,8 @@ export default function SectionFooter() {
         <GridContainer>
           <GridItem xs={12} sm={3} md={3}>
             <a href='#pablo'>
-              <Image
-                src={LoggaOne}
+              <img
+                src='/img/logo.png'
                 width={200}
                 height={40}
                 alt='Stadjättens Logga'

@@ -17,9 +17,6 @@ import Menu from '@material-ui/icons/Menu'
 import Close from '@material-ui/icons/Close'
 // core components
 import styles from 'styles/jss/nextjs-material-kit-pro/components/headerStyle.js'
-import Image from 'next/image'
-import LoggaOne from '../../public/img/logo.png'
-
 const useStyles = makeStyles(styles)
 
 export default function Header(props) {
@@ -70,8 +67,8 @@ export default function Header(props) {
       <Toolbar className={classes.containerFluid}>
         <Button className={classes.title}>
           <Link href='/'>
-            <Image
-              src={LoggaOne}
+            <img
+              src='/img/logo.png'
               height='37'
               width='200'
               alt='Städjätten logga(Vit)'
