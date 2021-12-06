@@ -176,22 +176,22 @@ export default function HeaderLinks(props) {
             color: 'transparent'
           }}
           dropdownList={[
-            <Link href='stockholm'>
+            <Link href='/stockholm' replace>
               <a className={classes.dropdownLink}>Stockholm</a>
             </Link>,
-            <Link href='goteborg'>
+            <Link href='/goteborg' replace>
               <a className={classes.dropdownLink}>Göteborg</a>
             </Link>
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link href='/kontakta-oss'>
+        <Link href='/kontakta-oss' replace>
           <a className={classes.navLink}>Kontakta Oss</a>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link href='/faq'>
+        <Link href='/faq' replace>
           <a className={classes.navLink}>FAQ</a>
         </Link>
       </ListItem>
