@@ -127,7 +127,7 @@ export default function HeaderLinks(props) {
               <a className={classes.dropdownLink}>Kontorsflytt</a>
             </Link>,
             <Link href={{ pathname: '/vara-tjanster/sanering' }}>
-              <a className={classes.dropdownLink}>Snering</a>
+              <a className={classes.dropdownLink}>Sanering</a>
             </Link>,
             <Link href={{ pathname: '/vara-tjanster/bortforsling' }}>
               <a className={classes.dropdownLink}>Bortforsling</a>
@@ -161,6 +161,12 @@ export default function HeaderLinks(props) {
               <a className={classes.dropdownLink} replace>
                 Rut avdrag
               </a>
+            </Link>,
+            <Link href='/kontakta-oss' replace>
+              <a className={classes.dropdownLink}>Kontakta Oss</a>
+            </Link>,
+            <Link href='/faq' replace>
+              <a className={classes.dropdownLink}>FAQ</a>
             </Link>
           ]}
         />
@@ -185,16 +191,7 @@ export default function HeaderLinks(props) {
           ]}
         />
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link href='/kontakta-oss' replace>
-          <a className={classes.navLink}>Kontakta Oss</a>
-        </Link>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link href='/faq' replace>
-          <a className={classes.navLink}>FAQ</a>
-        </Link>
-      </ListItem>
+
       {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding

@@ -74,7 +74,7 @@ export default function SectionFooter() {
           <GridItem xs={12} sm={3} md={3}>
             <a href='#pablo'>
               <img
-                src='/img/logo.png'
+                src='/img/logo-white.png'
                 width={200}
                 height={40}
                 alt='Stadjättens Logga'

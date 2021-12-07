@@ -43,13 +43,11 @@ export default function Index() {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1>
-                  Städjätten
-                  <span className={classes.proBadge}>AB</span>
-                </h1>
-                <h3 className={classes.title}>Din städfirma i Stockholm</h3>
+                <h1 className={classes.title}>Städjätten</h1>
+                <h4>Hos oss är både din städning och flytt i trygga händer</h4>
               </div>
             </GridItem>
+            <GridItem></GridItem>
           </GridContainer>
         </div>
       </Parallax>
