@@ -31,7 +31,7 @@ export default function SectionFooter() {
                 simple
                 href='https://instagram.com/stadjatten'
                 target='_blank'
-                color='twitter'
+                color='white'
               >
                 <i className='fab fa-instagram' />
               </Button>
@@ -41,13 +41,20 @@ export default function SectionFooter() {
                 justIcon
                 simple
                 href='https://www.facebook.com/StadjattenAB/'
-                color='facebook'
+                target='_blank'
+                color='white'
               >
                 <i className='fab fa-facebook' />
               </Button>
             </li>
             <li>
-              <Button justIcon simple href='' color='google'>
+              <Button
+                justIcon
+                simple
+                href='https://www.linkedin.com/company/st%C3%A4dj%C3%A4tten/'
+                target='_blank'
+                color='white'
+              >
                 <i className='fab fa-linkedin' />
               </Button>
             </li>

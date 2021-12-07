@@ -101,17 +101,32 @@ const footerStyle = {
     }
   },
   white: {
-    backgroundColor: whiteColor,
-    color: grayColor[1],
+    background:
+      'radial-gradient(ellipse at center,' +
+      primaryColor[4] +
+      ' 0,' +
+      primaryColor[5] +
+      ' 100%)',
+    color: whiteColor,
 
     textDecoration: 'none',
     '& a': {
+      color: whiteColor,
+      opacity: '.95',
       '&:visited': {
-        color: grayColor[1]
+        color: whiteColor
       },
-      '&:hover, &:focus': {
-        color: grayColor[20]
+      '&:focus, &:hover': {
+        opacity: 1
       }
+    },
+    '& p': {
+      color: whiteColor,
+      opacity: '.86'
+    },
+    '& h5': {
+      color: whiteColor,
+      fontWeight: '400'
     }
   },
   container,

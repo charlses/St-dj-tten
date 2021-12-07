@@ -20,7 +20,7 @@ export default function SectionProduct() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <GridContainer justify='center'>
+        <GridContainer justifyContent='center'>
           <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={150}>
             <GridItem xs={12} sm={8} md={8}>
               <h2 className={classes.title}>

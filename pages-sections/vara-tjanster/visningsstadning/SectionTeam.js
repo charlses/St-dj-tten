@@ -94,7 +94,6 @@ export default function SectionTeam() {
                 <Link href={{ pathname: '/vara-tjanster/flyttstadning' }}>
                   Flyttstädning
                 </Link>
-                !
               </li>
             </ul>
           </h5>
