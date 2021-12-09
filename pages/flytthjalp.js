@@ -13,6 +13,7 @@ import Parallax from 'components/Parallax/Parallax.js'
 // sections for this page
 import SectionPills from 'pages-sections/flytthjalp/SectionPills.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
+import SectionForm from 'pages-sections/sections-page/SectionForm'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -63,6 +64,7 @@ export default function AboutUsPage() {
       </Parallax>
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
+          <SectionForm />
           <SectionPills />
         </div>
       </div>

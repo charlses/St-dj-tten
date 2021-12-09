@@ -159,7 +159,7 @@ export default function HeaderLinks(props) {
             </Link>,
             <Link href={{ pathname: '/om-oss/rutavdrag' }}>
               <a className={classes.dropdownLink} replace>
-                Rut avdrag
+                RUT-avdrag
               </a>
             </Link>,
             <Link href='/kontakta-oss' replace>

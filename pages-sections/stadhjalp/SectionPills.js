@@ -35,7 +35,7 @@ export default function SectionPills() {
                 <Button
                   round
                   href='/vara-tjanster/flyttstadning'
-                  color='danger'
+                  color='primary'
                 >
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
@@ -75,7 +75,7 @@ export default function SectionPills() {
                 <Button
                   round
                   href='/vara-tjanster/vissningsstadning'
-                  color='warning'
+                  color='primary'
                 >
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
@@ -96,7 +96,7 @@ export default function SectionPills() {
                 <Button
                   round
                   href='/vara-tjanster/kontorsstadning'
-                  color='danger'
+                  color='primary'
                 >
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
@@ -137,11 +137,12 @@ export default function SectionPills() {
                 <p className={classes.category}>
                   Kontakta oss för att få ett prisförslag
                 </p>
-                <Button round href='/vara-tjanster/sanering' color='warning'>
+                <Button round href='/vara-tjanster/sanering' color='primary'>
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
               </CardBody>
             </Card>
+            primary
           </GridItem>
         </GridContainer>
       </div>

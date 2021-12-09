@@ -53,7 +53,7 @@ export default function SectionPills() {
                   <h3 className={classes.cardTitle}>Packhjälp</h3>
                 </a>
                 <p className={classes.category}>ffr.495kr/h</p>
-                <Button round href='/vara-tjanster/packhjalp' color='warning'>
+                <Button round href='/vara-tjanster/packhjalp' color='primary'>
                   <FormatAlignLeft className={classes.icons} />
                   Läs mer
                 </Button>
@@ -71,7 +71,7 @@ export default function SectionPills() {
                   <h3 className={classes.cardTitle}>Bärhjälp</h3>
                 </a>
                 <p className={classes.category}>fr.495kr/h</p>
-                <Button round href='/vara-tjanster/barhjalp' color='danger'>
+                <Button round href='/vara-tjanster/barhjalp' color='primary'>
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
               </CardBody>
@@ -114,7 +114,7 @@ export default function SectionPills() {
                   <h3 className={classes.cardTitle}>Pianoflytt</h3>
                 </a>
                 <p className={classes.category}>fr.495kr/h</p>
-                <Button round href='/vara-tjanster/pianoflytt' color='warning'>
+                <Button round href='/vara-tjanster/pianoflytt' color='primary'>
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
               </CardBody>
@@ -133,7 +133,11 @@ export default function SectionPills() {
                   <h3 className={classes.cardTitle}>Bortforsling</h3>
                 </a>
                 <p className={classes.category}>fr.495kr/h</p>
-                <Button round href='/vara-tjanster/bortforsling' color='danger'>
+                <Button
+                  round
+                  href='/vara-tjanster/bortforsling'
+                  color='primary'
+                >
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
               </CardBody>

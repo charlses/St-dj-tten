@@ -11,9 +11,7 @@ import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
 import Parallax from 'components/Parallax/Parallax.js'
 // sections for this page
-import SectionDescription from 'pages-sections/about-us/miljopolicy/SectionDescription.js'
 import SectionTeam from 'pages-sections/about-us/miljopolicy/SectionTeam.js'
-import SectionServices from 'pages-sections/about-us/miljopolicy/SectionServices.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'

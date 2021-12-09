@@ -36,7 +36,7 @@ export default function SectionPills() {
                 <Button
                   round
                   href='/vara-tjanster/flyttstadning'
-                  color='danger'
+                  color='primary'
                 >
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
@@ -76,7 +76,7 @@ export default function SectionPills() {
                 <Button
                   round
                   href='/vara-tjanster/vissningsstadning'
-                  color='warning'
+                  color='primary'
                 >
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
@@ -97,7 +97,7 @@ export default function SectionPills() {
                 <Button
                   round
                   href='/vara-tjanster/kontorsstadning'
-                  color='danger'
+                  color='primary'
                 >
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
@@ -138,7 +138,7 @@ export default function SectionPills() {
                   <h3 className={classes.cardTitle}>Packhjälp</h3>
                 </a>
                 <p className={classes.category}>ffr.495kr/h</p>
-                <Button round href='/vara-tjanster/packhjalp' color='warning'>
+                <Button round href='/vara-tjanster/packhjalp' color='primary'>
                   <FormatAlignLeft className={classes.icons} />
                   Läs mer
                 </Button>
@@ -156,7 +156,7 @@ export default function SectionPills() {
                   <h3 className={classes.cardTitle}>Bärhjälp</h3>
                 </a>
                 <p className={classes.category}>fr.495kr/h</p>
-                <Button round href='/vara-tjanster/barhjalp' color='danger'>
+                <Button round href='/vara-tjanster/barhjalp' color='primary'>
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
               </CardBody>
@@ -196,7 +196,7 @@ export default function SectionPills() {
                 <Button
                   round
                   href='/vara-tjanster/kontorsflytt'
-                  color='warning'
+                  color='primary'
                 >
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>

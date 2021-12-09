@@ -14,9 +14,9 @@ import GridItem from 'components/Grid/GridItem.js'
 import SectionProduct from 'pages-sections/landing-page/SectionProduct.js'
 import SectionProducts from 'pages-sections/ecommerce/SectionProducts.js'
 import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials.js'
-import SectionPills from 'pages-sections/blog-posts/SectionPills.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionForm from '../pages-sections/sections-page/SectionForm'
+import SectionBlog from 'pages-sections/landing-page/SectionBlog'
 
 import presentationStyle from 'styles/jss/nextjs-material-kit-pro/pages/presentationStyle.js'
 
@@ -56,10 +56,9 @@ export default function Index() {
       </Parallax>
       <div className={classNames(classes.main)}>
         <SectionProduct />
-
         <SectionProducts />
         <SectionTestimonials />
-        <SectionPills />
+        <SectionBlog />
       </div>
 
       <SectionFooter />
