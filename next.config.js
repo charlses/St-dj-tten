@@ -7,5 +7,11 @@ module.exports = withPlugins([[withImages]], {
   webpack(config, options) {
     config.resolve.modules.push(path.resolve('./'))
     return config
+  },
+  env: {
+    limeApiKey:
+      '565DDB898A0382B042FE3D88A959A6BDBD8BEDD44DC7BF56EAD0088FA5A99DABF525649D44B7B5377DDA',
+    limeApiUrl:
+      'https://stadjatten.lime-crm.com/stadjatten/api/v1/limeobject/deal/'
   }
 })

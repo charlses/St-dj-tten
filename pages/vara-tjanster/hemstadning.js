@@ -16,6 +16,8 @@ import RotateCards from 'pages-sections/vara-tjanster/hemstadning/RotateCards.js
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionContact from 'pages-sections/vara-tjanster/hemstadning/SectionContact.js'
 
+import SectionForm from 'pages-sections/sections-page/SectionForm'
+
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
 const useStyles = makeStyles(aboutUsStyle)
@@ -39,7 +41,7 @@ export default function AboutUsPage() {
       />
       <Parallax image='/img/bg9.jpg' filter='dark' small>
         <div className={classes.container}>
-          <GridContainer justify='center'>
+          <GridContainer justify='justifyContent'>
             <GridItem
               md={8}
               sm={8}
@@ -62,6 +64,7 @@ export default function AboutUsPage() {
       </Parallax>
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
+          <SectionForm />
           <SectionTeam />
           <RotateCards />
           <SectionContact />

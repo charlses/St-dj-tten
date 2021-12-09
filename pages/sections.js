@@ -6,7 +6,6 @@ import { makeStyles } from '@material-ui/core/styles'
 import Header from 'components/Header/Header.js'
 import HeaderLinks from 'components/Header/HeaderLinks.js'
 // sections of this Page
-import SectionHeaders from 'pages-sections/sections-page/SectionHeaders.js'
 import SectionFeatures from 'pages-sections/sections-page/SectionFeatures.js'
 import SectionBlogs from 'pages-sections/sections-page/SectionBlogs.js'
 import SectionTeams from 'pages-sections/sections-page/SectionTeams.js'
@@ -91,7 +90,6 @@ export default function SectionsPage() {
         fixed
       />
       <div className={classes.main}>
-        <SectionHeaders id='headers' />
         <SectionFeatures id='features' />
         <SectionBlogs id='blogs' />
         <SectionTeams id='teams' />

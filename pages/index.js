@@ -16,6 +16,7 @@ import SectionProducts from 'pages-sections/ecommerce/SectionProducts.js'
 import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials.js'
 import SectionPills from 'pages-sections/blog-posts/SectionPills.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
+import SectionForm from '../pages-sections/sections-page/SectionForm'
 
 import presentationStyle from 'styles/jss/nextjs-material-kit-pro/pages/presentationStyle.js'
 
@@ -47,7 +48,9 @@ export default function Index() {
                 <h4>Hos oss är både din städning och flytt i trygga händer</h4>
               </div>
             </GridItem>
-            <GridItem></GridItem>
+            <GridItem>
+              <SectionForm />
+            </GridItem>
           </GridContainer>
         </div>
       </Parallax>
