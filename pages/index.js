@@ -59,7 +59,7 @@ export default function Index() {
         <SectionProduct />
         <SectionProducts />
         <SectionTestimonials />
-        <SectionBlog />
+        {/* <SectionBlog /> */}
       </div>
 
       <SectionFooter />

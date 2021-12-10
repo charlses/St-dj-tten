@@ -26,7 +26,7 @@ export default function SectionPills() {
             <Card
               raised
               background
-              style={{ backgroundImage: "url('/img/examples/blog8.jpg')" }}
+              style={{ backgroundImage: "url('/img/flytthjalp.jpg')" }}
             >
               <CardBody background>
                 <a href='#pablo'>
@@ -45,7 +45,7 @@ export default function SectionPills() {
               raised
               background
               style={{
-                backgroundImage: "url('/img/examples/card-project6.jpg')"
+                backgroundImage: "url('/img/packhjalp.jpg')"
               }}
             >
               <CardBody background>
@@ -64,7 +64,7 @@ export default function SectionPills() {
             <Card
               raised
               background
-              style={{ backgroundImage: "url('/img/examples/office2.jpg')" }}
+              style={{ backgroundImage: "url('/img/barhjalp.jpg')" }}
             >
               <CardBody background>
                 <a href='#pablo'>
@@ -83,7 +83,7 @@ export default function SectionPills() {
               raised
               background
               style={{
-                backgroundImage: "url('/img/examples/card-project6.jpg')"
+                backgroundImage: "url('/img/kontorsflytt.jpg')"
               }}
             >
               <CardBody background>
