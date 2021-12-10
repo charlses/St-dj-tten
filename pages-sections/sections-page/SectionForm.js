@@ -54,11 +54,11 @@ export default function SectionForm() {
         <Card raised className={classes.card}>
           <CardBody formHorizontal>
             <h5 className={(classes.title, classes.textCenter)}>
-              Skicka en offerförfråga så kontaktar vi dig!
+              Skicka en offerförfråga så kontaktar vi dig inom 1 timme
             </h5>
             <form>
               <GridContainer>
-                <GridItem xs={12} sm={3} md={3}>
+                <GridItem xs={12} sm={6} md={2}>
                   <CustomInput
                     id='name'
                     required
@@ -71,7 +71,7 @@ export default function SectionForm() {
                     }}
                   />
                 </GridItem>
-                <GridItem xs={12} sm={3} md={3}>
+                <GridItem xs={12} sm={6} md={2}>
                   <CustomInput
                     id='email'
                     required
@@ -84,7 +84,7 @@ export default function SectionForm() {
                     }}
                   />
                 </GridItem>
-                <GridItem xs={12} sm={3} md={3}>
+                <GridItem xs={12} sm={6} md={2}>
                   <CustomInput
                     id='phone'
                     required
@@ -97,7 +97,33 @@ export default function SectionForm() {
                     }}
                   />
                 </GridItem>
-                <GridItem xs={12} sm={3} md={3}>
+                <GridItem xs={12} sm={6} md={2}>
+                  <CustomInput
+                    id='phone'
+                    required
+                    inputProps={{
+                      placeholder: 'Välj en tjänst'
+                    }}
+                    formControlProps={{
+                      fullWidth: true,
+                      className: classes.formControl
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={6} md={2}>
+                  <CustomInput
+                    id='phone'
+                    required
+                    inputProps={{
+                      placeholder: 'Datum'
+                    }}
+                    formControlProps={{
+                      fullWidth: true,
+                      className: classes.formControl
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={6} md={2}>
                   <Button block color='primary' className={classes.button}>
                     Skicka
                   </Button>

@@ -142,7 +142,6 @@ export default function SectionPills() {
                 </Button>
               </CardBody>
             </Card>
-            primary
           </GridItem>
         </GridContainer>
       </div>

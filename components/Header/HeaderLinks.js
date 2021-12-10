@@ -94,14 +94,11 @@ export default function HeaderLinks(props) {
             <Link href={{ pathname: '/vara-tjanster/flyttstadning' }}>
               <a className={classes.dropdownLink}>Flyttstädning</a>
             </Link>,
-            <Link href={{ pathname: '/vara-tjanster/hemstadning' }}>
-              <a className={classes.dropdownLink}>Hemstädning</a>
-            </Link>,
-            <Link href={{ pathname: '/vara-tjanster/kontorsstadning' }}>
-              <a className={classes.dropdownLink}>Kontorsstädning</a>
-            </Link>,
             <Link href={{ pathname: '/vara-tjanster/storstadning' }}>
               <a className={classes.dropdownLink}>Storstädning</a>
+            </Link>,
+            <Link href={{ pathname: '/vara-tjanster/hemstadning' }}>
+              <a className={classes.dropdownLink}>Hemstädning</a>
             </Link>,
             <Link href={{ pathname: '/vara-tjanster/visningsstadning' }}>
               <a className={classes.dropdownLink}>Visningsstädning</a>
@@ -109,28 +106,31 @@ export default function HeaderLinks(props) {
             <Link href={{ pathname: '/vara-tjanster/byggstadning' }}>
               <a className={classes.dropdownLink}>Byggstädning</a>
             </Link>,
+            <Link href={{ pathname: '/vara-tjanster/kontorsstadning' }}>
+              <a className={classes.dropdownLink}>Kontorsstädning</a>
+            </Link>,
+            <Link href={{ pathname: '/vara-tjanster/sanering' }}>
+              <a className={classes.dropdownLink}>Sanering</a>
+            </Link>,
             <Link href={{ pathname: '/vara-tjanster/flytthjalp' }}>
               <a className={classes.dropdownLink}>Flytthjälp</a>
             </Link>,
-            <Link href={{ pathname: '/vara-tjanster/packhjalp' }}>
-              <a className={classes.dropdownLink}>Packhjälp</a>
-            </Link>,
             <Link href={{ pathname: '/vara-tjanster/barhjalp' }}>
               <a className={classes.dropdownLink}>Bärhjälp</a>
+            </Link>,
+            <Link href={{ pathname: '/vara-tjanster/packhjalp' }}>
+              <a className={classes.dropdownLink}>Packhjälp</a>
             </Link>,
 
             <Link href={{ pathname: '/vara-tjanster/pianoflytt' }}>
               <a className={classes.dropdownLink}>Pianoflytt</a>
             </Link>,
+            <Link href={{ pathname: '/vara-tjanster/bortforsling' }}>
+              <a className={classes.dropdownLink}>Bortforsling</a>
+            </Link>,
 
             <Link href={{ pathname: '/vara-tjanster/kontorsflytt' }}>
               <a className={classes.dropdownLink}>Kontorsflytt</a>
-            </Link>,
-            <Link href={{ pathname: '/vara-tjanster/sanering' }}>
-              <a className={classes.dropdownLink}>Sanering</a>
-            </Link>,
-            <Link href={{ pathname: '/vara-tjanster/bortforsling' }}>
-              <a className={classes.dropdownLink}>Bortforsling</a>
             </Link>
           ]}
         />
@@ -149,21 +149,21 @@ export default function HeaderLinks(props) {
             <Link href={{ pathname: '/om-oss/samarbetspartners' }}>
               <a className={classes.dropdownLink}>Samarbetspartners</a>
             </Link>,
-            <Link href={{ pathname: '/om-oss/miljopolicy' }}>
-              <a className={classes.dropdownLink}>Miljöpolicy</a>
-            </Link>,
-            <Link href={{ pathname: '/om-oss/nyheter' }}>
-              <a className={classes.dropdownLink} replace>
-                Våra Nyheter
-              </a>
-            </Link>,
             <Link href={{ pathname: '/om-oss/rutavdrag' }}>
               <a className={classes.dropdownLink} replace>
                 RUT-avdrag
               </a>
             </Link>,
+            <Link href={{ pathname: '/om-oss/miljopolicy' }}>
+              <a className={classes.dropdownLink}>Miljöpolicy</a>
+            </Link>,
+            <Link href={{ pathname: '/om-oss/nyheter' }}>
+              <a className={classes.dropdownLink} replace>
+                Vårt magasin
+              </a>
+            </Link>,
             <Link href='/kontakta-oss' replace>
-              <a className={classes.dropdownLink}>Kontakta Oss</a>
+              <a className={classes.dropdownLink}>Kontakta oss</a>
             </Link>,
             <Link href='/faq' replace>
               <a className={classes.dropdownLink}>FAQ</a>

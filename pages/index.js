@@ -35,7 +35,7 @@ export default function Index() {
         fixed
         color='transparent'
         changeColorOnScroll={{
-          height: 400,
+          height: 1,
           color: 'white'
         }}
       />
@@ -48,13 +48,14 @@ export default function Index() {
                 <h4>Hos oss är både din städning och flytt i trygga händer</h4>
               </div>
             </GridItem>
-            <GridItem>
-              <SectionForm />
-            </GridItem>
           </GridContainer>
         </div>
       </Parallax>
+
       <div className={classNames(classes.main)}>
+        <div className={classNames(classes.containerFluid)}>
+          <SectionForm />
+        </div>
         <SectionProduct />
         <SectionProducts />
         <SectionTestimonials />

@@ -58,6 +58,28 @@ export default function SectionFooter() {
                 <i className='fab fa-linkedin' />
               </Button>
             </li>
+            <li>
+              <Button
+                justIcon
+                simple
+                href='https://www.youtube.com/channel/UC0aLPknU8viqEaqmVvu-LDw/'
+                target='_blank'
+                color='white'
+              >
+                <i className='fab fa-youtube' />
+              </Button>
+            </li>
+            <li>
+              <Button
+                justIcon
+                simple
+                href='https://www.tiktok.com/@stadjatten?'
+                target='_blank'
+                color='white'
+              >
+                <i className='fab fa-tiktok'></i>
+              </Button>
+            </li>
           </ul>
           <div className={classNames(classes.pullCenter, classes.copyRight)}>
             Copyright &copy; {1900 + new Date().getYear()}{' '}
@@ -96,7 +118,7 @@ export default function SectionFooter() {
                 <a href='/om-oss'>Om oss</a>
               </li>
               <li>
-                <a href='/offert'>Kostnadsfritt offert</a>
+                <a href='/offert'>Kostnadsfri offert</a>
               </li>
               <li>
                 <a href='/kontakta-oss'>Kontakta oss</a>
@@ -130,7 +152,7 @@ export default function SectionFooter() {
             <h5>Legalt</h5>
             <ul className={classes.linksVertical}>
               <li>
-                <a href='/transactions-faq'>Transactions FAQ</a>
+                <a href='/transactions-faq'>Transaktions FAQ</a>
               </li>
               <li>
                 <a href='/integritetspolicy'>Integritetspolicyn</a>

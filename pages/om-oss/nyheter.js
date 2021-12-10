@@ -37,13 +37,13 @@ export default function BlogPostsPage() {
         fixed
         color='transparent'
         changeColorOnScroll={{
-          height: 400,
+          height: 1,
           color: 'white'
         }}
       />
       <Parallax image='/img/bg10.jpg' filter='dark' small>
         <div className={classes.container}>
-          <GridContainer justify='center'>
+          <GridContainer justifyContent='center'>
             <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
               <h2 className={classes.title}>
                 A Place for Entrepreneurs to Share and Discover New Stories

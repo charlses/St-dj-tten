@@ -71,7 +71,7 @@ export default function Header(props) {
               src='/img/logo.png'
               height='37'
               width='200'
-              alt='Städjätten logga(Vit)'
+              alt='Städjätten logga(blått)'
             />
           </Link>
         </Button>

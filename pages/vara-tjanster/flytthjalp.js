@@ -35,7 +35,7 @@ export default function AboutUsPage() {
         fixed
         color='transparent'
         changeColorOnScroll={{
-          height: 300,
+          height: 1,
           color: 'white'
         }}
       />

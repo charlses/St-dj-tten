@@ -21,44 +21,34 @@ export default function SectionProducts() {
       <div className={classes.container}>
         <h2 className={classes.title}>Våra Tjänster</h2>
         <GridContainer>
-          <GridItem md={6} sm={6}>
+          <GridItem md={6} sm={6} xs={6}>
             <Card
               background
               style={{ backgroundImage: "url('/img/hemstadning.jpg')" }}
             >
               <CardBody background>
-                <a href='#pablo'>
+                <br />
+                <a href='/stadhjalp'>
                   <h3 className={classes.cardTitle}>Städhjälp</h3>
                 </a>
-                <p className={classes.description}>
-                  Förenkla din vardag genom att boka Städjätten som din
-                  städfirma. Vi hjälper dig med bland annat hemstädning,
-                  storstädning och flyttstädning. I vår städning arbetar vi med
-                  miljövänliga städprodukter samt väljer miljövänliga resor till
-                  våra kunder.
-                </p>
+                <br /> <br />
                 <Button href='/stadhjalp' round color='primary'>
                   Se mer
                 </Button>
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem md={6} sm={6}>
+          <GridItem md={6} sm={6} xs={6}>
             <Card
               background
               style={{ backgroundImage: "url('/img/flytt.jpg')" }}
             >
               <CardBody background>
-                <a href='#pablo'>
+                <br />
+                <a href='/flytthjalp'>
                   <h3 className={classes.cardTitle}>Flytthjälp</h3>
                 </a>
-                <p className={classes.description}>
-                  Vi hjälper dig när det är det dags för flytt. Med Städjätten
-                  som flyttfirma sker din flytt på ett snabbt, prisvärt och
-                  effektivt sätt. Städjätten är ansvarsförsäkrade via Trygg
-                  Hansa. Detta gör att du som kund kan känna dig trygg när du
-                  anlitar oss för flytthjälp.
-                </p>
+                <br /> <br />
                 <Button href='/flytthjalp' round color='primary'>
                   Se mer
                 </Button>
@@ -71,15 +61,11 @@ export default function SectionProducts() {
               style={{ backgroundImage: "url('/img/flytthjalp.jpg')" }}
             >
               <CardBody background>
-                <a href='#pablo'>
+                <br />
+                <a href='/vara-tjanster'>
                   <h3 className={classes.cardTitle}>Allla våra tjänster</h3>
                 </a>
-                <p className={classes.description}>
-                  Vi erbjuder tilläggstjänster till din hemstädning för att du
-                  ska kunna få en komplett lösning. Vi hjälper dig med
-                  vardagssysslor som kan ta mycket tid och energi och som man
-                  annars inte hinner med i en hektisk vardag.
-                </p>
+                <br /> <br />
                 <Button href='/vara-tjanster' round color='primary'>
                   Se alla våra tjänster
                 </Button>

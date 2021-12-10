@@ -33,13 +33,13 @@ export default function AboutUsPage() {
         fixed
         color='transparent'
         changeColorOnScroll={{
-          height: 300,
+          height: 1,
           color: 'primary'
         }}
       />
       <Parallax image='/img/bg9.jpg' filter='dark' small>
         <div className={classes.container}>
-          <GridContainer justify='center'>
+          <GridContainer justifyContent='center'>
             <GridItem
               md={8}
               sm={8}

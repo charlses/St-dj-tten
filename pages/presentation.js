@@ -43,7 +43,7 @@ export default function PresentationPage() {
         fixed
         color='transparent'
         changeColorOnScroll={{
-          height: 400,
+          height: 1,
           color: 'primary'
         }}
       />
