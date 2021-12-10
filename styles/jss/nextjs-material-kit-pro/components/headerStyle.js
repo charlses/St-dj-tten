@@ -75,13 +75,13 @@ const headerStyle = (theme) => ({
     marginTop: '0px'
   },
   primary: {
-    backgroundColor: primaryColor[0],
+    backgroundColor: primaryColor[1],
     color: whiteColor,
     boxShadow:
       '0 4px 20px 0px rgba(' +
       hexToRgb(blackColor) +
       ', 0.14), 0 7px 12px -5px rgba(' +
-      hexToRgb(primaryColor[0]) +
+      hexToRgb(primaryColor[1]) +
       ', 0.46)'
   },
   info: {

@@ -9,14 +9,17 @@ import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import IconButton from '@material-ui/core/IconButton'
-import Button from '@material-ui/core/Button'
+import { Button as ButtonHi } from '@material-ui/core'
 import Hidden from '@material-ui/core/Hidden'
 import Drawer from '@material-ui/core/Drawer'
+import { Phone } from '@material-ui/icons'
 // @material-ui/icons
 import Menu from '@material-ui/icons/Menu'
 import Close from '@material-ui/icons/Close'
+
 // core components
 import styles from 'styles/jss/nextjs-material-kit-pro/components/headerStyle.js'
+import Button from 'components/CustomButtons/Button.js'
 const useStyles = makeStyles(styles)
 
 export default function Header(props) {
@@ -65,7 +68,7 @@ export default function Header(props) {
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.containerFluid}>
-        <Button className={classes.title}>
+        <ButtonHi className={classes.title}>
           <Link href='/'>
             <img
               src='/img/logo.png'
@@ -74,9 +77,14 @@ export default function Header(props) {
               alt='Städjätten logga(blått)'
             />
           </Link>
-        </Button>
+        </ButtonHi>
         <Hidden smDown implementation='css' className={classes.hidden}>
           <div className={classes.collapse}>{links}</div>
+        </Hidden>
+        <Hidden mdUp>
+          <Button href='tel:+460770335051' color={'primary'} justIcon round>
+            <Phone />
+          </Button>
         </Hidden>
         <Hidden mdUp>
           <IconButton

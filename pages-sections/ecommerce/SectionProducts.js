@@ -58,7 +58,7 @@ export default function SectionProducts() {
           <GridItem md={12} sm={12}>
             <Card
               background
-              style={{ backgroundImage: "url('/img/flytthjalp.jpg')" }}
+              style={{ backgroundImage: "url('/img/alla-vara-tjanster.jpg')" }}
             >
               <CardBody background>
                 <br />
