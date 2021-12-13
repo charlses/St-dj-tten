@@ -15,6 +15,7 @@ import SectionDescription from 'pages-sections/har-finns-vi/stockholm/SectionDes
 import SectionTeam from 'pages-sections/har-finns-vi/stockholm/SectionTeam.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 
+import SectionPills from 'pages-sections/vara-tjanster/index/SectionPills.js'
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
 const useStyles = makeStyles(aboutUsStyle)
@@ -66,6 +67,7 @@ export default function AboutUsPage() {
         <div className={classes.container}>
           <SectionDescription />
           <SectionTeam />
+          <SectionPills />
         </div>
       </div>
       <SectionFooter />

@@ -28,13 +28,12 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand='NextJS Material Kit PRO'
         links={<HeaderLinks dropdownHoverColor='primary' />}
         fixed
         color='transparent'
         changeColorOnScroll={{
           height: 1,
-          color: 'primary'
+          color: 'white'
         }}
       />
       <Parallax image='/img/goteborg.jpg' filter='dark' small>

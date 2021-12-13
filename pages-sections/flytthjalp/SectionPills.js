@@ -33,7 +33,7 @@ export default function SectionPills() {
                   <h3 className={classes.cardTitle}>Flytthjälp</h3>
                 </a>
                 <p className={classes.category}>fr.495kr/h</p>
-                <Button round href='/flytthjalp' color='primary'>
+                <Button round href='/vara-tjanster/flytthjalp' color='primary'>
                   <FormatAlignLeft className={classes.icons} />
                   Läs mer
                 </Button>

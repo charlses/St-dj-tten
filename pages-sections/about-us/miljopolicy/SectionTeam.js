@@ -19,53 +19,60 @@ export default function SectionTeam() {
         <GridItem
           md={12}
           sm={12}
-          className={classNames(
-            classes.mrAuto,
-            classes.mlAuto,
-            classes.textCenter
-          )}
+          className={classNames(classes.mrAuto, classes.mlAuto)}
         >
+          <h2 className={classes.title}>Miljövänliga städmetoder</h2>
+          <h5 className={classes.description}>
+            För att minska användningen av kemikalier vid städning strävar vi
+            efter att först och främst använda torra städmetoder där det är
+            möjligt med hänsyn till ytskikt och rengöringskrav. Fuktiga metoder
+            kan användas efter att ytan rengjorts med torra metoder.
+            <br /> <br />
+            En av förutsättningarna för att städtjänsten ska resultera i god
+            städkvalitet är att personalen genomför städningen på ett effektivt
+            och resursbesparande sätt. Därför ser vi till att vår personal har
+            kunskap om hur t.ex. städkemikalier ska doseras.
+          </h5>
+          <h2 className={classes.title}>Miljövänliga städprodukter</h2>
+          <h5 className={classes.description}>
+            Det finns flertalet miljömärkta städkemikalier på marknaden. En
+            städkemikalie som är miljömärkt innebär, enligt
+            Upphandlingsmyndigheten, att en oberoende part har granskat
+            produktens miljö- och hälsomässiga effekter utifrån ett
+            livscykelperspektiv. Städtjänster påverkar miljön genom de
+            städkemikalier som används, förbrukning av olika produkter såsom
+            exempelvis avfallspåsar. <br />
+            <br />
+            Städjätten väljer alltid i första hand städprodukter och annat
+            material som är miljömärkt.
+          </h5>
           <h2 className={classes.title}>Transporter</h2>
           <h5 className={classes.description}>
-            De transporter som företaget gör i tätort sker med fordon med låga
-            eller inga emissioner. I de tätorter där det erbjuds möjlighet att
-            göra transporter med dubbfria däck, väljer företaget det.
-          </h5>
-          <h2 className={classes.title}>RUT-avdrag</h2>
-          <h5 className={classes.description}>
-            När du anlitar oss kan du använda dig av RUT-avdraget. Vi gör det
-            enkelt för dig och sköter all administration. Genom RUT- avdraget
-            har du som privatperson möjlighet att dra av arbetskostnader upp
-            till 75 000 kr per år efter nya regler 2021. Det gör att du kan få
-            50 % skatteavdrag på våra tjänster som exempelvis flytthjälp,
-            flyttstädning och hemstädning.
+            Vår främsta miljöpåverkan sker genom de resor och transporter som vi
+            genomför när vi besöker kunder, utmaningen ligger därför i att
+            minska våra utsläpp samtidigt som vi fortsätter att expandera. För
+            att minska vår klimatpåverkan finns det ett antal andra åtgärder vi
+            arbetar efter:
+            <ul>
+              <li>
+                Effektivisera våra transporter genom att samlasta, ruttoptimera
+                och samåka och därmed minska våra körsträckor och utsläpp.{' '}
+              </li>
+              <li>
+                Vi ska där det är möjligt och ekonomiskt rimligt välja att resa
+                med kollektivtrafik.
+              </li>
+              <li>
+                I de tätorter där det erbjuds möjlighet att göra transporter med
+                dubbfria däck, väljer företaget det.
+              </li>
+            </ul>
             <br />
             <br />
-            <p>Begreppet RUT är en akronym för:</p>
-            <p>Rengöring</p>
-            <p>Underhåll</p>
-            <p>Tvätt</p>
-          </h5>
-          <h2 className={classes.title}>
-            Kan alla använda sig av RUT-avdraget?
-          </h2>
-          <h5 className={classes.description}>
-            För att ta del av RUT- avdraget behöver du minst vara 18 år och
-            varit obegränsat skattskyldig under året. Om du som kund vill
-            använda dig av rut-avdraget behöver du endast kryssa i rutan i våra
-            formulär “Ja, jag vill använda mig av rut-avdraget för
-            privatpersoner så ansöker vi som företag om detta åt dig”.
-            <p>
-              På följande länk hittar du mer information om Skatteverkets
-              riktlinjer för RUT-avdrag{' '}
-              <a
-                href='https://www.skatteverket.se/privat/fastigheterochbostad/rotochrutarbete/gerarbetetratttillrutavdrag.106.5c1163881590be297b53de7.html'
-                target='_blank'
-              >
-                {' '}
-                skatteverket.se
-              </a>
-            </p>
+            Under 2022 planerar vi för att testa börja använda det förnyelsebara
+            bränslet HVO till våra lastbilar samt att samtliga anställda som kör
+            i arbetet ska gå Eco Driving-kurs för att kunna köra på ett mera
+            miljövänligt sätt.
           </h5>
         </GridItem>
       </GridContainer>

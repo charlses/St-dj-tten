@@ -48,13 +48,11 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Vår miljöpolicy</h1>
+              <h1 className={classes.title}>Städjättens miljöpolicy</h1>
               <h4>
                 Städjätten lägger stor vikt vid miljöaspekter när vi arbetar med
-                städ- och flytthjälp och väljer därför att arbeta med
-                miljömärkta och miljövänliga produkter. Vi anpassar vårt
-                tillvägagångssätt med målsättningen att minimera vår
-                miljöpåverkan för att främja en grönare värld.
+                städ- och flytthjälp. Vi har som målsättningen att minimera vår
+                miljöpåverkan i alla våra led för att främja en grönare värld.
               </h4>
             </GridItem>
           </GridContainer>

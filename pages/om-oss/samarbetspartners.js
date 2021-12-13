@@ -11,10 +11,9 @@ import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
 import Parallax from 'components/Parallax/Parallax.js'
 // sections for this page
-import SectionDescription from 'pages-sections/about-us/samarbetspartners/SectionDescription.js'
 import SectionTeam from 'pages-sections/about-us/samarbetspartners/SectionTeam.js'
-import SectionServices from 'pages-sections/about-us/samarbetspartners/SectionServices.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
+import SectionRotate from 'pages-sections/about-us/samarbetspartners/SectionRotate'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -29,7 +28,6 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand='NextJS Material Kit PRO'
         links={<HeaderLinks dropdownHoverColor='primary' />}
         fixed
         color='transparent'
@@ -38,7 +36,7 @@ export default function AboutUsPage() {
           color: 'white'
         }}
       />
-      <Parallax image='/img/bg9.jpg' filter='dark' small>
+      <Parallax image='/img/samarbetspartners.jpg' filter='dark' small>
         <div className={classes.container}>
           <GridContainer justifyContent='center'>
             <GridItem
@@ -55,9 +53,13 @@ export default function AboutUsPage() {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main)}>
+      <div
+        className={classNames(classes.main)}
+        style={{ paddingBottom: '50px' }}
+      >
         <div className={classes.container}>
           <SectionTeam />
+          <SectionRotate />
         </div>
       </div>
       <SectionFooter />
