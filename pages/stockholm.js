@@ -28,16 +28,15 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand='NextJS Material Kit PRO'
         links={<HeaderLinks dropdownHoverColor='primary' />}
         fixed
         color='transparent'
         changeColorOnScroll={{
           height: 1,
-          color: 'primary'
+          color: 'white'
         }}
       />
-      <Parallax image='/img/bg9.jpg' filter='dark' small>
+      <Parallax image='/img/stockholm.jpg' filter='dark' small>
         <div className={classes.container}>
           <GridContainer justifyContent='center'>
             <GridItem

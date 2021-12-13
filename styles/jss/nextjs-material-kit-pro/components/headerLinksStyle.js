@@ -57,6 +57,16 @@ const headerLinksStyle = (theme) => ({
   listItemText: {
     padding: '0 !important'
   },
+  buttonLink: {
+    color: 'inherit',
+    paddingTop: '0.45rem',
+    paddingBottom: '0.45rem',
+    fontSize: '12px',
+    display: 'inline-flex',
+    '&:hover,&:focus': {
+      color: 'inherit'
+    }
+  },
   navLink: {
     color: 'inherit',
     position: 'relative',

@@ -106,7 +106,7 @@ export default function SectionPills() {
               raised
               background
               style={{
-                backgroundImage: "url('/img/examples/card-project6.jpg')"
+                backgroundImage: "url('/img/pianoflytt.jpg')"
               }}
             >
               <CardBody background>
@@ -125,7 +125,7 @@ export default function SectionPills() {
               raised
               background
               style={{
-                backgroundImage: "url('/img/examples/card-project6.jpg')"
+                backgroundImage: "url('/img/bortforsling.jpg')"
               }}
             >
               <CardBody background>

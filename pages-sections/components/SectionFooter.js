@@ -124,7 +124,9 @@ export default function SectionFooter() {
                 <a href='/kontakta-oss'>Kontakta oss</a>
               </li>
               <li>
-                <a href='/karriar'>Jobba hos oss</a>
+                <a href='https://careers.workperformance.se/' target='_blank'>
+                  Jobba hos oss
+                </a>
               </li>
               <li>
                 <a href='/faq'>FAQ</a>

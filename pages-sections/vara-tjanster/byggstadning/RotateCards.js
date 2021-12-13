@@ -80,17 +80,15 @@ export default function SectionCards() {
                         classes.front + ' ' + classes.wrapperBackground
                       }
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/packhjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <a href='#pablo' onClick={(e) => e.preventDefault()}>
-                          <h3 className={classes.cardTitleWhite}>
-                            Storstädning
-                          </h3>
+                          <h3 className={classes.cardTitleWhite}>Packhjälp</h3>
                         </a>
                         <p className={classes.cardDescriptionWhite}>
-                          fr.250kr/h
+                          fr.495kr/h
                         </p>
                         <div className={classes.textCenter}>
                           <Button
@@ -108,12 +106,12 @@ export default function SectionCards() {
                     <div
                       className={classes.back + ' ' + classes.wrapperBackground}
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/packhjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>
-                          Boka storstädning nu!
+                          Boka Packhjälp nu!
                         </h5>
 
                         <div className={classes.textCenter}>
@@ -151,7 +149,76 @@ export default function SectionCards() {
                         classes.front + ' ' + classes.wrapperBackground
                       }
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/pianoflytt.jpg')"
+                      }}
+                    >
+                      <CardBody background className={classes.cardBodyRotate}>
+                        <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                          <h3 className={classes.cardTitleWhite}>Pianoflytt</h3>
+                        </a>
+                        <p className={classes.cardDescriptionWhite}>
+                          fr.495kr/h
+                        </p>
+                        <div className={classes.textCenter}>
+                          <Button
+                            round
+                            color='danger'
+                            onClick={() =>
+                              setActiveRotate2(classes.activateRotate)
+                            }
+                          >
+                            Läs mer <ArrowRight />
+                          </Button>
+                        </div>
+                      </CardBody>
+                    </div>
+                    <div
+                      className={classes.back + ' ' + classes.wrapperBackground}
+                      style={{
+                        backgroundImage: "url('/img/pianoflytt.jpg')"
+                      }}
+                    >
+                      <CardBody background className={classes.cardBodyRotate}>
+                        <h5 className={classes.cardTitleWhite}>
+                          Boka Pianoflytt nu!
+                        </h5>
+
+                        <div className={classes.textCenter}>
+                          <Button round color='primary' href='/offert'>
+                            <Subject /> Boka Nu
+                          </Button>
+
+                          <br />
+                          <Button
+                            round
+                            color='danger'
+                            onClick={() => setActiveRotate2('')}
+                          >
+                            Tillbaka
+                          </Button>
+                        </div>
+                      </CardBody>
+                    </div>
+                  </Card>
+                </div>
+              </GridItem>
+              <GridItem xs={12} sm={6} md={6} lg={4}>
+                <div
+                  className={
+                    classes.rotatingCardContainer +
+                    ' ' +
+                    classes.manualRotate +
+                    ' ' +
+                    activeRotate2
+                  }
+                >
+                  <Card className={classes.cardRotate}>
+                    <div
+                      className={
+                        classes.front + ' ' + classes.wrapperBackground
+                      }
+                      style={{
+                        backgroundImage: "url('/img/flytthjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -177,83 +244,12 @@ export default function SectionCards() {
                     <div
                       className={classes.back + ' ' + classes.wrapperBackground}
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/flytthjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>
                           Boka Flytthjälp nu!
-                        </h5>
-
-                        <div className={classes.textCenter}>
-                          <Button round color='primary' href='/offert'>
-                            <Subject /> Boka Nu
-                          </Button>
-
-                          <br />
-                          <Button
-                            round
-                            color='danger'
-                            onClick={() => setActiveRotate2('')}
-                          >
-                            Tillbaka
-                          </Button>
-                        </div>
-                      </CardBody>
-                    </div>
-                  </Card>
-                </div>
-              </GridItem>
-              <GridItem xs={12} sm={6} md={6} lg={4}>
-                <div
-                  className={
-                    classes.rotatingCardContainer +
-                    ' ' +
-                    classes.manualRotate +
-                    ' ' +
-                    activeRotate2
-                  }
-                >
-                  <Card className={classes.cardRotate}>
-                    <div
-                      className={
-                        classes.front + ' ' + classes.wrapperBackground
-                      }
-                      style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
-                      }}
-                    >
-                      <CardBody background className={classes.cardBodyRotate}>
-                        <a href='#pablo' onClick={(e) => e.preventDefault()}>
-                          <h3 className={classes.cardTitleWhite}>
-                            Flyttstädning
-                          </h3>
-                        </a>
-                        <p className={classes.cardDescriptionWhite}>
-                          fr.20kr/kvm
-                        </p>
-                        <div className={classes.textCenter}>
-                          <Button
-                            round
-                            color='danger'
-                            onClick={() =>
-                              setActiveRotate2(classes.activateRotate)
-                            }
-                          >
-                            Läs mer <ArrowRight />
-                          </Button>
-                        </div>
-                      </CardBody>
-                    </div>
-                    <div
-                      className={classes.back + ' ' + classes.wrapperBackground}
-                      style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
-                      }}
-                    >
-                      <CardBody background className={classes.cardBodyRotate}>
-                        <h5 className={classes.cardTitleWhite}>
-                          Boka flyttstädning nu!
                         </h5>
 
                         <div className={classes.textCenter}>

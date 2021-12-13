@@ -25,10 +25,10 @@ export default function SectionPills() {
             <Card
               raised
               background
-              style={{ backgroundImage: "url('/img/examples/office2.jpg')" }}
+              style={{ backgroundImage: "url('/img/stockholm.jpg')" }}
             >
               <CardBody background>
-                <a href='/vara-tjanster/flyttstadning'>
+                <a href='/stockholm'>
                   <h3 className={classes.cardTitle}>Stockholm</h3>
                 </a>
                 <p className={classes.category}>
@@ -37,11 +37,7 @@ export default function SectionPills() {
                   hjälper vi dig med din städ- och flytthjälp. Kontakta oss på
                   Städjätten idag så kommer vi till din gata!
                 </p>
-                <Button
-                  round
-                  href='/vara-tjanster/flyttstadning'
-                  color='danger'
-                >
+                <Button round href='/stockholm' color='danger'>
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>
               </CardBody>
@@ -51,7 +47,7 @@ export default function SectionPills() {
             <Card
               raised
               background
-              style={{ backgroundImage: "url('/img/examples/blog8.jpg')" }}
+              style={{ backgroundImage: "url('/img/goteborg.jpg')" }}
             >
               <CardBody background>
                 <a href='#pablo'>
@@ -62,7 +58,7 @@ export default function SectionPills() {
                   och flytthjälp. Är du intresserad av att veta mer om vilka
                   tjänster vi erbjuder i Göteborg? <br /> <br />
                 </p>
-                <Button round href='/vara-tjanster/hemstadning' color='primary'>
+                <Button round href='/goteborg' color='primary'>
                   <FormatAlignLeft className={classes.icons} /> Läs mer här
                 </Button>
               </CardBody>

@@ -80,7 +80,7 @@ export default function SectionCards() {
                         classes.front + ' ' + classes.wrapperBackground
                       }
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/packhjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -106,7 +106,7 @@ export default function SectionCards() {
                     <div
                       className={classes.back + ' ' + classes.wrapperBackground}
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/packhjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -149,7 +149,7 @@ export default function SectionCards() {
                         classes.front + ' ' + classes.wrapperBackground
                       }
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/pianoflytt.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -175,7 +175,7 @@ export default function SectionCards() {
                     <div
                       className={classes.back + ' ' + classes.wrapperBackground}
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/pianoflytt.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -218,7 +218,7 @@ export default function SectionCards() {
                         classes.front + ' ' + classes.wrapperBackground
                       }
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/flytthjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -244,7 +244,7 @@ export default function SectionCards() {
                     <div
                       className={classes.back + ' ' + classes.wrapperBackground}
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/flytthjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>

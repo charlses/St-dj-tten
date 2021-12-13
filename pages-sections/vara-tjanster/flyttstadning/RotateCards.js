@@ -80,17 +80,15 @@ export default function SectionCards() {
                         classes.front + ' ' + classes.wrapperBackground
                       }
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/packhjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <a href='#pablo' onClick={(e) => e.preventDefault()}>
-                          <h3 className={classes.cardTitleWhite}>
-                            Byggstädning
-                          </h3>
+                          <h3 className={classes.cardTitleWhite}>Packhjälp</h3>
                         </a>
                         <p className={classes.cardDescriptionWhite}>
-                          fr.20kr/kvm
+                          fr.495kr/h
                         </p>
                         <div className={classes.textCenter}>
                           <Button
@@ -108,12 +106,12 @@ export default function SectionCards() {
                     <div
                       className={classes.back + ' ' + classes.wrapperBackground}
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/packhjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>
-                          Boka byggstädning nu!
+                          Boka Packhjälp nu!
                         </h5>
 
                         <div className={classes.textCenter}>
@@ -151,15 +149,15 @@ export default function SectionCards() {
                         classes.front + ' ' + classes.wrapperBackground
                       }
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/pianoflytt.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <a href='#pablo' onClick={(e) => e.preventDefault()}>
-                          <h3 className={classes.cardTitleWhite}>Sanering</h3>
+                          <h3 className={classes.cardTitleWhite}>Pianoflytt</h3>
                         </a>
                         <p className={classes.cardDescriptionWhite}>
-                          fr.20kr/kvm
+                          fr.495kr/h
                         </p>
                         <div className={classes.textCenter}>
                           <Button
@@ -177,12 +175,12 @@ export default function SectionCards() {
                     <div
                       className={classes.back + ' ' + classes.wrapperBackground}
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/pianoflytt.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>
-                          Boka sanering nu!
+                          Boka Pianoflytt nu!
                         </h5>
 
                         <div className={classes.textCenter}>
@@ -220,17 +218,15 @@ export default function SectionCards() {
                         classes.front + ' ' + classes.wrapperBackground
                       }
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/flytthjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <a href='#pablo' onClick={(e) => e.preventDefault()}>
-                          <h3 className={classes.cardTitleWhite}>
-                            Visningsstädning
-                          </h3>
+                          <h3 className={classes.cardTitleWhite}>Flytthjälp</h3>
                         </a>
                         <p className={classes.cardDescriptionWhite}>
-                          fr.20kr/kvm
+                          fr.495kr/h
                         </p>
                         <div className={classes.textCenter}>
                           <Button
@@ -248,12 +244,12 @@ export default function SectionCards() {
                     <div
                       className={classes.back + ' ' + classes.wrapperBackground}
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/flytthjalp.jpg')"
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>
-                          Boka visningsstadning nu!
+                          Boka Flytthjälp nu!
                         </h5>
 
                         <div className={classes.textCenter}>

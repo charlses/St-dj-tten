@@ -37,7 +37,7 @@ export default function AboutUsPage() {
           color: 'primary'
         }}
       />
-      <Parallax image='/img/bg9.jpg' filter='dark' small>
+      <Parallax image='/img/goteborg.jpg' filter='dark' small>
         <div className={classes.container}>
           <GridContainer justifyContent='center'>
             <GridItem
