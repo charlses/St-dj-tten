@@ -23,23 +23,49 @@ export default function SectionForm() {
   const [newEmail, setNewEmail] = useState('')
   const [newPhone, setNewPhone] = useState('')
   const [newStatus, setNewStatus] = useState('')
+  const [newService, setNewService] = useState('')
+  const [newDate, setNewDate] = useState('')
 
-  const sendGetRequest = async () => {
+  const sendPostRequest = async () => {
     try {
-      const res = await axios({
-        method: 'get',
-        url: process.env.limeApiUrl,
-        headers: {
-          'Accept': 'application/hal+json',
-          'x-api-key': process.env.limeApiKey
-        }
-      })
+      const res = await axios.all([
+        axios({
+          method: 'post',
+          url: process.env.limeApiUrlPerson,
+          headers: {
+            'Accept': 'application/hal+json',
+            'x-api-key': process.env.limeApiKey
+          }
+        }),
+        axios({
+          method: 'post',
+          url: process.env.limeApiUrlCompany,
+          data: {
+            name: newName,
+            phone: newPhone,
+            email: newEmail
+          },
+          headers: {
+            'Accept': 'application/hal+json',
+            'x-api-key': process.env.limeApiKey
+          }
+        }),
+        axios({
+          method: 'post',
+          url: process.env.limeApiUrlDeal,
+          headers: {
+            'Accept': 'application/hal+json',
+            'x-api-key': process.env.limeApiKey
+          }
+        })
+      ])
+
+      return res.status === '200'
     } catch (err) {
-      console.error(err)
+      console.log(err.message)
+      return false
     }
   }
-
-  sendGetRequest()
 
   return (
     // we've set the className to cd-section so we can make smooth scroll to it
@@ -54,17 +80,17 @@ export default function SectionForm() {
         <Card raised className={classes.card}>
           <CardBody formHorizontal>
             <h5 className={(classes.title, classes.textCenter)}>
-              Skicka en offerförfråga så kontaktar vi dig inom 1 timme
+              Skicka en offerförfrågan så kontaktar vi dig inom 1 timme
             </h5>
             <form>
               <GridContainer>
                 <GridItem xs={12} sm={6} md={2}>
                   <CustomInput
-                    id='name'
+                    id='float'
                     required
-                    inputProps={{
-                      placeholder: 'Ditt namn'
-                    }}
+                    onChange={(e) => setNewName(e.target.value)}
+                    value={newName}
+                    labelText='Ditt namn'
                     formControlProps={{
                       fullWidth: true,
                       className: classes.formControl
@@ -73,11 +99,11 @@ export default function SectionForm() {
                 </GridItem>
                 <GridItem xs={12} sm={6} md={2}>
                   <CustomInput
-                    id='email'
+                    id='float'
                     required
-                    inputProps={{
-                      placeholder: 'E-post'
-                    }}
+                    onChange={(e) => setNewEmail(e.target.value)}
+                    labelText='E-post'
+                    value={newEmail}
                     formControlProps={{
                       fullWidth: true,
                       className: classes.formControl
@@ -86,11 +112,11 @@ export default function SectionForm() {
                 </GridItem>
                 <GridItem xs={12} sm={6} md={2}>
                   <CustomInput
-                    id='phone'
+                    id='float'
+                    labelText='Telefonnummer'
+                    onChange={(e) => setNewPhone(e.target.value)}
+                    value={newPhone}
                     required
-                    inputProps={{
-                      placeholder: 'Telefonnummer'
-                    }}
                     formControlProps={{
                       fullWidth: true,
                       className: classes.formControl
@@ -99,11 +125,11 @@ export default function SectionForm() {
                 </GridItem>
                 <GridItem xs={12} sm={6} md={2}>
                   <CustomInput
-                    id='phone'
+                    id='float'
                     required
-                    inputProps={{
-                      placeholder: 'Välj en tjänst'
-                    }}
+                    onChange={(e) => setNewService(e.target.value)}
+                    value={newService}
+                    labelText='Välj en tjänst'
                     formControlProps={{
                       fullWidth: true,
                       className: classes.formControl
@@ -112,11 +138,11 @@ export default function SectionForm() {
                 </GridItem>
                 <GridItem xs={12} sm={6} md={2}>
                   <CustomInput
-                    id='phone'
+                    id='float'
                     required
-                    inputProps={{
-                      placeholder: 'Datum'
-                    }}
+                    onChange={(e) => setNewDate(e.target.value)}
+                    value={newDate}
+                    labelText='Datumn'
                     formControlProps={{
                       fullWidth: true,
                       className: classes.formControl

@@ -31,7 +31,7 @@ export default function SectionPills() {
                 <a href='/vara-tjanster/flyttstadning'>
                   <h3 className={classes.cardTitle}>Flyttstädning</h3>
                 </a>
-                <p className={classes.category}>fr.20kr/km</p>
+                <p className={classes.category}>fr. 20kr/kvm</p>
                 <Button
                   round
                   href='/vara-tjanster/flyttstadning'
@@ -46,35 +46,16 @@ export default function SectionPills() {
             <Card
               raised
               background
-              style={{ backgroundImage: "url('/img/hemstadning.jpg')" }}
+              style={{ backgroundImage: "url('/img/storstadning.jpg')" }}
             >
               <CardBody background>
                 <a href='#pablo'>
-                  <h3 className={classes.cardTitle}>Hemstädning</h3>
+                  <h3 className={classes.cardTitle}>Storstädning</h3>
                 </a>
-                <p className={classes.category}>179kr/h</p>
-                <Button round href='/vara-tjanster/hemstadning' color='primary'>
-                  <FormatAlignLeft className={classes.icons} /> Läs mer
-                </Button>
-              </CardBody>
-            </Card>
-          </GridItem>
-          <GridItem xs={12} sm={6} md={4}>
-            <Card
-              raised
-              background
-              style={{
-                backgroundImage: "url('/img/visningsstadning.jpg')"
-              }}
-            >
-              <CardBody background>
-                <a href='#pablo'>
-                  <h3 className={classes.cardTitle}>Visningsstädning</h3>
-                </a>
-                <p className={classes.category}>fr.20kr/kvm</p>
+                <p className={classes.category}>fr 250kr/h</p>
                 <Button
                   round
-                  href='/vara-tjanster/vissningsstadning'
+                  href='/vara-tjanster/storstadning'
                   color='primary'
                 >
                   <FormatAlignLeft className={classes.icons} /> Läs mer
@@ -86,16 +67,35 @@ export default function SectionPills() {
             <Card
               raised
               background
-              style={{ backgroundImage: "url('/img/kontorsstadning.jpg')" }}
+              style={{
+                backgroundImage: "url('/img/hemstadning.jpg')"
+              }}
             >
               <CardBody background>
                 <a href='#pablo'>
-                  <h3 className={classes.cardTitle}>Kontorsstädning</h3>
+                  <h3 className={classes.cardTitle}>Hemstädning</h3>
                 </a>
-                <p className={classes.category}>fr.320kr/h</p>
+                <p className={classes.category}>fr. 179kr/h</p>
+                <Button round href='/vara-tjanster/hemstadning' color='primary'>
+                  <FormatAlignLeft className={classes.icons} /> Läs mer
+                </Button>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={4}>
+            <Card
+              raised
+              background
+              style={{ backgroundImage: "url('/img/visningsstadning.jpg')" }}
+            >
+              <CardBody background>
+                <a href='#pablo'>
+                  <h3 className={classes.cardTitle}>Visningsstädning</h3>
+                </a>
+                <p className={classes.category}>fr. 20kr/kvm</p>
                 <Button
                   round
-                  href='/vara-tjanster/kontorsstadning'
+                  href='/vara-tjanster/visningsstadning'
                   color='primary'
                 >
                   <FormatAlignLeft className={classes.icons} /> Läs mer
@@ -113,7 +113,7 @@ export default function SectionPills() {
                 <a href='#pablo'>
                   <h3 className={classes.cardTitle}>Byggstädning</h3>
                 </a>
-                <p className={classes.category}>fr.250kr/h</p>
+                <p className={classes.category}>fr. 250kr/h</p>
                 <Button
                   round
                   href='/vara-tjanster/byggstadning'
@@ -128,15 +128,13 @@ export default function SectionPills() {
             <Card
               raised
               background
-              style={{ backgroundImage: "url('/img/sanering.jpg')" }}
+              style={{ backgroundImage: "url('/img/kontorsstadning.jpg')" }}
             >
               <CardBody background>
                 <a href='#pablo'>
-                  <h3 className={classes.cardTitle}>Sanering</h3>
+                  <h3 className={classes.cardTitle}>Kontorsstädning</h3>
                 </a>
-                <p className={classes.category}>
-                  Kontakta oss för att få ett prisförslag
-                </p>
+                <p className={classes.category}>fr. 329kr/h</p>
                 <Button round href='/vara-tjanster/sanering' color='primary'>
                   <FormatAlignLeft className={classes.icons} /> Läs mer
                 </Button>

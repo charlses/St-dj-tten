@@ -100,6 +100,7 @@ export default function SectionFooter() {
                 width={200}
                 height={40}
                 alt='Stadjättens Logga'
+                style={{ marginBottom: '20px' }}
               />
             </a>
             <p>
