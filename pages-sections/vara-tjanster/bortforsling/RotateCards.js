@@ -93,7 +93,7 @@ export default function SectionCards() {
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color='danger'
+                            color='primary'
                             onClick={() =>
                               setActiveRotate2(classes.activateRotate)
                             }
@@ -122,7 +122,7 @@ export default function SectionCards() {
                           <br />
                           <Button
                             round
-                            color='danger'
+                            color='primary'
                             onClick={() => setActiveRotate2('')}
                           >
                             Tillbaka
@@ -162,7 +162,7 @@ export default function SectionCards() {
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color='danger'
+                            color='primary'
                             onClick={() =>
                               setActiveRotate2(classes.activateRotate)
                             }
@@ -191,7 +191,7 @@ export default function SectionCards() {
                           <br />
                           <Button
                             round
-                            color='danger'
+                            color='primary'
                             onClick={() => setActiveRotate2('')}
                           >
                             Tillbaka
@@ -231,7 +231,7 @@ export default function SectionCards() {
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color='danger'
+                            color='primary'
                             onClick={() =>
                               setActiveRotate2(classes.activateRotate)
                             }
@@ -259,7 +259,7 @@ export default function SectionCards() {
                           <br />
                           <Button
                             round
-                            color='danger'
+                            color='primary'
                             onClick={() => setActiveRotate2('')}
                           >
                             Tillbaka

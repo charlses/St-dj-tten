@@ -75,7 +75,7 @@ export default function SectionPills() {
                 <p className={classes.category}>fr.20kr/kvm</p>
                 <Button
                   round
-                  href='/vara-tjanster/vissningsstadning'
+                  href='/vara-tjanster/visningsstadning'
                   color='primary'
                 >
                   <FormatAlignLeft className={classes.icons} /> Läs mer

@@ -16,9 +16,9 @@ export default function SectionContact() {
   const classes = useStyles()
   return (
     <div className={classes.aboutUs}>
-      <GridContainer mt={3}>
+      <GridContainer mt={3} justifyContent>
         <GridItem xs={12} sm={12} md={12} lg={12} mt={2}>
-          <Button color='primary'>
+          <Button color='primary' href='/vara-tjanster'>
             <ArrowLeft />
             Tillbaka till alla våra tjänster
           </Button>
