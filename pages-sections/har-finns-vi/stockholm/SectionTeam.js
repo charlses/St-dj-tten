@@ -25,9 +25,7 @@ export default function SectionTeam() {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>
-            Behöver du en flyttfirma i Stockholm?
-          </h2>
+          <h2 className={classes.title}>Behöver du flytthjälp i Stockholm?</h2>
           <h5 className={classes.description}>
             Vi hjälper dig när det är det dags för flytt till och från
             Stockholm. Med Städjätten som flyttfirma sker din flytt på ett

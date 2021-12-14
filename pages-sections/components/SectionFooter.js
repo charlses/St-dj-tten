@@ -10,8 +10,9 @@ import Mail from '@material-ui/icons/Mail'
 import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
 import Button from 'components/CustomButtons/Button.js'
-import CustomInput from 'components/CustomInput/CustomInput.js'
 import Footer from 'components/Footer/Footer.js'
+import { useState } from 'react'
+import axios from 'axios'
 
 import styles from 'styles/jss/nextjs-material-kit-pro/pages/componentsSections/footerStyle.js'
 
@@ -19,6 +20,37 @@ const useStyles = makeStyles(styles)
 
 export default function SectionFooter() {
   const classes = useStyles()
+  const [newEmail, setNewEmail] = useState('')
+
+  const headers = () => {
+    return {
+      'Accept': 'application/hal+json',
+      'x-api-key': process.env.limeApiKey
+    }
+  }
+
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault()
+      const response = await axios({
+        method: 'post',
+        url: process.env.limeApiUrlPerson,
+        data: {
+          firstname: 'NewsLetter',
+          email: newEmail
+        },
+        headers: headers()
+      })
+      console.log(newEmail)
+      return response.status === 200
+      setNewEmail('')
+    } catch (err) {
+      console.log(err.message)
+      console.log(err.request)
+      console.log(err.response)
+    }
+  }
+
   return (
     <Footer
       theme='white'
@@ -93,7 +125,7 @@ export default function SectionFooter() {
     >
       <div className={classes.footer}>
         <GridContainer>
-          <GridItem xs={12} sm={3} md={3}>
+          <GridItem xs={12} sm={6} md={3}>
             <a href='#pablo'>
               <img
                 src='/img/logo-white.png'
@@ -109,7 +141,7 @@ export default function SectionFooter() {
               städ- och flytthjälpen.
             </p>
           </GridItem>
-          <GridItem xs={12} sm={2} md={2}>
+          <GridItem xs={12} sm={6} md={2}>
             <h5>Om Oss</h5>
             <ul className={classes.linksVertical}>
               <li>
@@ -134,7 +166,7 @@ export default function SectionFooter() {
               </li>
             </ul>
           </GridItem>
-          <GridItem xs={12} sm={2} md={2}>
+          <GridItem xs={12} sm={6} md={2}>
             <h5>Våra tjänster</h5>
             <ul className={classes.linksVertical}>
               <li>
@@ -151,7 +183,7 @@ export default function SectionFooter() {
               </li>
             </ul>
           </GridItem>
-          <GridItem xs={12} sm={2} md={2}>
+          <GridItem xs={12} sm={6} md={2}>
             <h5>Legalt</h5>
             <ul className={classes.linksVertical}>
               <li>
@@ -165,26 +197,26 @@ export default function SectionFooter() {
               </li>
             </ul>
           </GridItem>
-          <GridItem xs={12} sm={3} md={3}>
+          <GridItem xs={12} sm={6} md={3}>
             <h5>Vårt nyhetsbrev</h5>
             <p>
               Prenumerera på vårt nyhetsbrev så missar du inte framtida
               erbjudanden.
             </p>
-            <form>
-              <CustomInput
-                id='footeremail'
-                formControlProps={{
-                  fullWidth: false,
-                  className: classes.customFormControl
-                }}
-                inputProps={{
-                  placeholder: 'Ditt e-post'
-                }}
+            <form onSubmit={handleSubmit}>
+              <input
+                style={{}}
+                className={classes.newsLetterInput}
+                type='email'
+                placeholder='Ditt e-post'
+                required
+                onChange={(e) => setNewEmail(e.target.value)}
+                value={newEmail}
               />
-              <Button color='primary' justIcon>
-                <Mail />
-              </Button>
+
+              <button color='primary' className={classes.newsLetterButton}>
+                <Mail className={classes.newsLetterIcon} />
+              </button>
             </form>
           </GridItem>
         </GridContainer>

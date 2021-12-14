@@ -8,6 +8,19 @@ module.exports = withPlugins([[withImages]], {
     config.resolve.modules.push(path.resolve('./'))
     return config
   },
+  async headers() {
+    return [
+      {
+        source: '/about',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*'
+          }
+        ]
+      }
+    ]
+  },
   env: {
     limeApiKey:
       '565DDB898A0382B042FE3D88A959A6BDBD8BEDD44DC7BF56EAD0088FA5A99DABF525649D44B7B5377DDA',

@@ -175,6 +175,10 @@ const style = {
     ...btnLink,
     color: whiteColor
   },
+  btnTikTok: {
+    ...btnLink,
+    color: whiteColor
+  },
   icon: {
     top: '3px',
     width: '18px',
@@ -183,6 +187,25 @@ const style = {
   },
   customFormControl: {
     paddingTop: '14px'
+  },
+  newsLetterButton: {
+    backgroundColor: '#DBF3FF',
+    border: 'none',
+    padding: '-10px',
+    borderRadius: '5px',
+    paddingTop: '4px',
+    border: '1px solid white'
+  },
+  newsLetterIcon: {
+    color: '#099EE3'
+  },
+  newsLetterInput: {
+    backgroundColor: 'transparent',
+    border: 'none',
+    borderBottom: '2px solid white',
+    marginRight: '10px',
+    color: '#fff',
+    '&::placeholder': { color: '#fefefe' }
   }
 }
 
