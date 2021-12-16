@@ -13,6 +13,7 @@ import Button from 'components/CustomButtons/Button.js'
 import Footer from 'components/Footer/Footer.js'
 import { useState } from 'react'
 import axios from 'axios'
+import SectionPreFooter from 'pages-sections/components/SectionPreFooter.js'
 
 import styles from 'styles/jss/nextjs-material-kit-pro/pages/componentsSections/footerStyle.js'
 
@@ -125,7 +126,7 @@ export default function SectionFooter() {
     >
       <div className={classes.footer}>
         <GridContainer>
-          <GridItem xs={12} sm={6} md={3}>
+          <GridItem xs={12} sm={6} md={4}>
             <a href='#pablo'>
               <img
                 src='/img/logo-white.png'
@@ -196,28 +197,6 @@ export default function SectionFooter() {
                 <a href='/foretagsinformation'>Företagsinformation</a>
               </li>
             </ul>
-          </GridItem>
-          <GridItem xs={12} sm={6} md={3}>
-            <h5>Vårt nyhetsbrev</h5>
-            <p>
-              Prenumerera på vårt nyhetsbrev så missar du inte framtida
-              erbjudanden.
-            </p>
-            <form onSubmit={handleSubmit}>
-              <input
-                style={{}}
-                className={classes.newsLetterInput}
-                type='email'
-                placeholder='Ditt e-post'
-                required
-                onChange={(e) => setNewEmail(e.target.value)}
-                value={newEmail}
-              />
-
-              <button color='primary' className={classes.newsLetterButton}>
-                <Mail className={classes.newsLetterIcon} />
-              </button>
-            </form>
           </GridItem>
         </GridContainer>
       </div>

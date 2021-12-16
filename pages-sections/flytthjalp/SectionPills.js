@@ -1,16 +1,15 @@
 import React from 'react'
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
-import Tooltip from '@material-ui/core/Tooltip'
-// @material-ui/icons
-import FormatAlignLeft from '@material-ui/icons/FormatAlignLeft'
 // core components
 import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
-import NavPills from 'components/NavPills/NavPills.js'
 import Card from 'components/Card/Card.js'
 import CardBody from 'components/Card/CardBody.js'
 import Button from 'components/CustomButtons/Button.js'
+import classNames from 'classnames'
+
+import CardHeader from 'components/Card/CardHeader.js'
 
 import sectionPillsStyle from 'styles/jss/nextjs-material-kit-pro/pages/blogPostsSections/sectionPillsStyle.js'
 
@@ -22,123 +21,179 @@ export default function SectionPills() {
     <div className={classes.section}>
       <div className={classes.container}>
         <GridContainer>
-          <GridItem xs={12} sm={6} md={4}>
-            <Card
-              raised
-              background
-              style={{ backgroundImage: "url('/img/flytthjalp.jpg')" }}
-            >
-              <CardBody background>
-                <a href='#pablo'>
-                  <h3 className={classes.cardTitle}>Flytthjälp</h3>
+          <GridItem
+            xs={12}
+            sm={6}
+            md={6}
+            lg={4}
+            className={classNames(
+              classes.mrAuto,
+              classes.mlAuto,
+              classes.textCenter
+            )}
+          >
+            <Card>
+              <CardHeader image>
+                <a href='/vara-tjanster/flytthjalp'>
+                  <img src='/img/flytthjalp.jpg' alt='Flytthjälp' />
                 </a>
-                <p className={classes.category}>fr.495kr/h</p>
+              </CardHeader>
+              <CardBody>
+                <h3 className={classes.cardTitle}>
+                  <a href='/vara-tjanster/flytthjalp'>Flytthjälp</a>
+                </h3>
+                <p>fr. 495kr/h</p>
                 <Button round href='/vara-tjanster/flytthjalp' color='primary'>
-                  <FormatAlignLeft className={classes.icons} />
                   Läs mer
                 </Button>
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={6} md={4}>
-            <Card
-              raised
-              background
-              style={{
-                backgroundImage: "url('/img/packhjalp.jpg')"
-              }}
-            >
-              <CardBody background>
-                <a href='#pablo'>
-                  <h3 className={classes.cardTitle}>Packhjälp</h3>
+          <GridItem
+            xs={12}
+            sm={6}
+            md={6}
+            lg={4}
+            className={classNames(
+              classes.mrAuto,
+              classes.mlAuto,
+              classes.textCenter
+            )}
+          >
+            <Card>
+              <CardHeader image>
+                <a href='/vara-tjanster/packhjalp'>
+                  <img src='/img/packhjalp.jpg' alt='Packhjalp' />
                 </a>
-                <p className={classes.category}>ffr.495kr/h</p>
+              </CardHeader>
+              <CardBody>
+                <h3 className={classes.cardTitle}>
+                  <a href='/vara-tjanster/packhjalp'>Packhjalp</a>
+                </h3>
+                <p>fr. 495kr/h</p>
                 <Button round href='/vara-tjanster/packhjalp' color='primary'>
-                  <FormatAlignLeft className={classes.icons} />
                   Läs mer
                 </Button>
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={6} md={4}>
-            <Card
-              raised
-              background
-              style={{ backgroundImage: "url('/img/barhjalp.jpg')" }}
-            >
-              <CardBody background>
-                <a href='#pablo'>
-                  <h3 className={classes.cardTitle}>Bärhjälp</h3>
+          <GridItem
+            xs={12}
+            sm={6}
+            md={6}
+            lg={4}
+            className={classNames(
+              classes.mrAuto,
+              classes.mlAuto,
+              classes.textCenter
+            )}
+          >
+            <Card>
+              <CardHeader image>
+                <a href='/vara-tjanster/barhjalp'>
+                  <img src='/img/barhjalp.jpg' alt='Bärhjälp' />
                 </a>
-                <p className={classes.category}>fr.495kr/h</p>
+              </CardHeader>
+              <CardBody>
+                <h3 className={classes.cardTitle}>
+                  <a href='/vara-tjanster/barhjalp'>Bärhjälp</a>
+                </h3>
+                <p>fr. 495kr/h</p>
                 <Button round href='/vara-tjanster/barhjalp' color='primary'>
-                  <FormatAlignLeft className={classes.icons} /> Läs mer
+                  Läs mer
                 </Button>
               </CardBody>
             </Card>
           </GridItem>
-
-          <GridItem xs={12} sm={6} md={4}>
-            <Card
-              raised
-              background
-              style={{
-                backgroundImage: "url('/img/kontorsflytt.jpg')"
-              }}
-            >
-              <CardBody background>
-                <a href='#pablo'>
-                  <h3 className={classes.cardTitle}>Kontorsflytt</h3>
+          <GridItem
+            xs={12}
+            sm={6}
+            md={6}
+            lg={4}
+            className={classNames(
+              classes.mrAuto,
+              classes.mlAuto,
+              classes.textCenter
+            )}
+          >
+            <Card>
+              <CardHeader image>
+                <a href='/vara-tjanster/kontorsflytt'>
+                  <img src='/img/kontorsflytt.jpg' alt='Kontorsflytt' />
                 </a>
-                <p className={classes.category}>fr.990kr/h</p>
+              </CardHeader>
+              <CardBody>
+                <h3 className={classes.cardTitle}>
+                  <a href='/vara-tjanster/kontorsflytt'>Kontorsflytt</a>
+                </h3>
+                <p>fr. 990kr/h</p>
                 <Button
                   round
                   href='/vara-tjanster/kontorsflytt'
                   color='primary'
                 >
-                  <FormatAlignLeft className={classes.icons} /> Läs mer
+                  Läs mer
                 </Button>
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={6} md={4}>
-            <Card
-              raised
-              background
-              style={{
-                backgroundImage: "url('/img/pianoflytt.jpg')"
-              }}
-            >
-              <CardBody background>
-                <a href='#pablo'>
-                  <h3 className={classes.cardTitle}>Pianoflytt</h3>
+          <GridItem
+            xs={12}
+            sm={6}
+            md={6}
+            lg={4}
+            className={classNames(
+              classes.mrAuto,
+              classes.mlAuto,
+              classes.textCenter
+            )}
+          >
+            <Card>
+              <CardHeader image>
+                <a href='/vara-tjanster/pianoflytt'>
+                  <img src='/img/pianoflytt.jpg' alt='Pianoflytt' />
                 </a>
-                <p className={classes.category}>fr.495kr/h</p>
+              </CardHeader>
+              <CardBody>
+                <h3 className={classes.cardTitle}>
+                  <a href='/vara-tjanster/painoflytt'>Pianoflytt</a>
+                </h3>
+                <p>fr. 495kr/h</p>
                 <Button round href='/vara-tjanster/pianoflytt' color='primary'>
-                  <FormatAlignLeft className={classes.icons} /> Läs mer
+                  Läs mer
                 </Button>
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={6} md={4}>
-            <Card
-              raised
-              background
-              style={{
-                backgroundImage: "url('/img/bortforsling.jpg')"
-              }}
-            >
-              <CardBody background>
-                <a href='#pablo'>
-                  <h3 className={classes.cardTitle}>Bortforsling</h3>
+
+          <GridItem
+            xs={12}
+            sm={6}
+            md={6}
+            lg={4}
+            className={classNames(
+              classes.mrAuto,
+              classes.mlAuto,
+              classes.textCenter
+            )}
+          >
+            <Card>
+              <CardHeader image>
+                <a href='/vara-tjanster/bortforsling'>
+                  <img src='/img/bortforsling.jpg' alt='bortforsling' />
                 </a>
-                <p className={classes.category}>fr.495kr/h</p>
+              </CardHeader>
+              <CardBody>
+                <h3 className={classes.cardTitle}>
+                  <a href='/vara-tjanster/bortforsling'>Bortforsling</a>
+                </h3>
+                <p>fr. 495kr/h</p>
                 <Button
                   round
                   href='/vara-tjanster/bortforsling'
                   color='primary'
                 >
-                  <FormatAlignLeft className={classes.icons} /> Läs mer
+                  Läs mer
                 </Button>
               </CardBody>
             </Card>

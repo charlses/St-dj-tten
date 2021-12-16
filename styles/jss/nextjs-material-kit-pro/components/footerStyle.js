@@ -101,12 +101,7 @@ const footerStyle = {
     }
   },
   white: {
-    background:
-      'radial-gradient(ellipse at center,' +
-      primaryColor[4] +
-      ' 0,' +
-      primaryColor[5] +
-      ' 100%)',
+    background: '#334a5b',
     color: whiteColor,
 
     textDecoration: 'none',

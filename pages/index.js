@@ -17,6 +17,7 @@ import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonial
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionForm from '../pages-sections/sections-page/SectionForm'
 import SectionBlog from 'pages-sections/landing-page/SectionBlog'
+import SectionPreFooter from 'pages-sections/components/SectionPreFooter.js'
 
 import presentationStyle from 'styles/jss/nextjs-material-kit-pro/pages/presentationStyle.js'
 
@@ -52,16 +53,18 @@ export default function Index() {
         </div>
       </Parallax>
 
-      <div className={classNames(classes.main)}>
-        <div className={classNames(classes.containerFluid)}>
-          <SectionForm />
-        </div>
+      <div
+        className={classNames(
+          classes.main + ' ' + classes.mainRaised + ' ' + classes.containerFluid
+        )}
+      >
+        <SectionForm />
         <SectionProduct />
         <SectionProducts />
         <SectionTestimonials />
         {/* <SectionBlog /> */}
       </div>
-
+      <SectionPreFooter />
       <SectionFooter />
     </div>
   )

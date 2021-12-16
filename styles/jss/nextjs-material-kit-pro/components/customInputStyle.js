@@ -19,8 +19,7 @@ const customInputStyle = {
       borderBottomWidth: '1px !important'
     },
     '&:after': {
-      borderBottomColor: whiteColor,
-      borderBottomWidth: '1px'
+      borderBottomColor: primaryColor[0]
     }
   },
   underlineError: {
@@ -67,7 +66,7 @@ const customInputStyle = {
     paddingTop: '27px',
     position: 'relative',
     '& svg,& .fab,& .far,& .fal,& .fas,& .material-icons': {
-      color: grayColor[13]
+      color: 'grayColor[1]'
     }
   },
   whiteUnderline: {
@@ -89,8 +88,7 @@ const customInputStyle = {
       opacity: '1'
     },
     '&::placeholder': {
-      color: whiteColor,
-      opacity: 0.8
+      color: grayColor[12]
     }
   },
   whiteInput: {

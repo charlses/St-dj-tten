@@ -16,6 +16,7 @@ import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionForm from 'pages-sections/sections-page/SectionForm'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
+import SectionPreFooter from '../pages-sections/components/SectionPreFooter'
 
 const useStyles = makeStyles(aboutUsStyle)
 
@@ -62,12 +63,13 @@ export default function AboutUsPage() {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main)}>
-        <div className={classes.container}>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <div className={classes.containerFluid}>
           <SectionForm />
           <SectionPills />
         </div>
       </div>
+      <SectionPreFooter />
       <SectionFooter />
     </div>
   )
