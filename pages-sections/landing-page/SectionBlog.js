@@ -42,7 +42,14 @@ export default function SectionCards() {
   const classes = useStyles()
 
   return (
-    <div>
+    <div
+      className={classes.section}
+      style={{
+        backgroundImage: 'linear-gradient(176deg, #E7F7FE 70%, #ffffff)',
+        paddingTop: '50px',
+        paddingBottom: '60px'
+      }}
+    >
       {/* BLOG CARDS START */}
       <div>
         <div className={classes.container}>

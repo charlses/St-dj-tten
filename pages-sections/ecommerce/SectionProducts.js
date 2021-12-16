@@ -1,6 +1,4 @@
 import React from 'react'
-// nodejs library that concatenates classes
-
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
 // core components
@@ -9,65 +7,114 @@ import GridItem from 'components/Grid/GridItem.js'
 import Card from 'components/Card/Card.js'
 import CardBody from 'components/Card/CardBody.js'
 import Button from 'components/CustomButtons/Button.js'
+import classNames from 'classnames'
 
-import styles from 'styles/jss/nextjs-material-kit-pro/pages/ecommerceSections/productsStyle.js'
+import CardHeader from 'components/Card/CardHeader.js'
 
-const useStyles = makeStyles(styles)
+import sectionPillsStyle from 'styles/jss/nextjs-material-kit-pro/pages/blogPostsSections/sectionPillsStyle.js'
 
-export default function SectionProducts() {
+const useStyles = makeStyles(sectionPillsStyle)
+
+export default function SectionPills() {
   const classes = useStyles()
   return (
-    <div className={classes.section}>
+    <div
+      className={classes.section}
+      style={{
+        backgroundImage: 'linear-gradient(176deg, #E7F7FE 50%, #ffffff)'
+      }}
+    >
       <div className={classes.container}>
-        <h2 className={classes.title}>Våra Tjänster</h2>
         <GridContainer>
-          <GridItem md={6} sm={6} xs={6}>
-            <Card
-              background
-              style={{ backgroundImage: "url('/img/hemstadning.jpg')" }}
-            >
-              <CardBody background>
-                <br />
+          <GridItem
+            xs={12}
+            sm={6}
+            md={6}
+            lg={6}
+            className={classNames(
+              classes.mrAuto,
+              classes.mlAuto,
+              classes.textCenter
+            )}
+          >
+            <Card>
+              <CardHeader image>
                 <a href='/stadhjalp'>
-                  <h3 className={classes.cardTitle}>Städhjälp</h3>
+                  <img
+                    src='/img/hemstadning.jpg'
+                    alt='Städhjälp'
+                    style={{ maxHeight: '250px' }}
+                  />
                 </a>
-                <br /> <br />
-                <Button href='/stadhjalp' round color='primary'>
-                  Se mer
+              </CardHeader>
+              <CardBody>
+                <h3 className={classes.cardTitle}>
+                  <a href='/stadhjalp'>Städhjälp</a>
+                </h3>
+                <Button round href='/stadhjalp' color='primary'>
+                  Läs mer
                 </Button>
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem md={6} sm={6} xs={6}>
-            <Card
-              background
-              style={{ backgroundImage: "url('/img/flytthjalp.jpg')" }}
-            >
-              <CardBody background>
-                <br />
+          <GridItem
+            xs={12}
+            sm={6}
+            md={6}
+            lg={6}
+            className={classNames(
+              classes.mrAuto,
+              classes.mlAuto,
+              classes.textCenter
+            )}
+          >
+            <Card>
+              <CardHeader image>
                 <a href='/flytthjalp'>
-                  <h3 className={classes.cardTitle}>Flytthjälp</h3>
+                  <img
+                    src='/img/flytthjalp.jpg'
+                    alt='Flytthjälp'
+                    style={{ maxHeight: '250px' }}
+                  />
                 </a>
-                <br /> <br />
-                <Button href='/flytthjalp' round color='primary'>
-                  Se mer
+              </CardHeader>
+              <CardBody>
+                <h3 className={classes.cardTitle}>
+                  <a href='/flytthjalp'>Flytthjälp</a>
+                </h3>
+                <Button round href='/flytthjalp' color='primary'>
+                  Läs mer
                 </Button>
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem md={12} sm={12}>
-            <Card
-              background
-              style={{ backgroundImage: "url('/img/alla-vara-tjanster.jpg')" }}
-            >
-              <CardBody background>
-                <br />
+          <GridItem
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            className={classNames(
+              classes.mrAuto,
+              classes.mlAuto,
+              classes.textCenter
+            )}
+          >
+            <Card>
+              <CardHeader image>
                 <a href='/vara-tjanster'>
-                  <h3 className={classes.cardTitle}>Allla våra tjänster</h3>
+                  <img
+                    src='/img/alla-vara-tjanster.jpg'
+                    alt='Alla våra tjänster'
+                    style={{ maxHeight: '250px' }}
+                  />
                 </a>
-                <br /> <br />
-                <Button href='/vara-tjanster' round color='primary'>
-                  Se alla våra tjänster
+              </CardHeader>
+              <CardBody>
+                <h3 className={classes.cardTitle}>
+                  <a href='/vara-tjanster'>Alla våra tjänster</a>
+                </h3>
+                <Button round href='/vara-tjanster' color='primary'>
+                  Läs mer
                 </Button>
               </CardBody>
             </Card>

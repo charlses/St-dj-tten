@@ -21,11 +21,7 @@ export default function SectionTeam() {
         <GridItem
           md={12}
           sm={12}
-          className={classNames(
-            classes.mrAuto,
-            classes.mlAuto,
-            classes.textCenter
-          )}
+          className={classNames(classes.mrAuto, classes.mlAuto)}
         >
           <h5 className={classes.description}>
             Det är inte lätt att städa efter en renovering oavsett storlek,
@@ -43,9 +39,7 @@ export default function SectionTeam() {
           sm={12}
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
-          <h2 className={classes.title + ' ' + classes.textCenter}>
-            Rätt byggstädning är viktigt
-          </h2>
+          <h2 className={classes.title}>Rätt byggstädning är viktigt</h2>
           <h5 className={classes.description}>
             Visste du till exempel att det är viktigt att börja städa uppifrån
             och ner vid en byggstädning eller att en byggstädning kräver
@@ -59,9 +53,7 @@ export default function SectionTeam() {
             byggföretag, bostadsrättsföreningar och andra fastighetsägare i
             Stockholm och Göteborg har vi kunskapen och verktygen som behövs.
           </h5>
-          <h2 className={classes.title + ' ' + classes.textCenter}>
-            Vad ingår i en byggstädning?
-          </h2>
+          <h2 className={classes.title}>Vad ingår i en byggstädning?</h2>
           <h5 className={classes.description}>
             <ul>
               <li>Rengöring av fläkt och filter (ej inuti)</li>

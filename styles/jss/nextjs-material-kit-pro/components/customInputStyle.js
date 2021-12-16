@@ -66,7 +66,7 @@ const customInputStyle = {
     paddingTop: '27px',
     position: 'relative',
     '& svg,& .fab,& .far,& .fal,& .fas,& .material-icons': {
-      color: 'grayColor[1]'
+      color: grayColor[13]
     }
   },
   whiteUnderline: {
@@ -78,7 +78,7 @@ const customInputStyle = {
     }
   },
   input: {
-    color: whiteColor,
+    color: grayColor[13],
     height: 'unset',
     '&,&::placeholder': {
       fontSize: '14px',

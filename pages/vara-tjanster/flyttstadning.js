@@ -15,6 +15,7 @@ import SectionTeam from 'pages-sections/vara-tjanster/flyttstadning/SectionTeam.
 import RotateCards from 'pages-sections/vara-tjanster/flyttstadning/RotateCards.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionContact from 'pages-sections/vara-tjanster/flyttstadning/SectionContact.js'
+import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
 import SectionForm from 'pages-sections/sections-page/SectionForm'
 
@@ -61,7 +62,7 @@ export default function AboutUsPage() {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main)}>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <div className={classes.container}>
           <SectionForm />
           <SectionTeam />
@@ -69,6 +70,7 @@ export default function AboutUsPage() {
           <SectionContact />
         </div>
       </div>
+      <SectionPreFooter />
       <SectionFooter />
     </div>
   )

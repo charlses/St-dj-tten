@@ -18,6 +18,7 @@ import SectionContact from 'pages-sections/vara-tjanster/visningsstadning/Sectio
 
 import SectionForm from 'pages-sections/sections-page/SectionForm'
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
+import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
 const useStyles = makeStyles(aboutUsStyle)
 
@@ -62,7 +63,7 @@ export default function AboutUsPage() {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main)}>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <div className={classes.container}>
           <SectionForm />
           <SectionTeam />
@@ -70,6 +71,7 @@ export default function AboutUsPage() {
           <SectionContact />
         </div>
       </div>
+      <SectionPreFooter />
       <SectionFooter />
     </div>
   )

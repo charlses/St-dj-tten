@@ -14,11 +14,7 @@ export default function SectionTestimonials({ ...rest }) {
   const classes = useStyles()
 
   return (
-    <div
-      className='cd-section'
-      {...rest}
-      style={{ backgroundColor: '#DBF3FF' }}
-    >
+    <div className='cd-section' {...rest}>
       {/* Testimonials 3 START */}
       <div className={classes.testimonials}>
         <div className={classes.container}>

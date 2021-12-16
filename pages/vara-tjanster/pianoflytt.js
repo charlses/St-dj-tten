@@ -15,6 +15,7 @@ import SectionTeam from 'pages-sections/vara-tjanster/pianoflytt/SectionTeam.js'
 import RotateCards from 'pages-sections/vara-tjanster/pianoflytt/RotateCards.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionContact from 'pages-sections/vara-tjanster/pianoflytt/SectionContact.js'
+import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
 import SectionForm from 'pages-sections/sections-page/SectionForm'
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
@@ -63,7 +64,7 @@ export default function AboutUsPage() {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main)}>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <div className={classes.container}>
           <SectionForm />
           <SectionTeam />
@@ -71,6 +72,7 @@ export default function AboutUsPage() {
           <SectionContact />
         </div>
       </div>
+      <SectionPreFooter />
       <SectionFooter />
     </div>
   )

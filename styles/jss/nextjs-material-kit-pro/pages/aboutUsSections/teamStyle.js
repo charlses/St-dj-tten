@@ -12,7 +12,6 @@ const teamStyle = {
   mlAuto,
   title,
   description: {
-    ...description,
     marginBottom: '80px'
   },
   cardTitle,
@@ -34,6 +33,14 @@ const teamStyle = {
   },
   justifyContent: {
     justifyContent: 'center!important'
+  },
+  'ul li::before': {
+    'content': '"\\2022"',
+    'color': 'red',
+    'fontWeight': 'bold',
+    'display': 'inline-block',
+    'width': '1em',
+    'marginLeft': '-1em'
   }
 }
 

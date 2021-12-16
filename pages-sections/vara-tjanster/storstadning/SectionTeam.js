@@ -23,9 +23,7 @@ export default function SectionTeam() {
           sm={12}
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
-          <h2 className={classes.title + ' ' + classes.textCenter}>
-            Vad ingår i storstädning?
-          </h2>
+          <h2 className={classes.title}>Vad ingår i storstädning?</h2>
           <h5 className={classes.description}>
             En storstädning är en mer omfattande städning vilket gör att det
             blir rent på riktigt i hela bostaden. Damm lägger sig som ett lager

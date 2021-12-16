@@ -31,10 +31,8 @@ export default function SectionPreFooter() {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h3 className={classes.title} style={{ color: '#ffffff' }}>
-                Vårt nyhetsbrev
-              </h3>
-              <p className={classes.description} style={{ color: '#fefefe' }}>
+              <h3 className={classes.title}>Vårt nyhetsbrev</h3>
+              <p className={classes.description}>
                 Prenumerera på vårt nyhetsbrev så missar du inte framtida
                 erbjudanden.
               </p>
@@ -54,7 +52,7 @@ export default function SectionPreFooter() {
                           inputProps={{
                             startAdornment: (
                               <InputAdornment position='start'>
-                                <Mail style={{ color: '#e5e5e5' }} />
+                                <Mail />
                               </InputAdornment>
                             ),
                             placeholder: 'Your Email...'

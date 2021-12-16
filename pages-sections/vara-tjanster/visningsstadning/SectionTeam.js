@@ -22,11 +22,7 @@ export default function SectionTeam() {
         <GridItem
           md={12}
           sm={12}
-          className={classNames(
-            classes.mrAuto,
-            classes.mlAuto,
-            classes.textCenter
-          )}
+          className={classNames(classes.mrAuto, classes.mlAuto)}
         >
           <h2 className={classes.title}>Anlita oss för visningsstädning</h2>
           <h5 className={classes.description}>
@@ -43,9 +39,7 @@ export default function SectionTeam() {
           sm={12}
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
-          <h2 className={classes.title + ' ' + classes.textCenter}>
-            Vad ingår i visningsstädning?
-          </h2>
+          <h2 className={classes.title}>Vad ingår i visningsstädning?</h2>
           <h5 className={classes.description}>
             <ul>
               <li>Avtorkning av diskbänk, arbetsbänk, kranar</li>
@@ -67,7 +61,7 @@ export default function SectionTeam() {
           sm={12}
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
-          <h2 className={classes.title + ' ' + classes.textCenter}>
+          <h2 className={classes.title}>
             Några snabba tips att tänka på vid en bostadsvisning:
           </h2>
           <h5 className={classes.description}>

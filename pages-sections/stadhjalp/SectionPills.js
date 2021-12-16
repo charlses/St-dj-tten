@@ -18,7 +18,12 @@ const useStyles = makeStyles(sectionPillsStyle)
 export default function SectionPills() {
   const classes = useStyles()
   return (
-    <div className={classes.section}>
+    <div
+      className={classes.section}
+      style={{
+        backgroundImage: 'linear-gradient(176deg, #E7F7FE 50%, #ffffff)'
+      }}
+    >
       <div className={classes.container}>
         <GridContainer>
           <GridItem

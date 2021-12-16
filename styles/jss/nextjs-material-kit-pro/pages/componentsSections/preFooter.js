@@ -88,7 +88,7 @@ const styles = {
   },
   formFix: {},
   subscribeLineWhite: {
-    backgroundColor: '#006787',
+    backgroundColor: whiteColor,
     '& $subscribeButton': {
       top: '-6px'
     }

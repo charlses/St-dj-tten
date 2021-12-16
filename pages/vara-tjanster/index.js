@@ -13,6 +13,7 @@ import Parallax from 'components/Parallax/Parallax.js'
 // sections for this page
 import SectionPills from 'pages-sections/vara-tjanster/index/SectionPills.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
+import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
 import SectionForm from 'pages-sections/sections-page/SectionForm'
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
@@ -53,7 +54,7 @@ export default function AboutUsPage() {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main)}>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <SectionForm />
         <div className={classes.container}>
           <div>
@@ -75,6 +76,7 @@ export default function AboutUsPage() {
           <SectionPills />
         </div>
       </div>
+      <SectionPreFooter />
       <SectionFooter />
     </div>
   )

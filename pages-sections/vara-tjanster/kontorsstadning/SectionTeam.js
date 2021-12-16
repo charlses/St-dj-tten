@@ -21,11 +21,7 @@ export default function SectionTeam() {
         <GridItem
           md={12}
           sm={12}
-          className={classNames(
-            classes.mrAuto,
-            classes.mlAuto,
-            classes.textCenter
-          )}
+          className={classNames(classes.mrAuto, classes.mlAuto)}
         >
           <h2 className={classes.title}>Effektiva & ansvarsförsäkrade</h2>
           <h5 className={classes.description}>
