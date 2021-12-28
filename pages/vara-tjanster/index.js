@@ -49,30 +49,37 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Alla våra tjänster</h1>
+              <h1 className={classes.title} style={{ color: '#fefefe' }}>
+                Alla våra tjänster
+              </h1>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <GridContainer style={{ marginTop: '50px' }}>
+          <GridItem
+            d={8}
+            sm={8}
+            className={classNames(
+              classes.mlAuto,
+              classes.mrAuto,
+              classes.textCenter
+            )}
+          >
+            <h4>
+              Behöver du hjälp med endast vissa delar i flytten? Exempelvis
+              packhjälp, bärhjälp, själva transporten eller kanske bara pianot?
+              Vi hjälper dig även med sanering, bortforsling, storstädning,
+              hemstädning och till och med din trädgårdsskötsel! Alla våra
+              priser är inklusive RUT-avdraget. Genom RUT- avdraget har du som
+              privatperson möjlighet att dra av arbetskostnader upp till 75 000
+              kr per år efter nya regler 2021.
+            </h4>
+          </GridItem>
+        </GridContainer>
         <SectionForm />
         <div className={classes.container}>
-          <div>
-            <GridContainer style={{ marginTop: '50px' }}>
-              <GridItem md={12} sm={12}>
-                <h4>
-                  Behöver du hjälp med endast vissa delar i flytten? Exempelvis
-                  packhjälp, bärhjälp, själva transporten eller kanske bara
-                  pianot? Vi hjälper dig även med sanering, bortforsling,
-                  storstädning, hemstädning och till och med din
-                  trädgårdsskötsel! Alla våra priser är inklusive RUT-avdraget.
-                  Genom RUT- avdraget har du som privatperson möjlighet att dra
-                  av arbetskostnader upp till 75 000 kr per år efter nya regler
-                  2021.
-                </h4>
-              </GridItem>
-            </GridContainer>
-          </div>
           <SectionPills />
         </div>
       </div>

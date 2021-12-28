@@ -52,7 +52,25 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Byggstädning</h1>
+              <h1 className={classes.title} style={{ color: '#fefefe' }}>
+                Byggstädning
+              </h1>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem
+              md={8}
+              sm={8}
+              className={classNames(
+                classes.mlAuto,
+                classes.mrAuto,
+                classes.textCenter
+              )}
+            >
               <h4>
                 Byggstädning går hand i hand med byggprojekt, alla som har
                 genomfört en ombyggnation hemma eller på kontoret vet hur mycket
@@ -60,10 +78,6 @@ export default function AboutUsPage() {
               </h4>
             </GridItem>
           </GridContainer>
-        </div>
-      </Parallax>
-      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
-        <div className={classes.container}>
           <SectionForm />
           <SectionTeam />
           <RotateCards />

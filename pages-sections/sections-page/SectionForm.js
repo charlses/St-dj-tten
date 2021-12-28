@@ -61,117 +61,117 @@ export default function SectionForm() {
   }
 
   return (
-    <form onSubmit={sendPostRequest}>
-      <input
-        type='text'
-        onChange={(e) => setNewName(e.target.value)}
-        value={newName}
-        placeholder='namn'
-      />
-      <input
-        type='text'
-        onChange={(e) => setNewEmail(e.target.value)}
-        value={newEmail}
-        placeholder='e-post'
-      />
-      <input
-        type='text'
-        onChange={(e) => setNewPhone(e.target.value)}
-        value={newPhone}
-        placeholder='telefonnummer'
-      />
-      <button> Skicka </button>
-    </form>
+    // <form onSubmit={sendPostRequest}>
+    //   <input
+    //     type='text'
+    //     onChange={(e) => setNewName(e.target.value)}
+    //     value={newName}
+    //     placeholder='namn'
+    //   />
+    //   <input
+    //     type='text'
+    //     onChange={(e) => setNewEmail(e.target.value)}
+    //     value={newEmail}
+    //     placeholder='e-post'
+    //   />
+    //   <input
+    //     type='text'
+    //     onChange={(e) => setNewPhone(e.target.value)}
+    //     value={newPhone}
+    //     placeholder='telefonnummer'
+    //   />
+    //   <button> Skicka </button>
+    // </form>
 
-    // <GridContainer>
-    //   <GridItem
-    //     xs={12}
-    //     sm={10}
-    //     md={10}
-    //     className={classNames(classes.mlAuto, classes.mrAuto)}
-    //   >
-    //     <Card raised className={classes.card}>
-    //       <CardBody formHorizontal>
-    //         <h5 className={(classes.title, classes.textCenter)}>
-    //           Skicka en offerförfrågan så kontaktar vi dig inom 1 timme
-    //         </h5>
-    //         <form>
-    //           <GridContainer>
-    //             <GridItem xs={12} sm={6} md={2}>
-    //               <CustomInput
-    //                 id='float'
-    //                 required
-    //                 onChange={(e) => setNewName(e.target.value)}
-    //                 value={newName}
-    //                 labelText='Ditt namn'
-    //                 formControlProps={{
-    //                   fullWidth: true,
-    //                   className: classes.formControl
-    //                 }}
-    //               />
-    //             </GridItem>
-    //             <GridItem xs={12} sm={6} md={2}>
-    //               <CustomInput
-    //                 id='float'
-    //                 required
-    //                 onChange={(e) => setNewEmail(e.target.value)}
-    //                 labelText='E-post'
-    //                 value={newEmail}
-    //                 formControlProps={{
-    //                   fullWidth: true,
-    //                   className: classes.formControl
-    //                 }}
-    //               />
-    //             </GridItem>
-    //             <GridItem xs={12} sm={6} md={2}>
-    //               <CustomInput
-    //                 id='float'
-    //                 labelText='Telefonnummer'
-    //                 onChange={(e) => setNewPhone(e.target.value)}
-    //                 value={newPhone}
-    //                 required
-    //                 formControlProps={{
-    //                   fullWidth: true,
-    //                   className: classes.formControl
-    //                 }}
-    //               />
-    //             </GridItem>
-    //             <GridItem xs={12} sm={6} md={2}>
-    //               <CustomInput
-    //                 id='float'
-    //                 required
-    //                 onChange={(e) => setNewService(e.target.value)}
-    //                 value={newService}
-    //                 labelText='Välj en tjänst'
-    //                 formControlProps={{
-    //                   fullWidth: true,
-    //                   className: classes.formControl
-    //                 }}
-    //               />
-    //             </GridItem>
-    //             <GridItem xs={12} sm={6} md={2}>
-    //               <CustomInput
-    //                 id='float'
-    //                 required
-    //                 onChange={(e) => setNewDate(e.target.value)}
-    //                 value={newDate}
-    //                 labelText='Datumn'
-    //                 formControlProps={{
-    //                   fullWidth: true,
-    //                   className: classes.formControl
-    //                 }}
-    //               />
-    //             </GridItem>
-    //             <GridItem xs={12} sm={6} md={2}>
-    //               <Button block color='primary' className={classes.button}>
-    //                 Skicka
-    //               </Button>
-    //             </GridItem>
-    //           </GridContainer>
-    //         </form>
-    //       </CardBody>
-    //     </Card>
-    //   </GridItem>
-    // </GridContainer>
+    <GridContainer>
+      <GridItem
+        xs={12}
+        sm={10}
+        md={10}
+        className={classNames(classes.mlAuto, classes.mrAuto)}
+      >
+        <Card raised className={classes.card}>
+          <CardBody formHorizontal>
+            <h5 className={(classes.title, classes.textCenter)}>
+              Skicka en offerförfrågan så kontaktar vi dig inom 1 timme
+            </h5>
+            <form>
+              <GridContainer>
+                <GridItem xs={12} sm={6} md={2}>
+                  <CustomInput
+                    id='float'
+                    required
+                    onChange={(e) => setNewName(e.target.value)}
+                    value={newName}
+                    labelText='Ditt namn'
+                    formControlProps={{
+                      fullWidth: true,
+                      className: classes.formControl
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={6} md={2}>
+                  <CustomInput
+                    id='float'
+                    required
+                    onChange={(e) => setNewEmail(e.target.value)}
+                    labelText='E-post'
+                    value={newEmail}
+                    formControlProps={{
+                      fullWidth: true,
+                      className: classes.formControl
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={6} md={2}>
+                  <CustomInput
+                    id='float'
+                    labelText='Telefonnummer'
+                    onChange={(e) => setNewPhone(e.target.value)}
+                    value={newPhone}
+                    required
+                    formControlProps={{
+                      fullWidth: true,
+                      className: classes.formControl
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={6} md={2}>
+                  <CustomInput
+                    id='float'
+                    required
+                    onChange={(e) => setNewService(e.target.value)}
+                    value={newService}
+                    labelText='Välj en tjänst'
+                    formControlProps={{
+                      fullWidth: true,
+                      className: classes.formControl
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={6} md={2}>
+                  <CustomInput
+                    id='float'
+                    required
+                    onChange={(e) => setNewDate(e.target.value)}
+                    value={newDate}
+                    labelText='Datumn'
+                    formControlProps={{
+                      fullWidth: true,
+                      className: classes.formControl
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={6} md={2}>
+                  <Button block color='primary' className={classes.button}>
+                    Skicka
+                  </Button>
+                </GridItem>
+              </GridContainer>
+            </form>
+          </CardBody>
+        </Card>
+      </GridItem>
+    </GridContainer>
   )
 }

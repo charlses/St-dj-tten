@@ -51,7 +51,25 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Bortforsling</h1>
+              <h1 className={classes.title} style={{ color: '#fefefe' }}>
+                Bortforsling
+              </h1>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem
+              md={8}
+              sm={8}
+              className={classNames(
+                classes.mlAuto,
+                classes.mrAuto,
+                classes.textCenter
+              )}
+            >
               <h4>
                 Har du varit uppe på vinden, nere i källaren eller i trädgården
                 och rensat? Har du samlat på dig skräp, trädgårds- eller
@@ -61,10 +79,6 @@ export default function AboutUsPage() {
               </h4>
             </GridItem>
           </GridContainer>
-        </div>
-      </Parallax>
-      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
-        <div className={classes.container}>
           <SectionForm />
           <SectionTeam />
           <RotateCards />

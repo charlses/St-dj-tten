@@ -49,21 +49,35 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Flytthjälp</h1>
-              <h4>
-                Behöver du hjälp med endast vissa delar i flytten? Exempelvis
-                packhjälp, bärhjälp, själva transporten eller kanske bara
-                pianot? Vi hjälper dig även med sanering, bortforsling,
-                storstädning, hemstädning och till och med din trädgårdsskötsel!
-                Alla våra priser är inklusive RUT-avdraget. Genom RUT- avdraget
-                har du som privatperson möjlighet att dra av arbetskostnader upp
-                till 75 000 kr per år efter nya regler 2021. <br />
-              </h4>
+              <h1 className={classes.title} style={{ color: '#fefefe' }}>
+                Flytthjälp
+              </h1>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <GridContainer
+          md={8}
+          sm={8}
+          className={classNames(
+            classes.mlAuto,
+            classes.mrAuto,
+            classes.textCenter
+          )}
+        >
+          <GridItem>
+            <h4>
+              Behöver du hjälp med endast vissa delar i flytten? Exempelvis
+              packhjälp, bärhjälp, själva transporten eller kanske bara pianot?
+              Vi hjälper dig även med sanering, bortforsling, storstädning,
+              hemstädning och till och med din trädgårdsskötsel! Alla våra
+              priser är inklusive RUT-avdraget. Genom RUT- avdraget har du som
+              privatperson möjlighet att dra av arbetskostnader upp till 75 000
+              kr per år efter nya regler 2021. <br />
+            </h4>
+          </GridItem>
+        </GridContainer>
         <div className={classes.containerFluid}>
           <SectionForm />
           <SectionPills />
