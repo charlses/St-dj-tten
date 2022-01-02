@@ -3,20 +3,21 @@ import React from 'react'
 // nodejs library that concatenates classes
 import classNames from 'classnames'
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles'
+import {makeStyles} from '@material-ui/core/styles'
+
 // core components
 import Header from 'components/Header/Header.js'
 import HeaderLinks from 'components/Header/HeaderLinks.js'
 import Parallax from 'components/Parallax/Parallax.js'
 import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
+
 // sections for this page
 import SectionProduct from 'pages-sections/landing-page/SectionProduct.js'
 import SectionProducts from 'pages-sections/ecommerce/SectionProducts.js'
 import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionForm from '../pages-sections/sections-page/SectionForm'
-import SectionBlog from 'pages-sections/landing-page/SectionBlog'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter.js'
 
 import presentationStyle from 'styles/jss/nextjs-material-kit-pro/pages/presentationStyle.js'
@@ -32,7 +33,7 @@ export default function Index() {
   return (
     <div>
       <Header
-        links={<HeaderLinks dropdownHoverColor='primary' />}
+        links={<HeaderLinks dropdownHoverColor='primary'/>}
         fixed
         color='transparent'
         changeColorOnScroll={{
@@ -49,6 +50,7 @@ export default function Index() {
                 <h4>Hos oss är både din städning och flytt i trygga händer</h4>
               </div>
             </GridItem>
+            <SectionForm/>
           </GridContainer>
         </div>
       </Parallax>
@@ -58,14 +60,13 @@ export default function Index() {
           classes.main + ' ' + classes.mainRaised + ' ' + classes.containerFluid
         )}
       >
-        <SectionForm />
-        <SectionProduct />
-        <SectionProducts />
-        <SectionTestimonials />
-        {/* <SectionBlog /> */}
+        <SectionProduct/>
+        <SectionProducts/>
+        <SectionTestimonials/>
+         {/*<SectionBlog />*/}
       </div>
-      <SectionPreFooter />
-      <SectionFooter />
+      <SectionPreFooter/>
+      <SectionFooter/>
     </div>
   )
 }

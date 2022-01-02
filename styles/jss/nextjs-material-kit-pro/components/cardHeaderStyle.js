@@ -11,11 +11,11 @@ import {
 
 const cardHeaderStyle = {
   cardHeader: {
-    borderRadius: "3px",
+    // borderRadius: "3px",
     padding: "1rem 15px",
     marginLeft: "15px",
     marginRight: "15px",
-    marginTop: "-30px",
+    // marginTop: "-30px",
     border: "0",
     marginBottom: "0",
   },
@@ -30,20 +30,22 @@ const cardHeaderStyle = {
     position: "relative",
     padding: "0",
     zIndex: "1",
-    marginLeft: "15px",
-    marginRight: "15px",
-    marginTop: "-30px",
-    borderRadius: "6px",
+    margin: "15px",
+    // marginLeft: "15px",
+    // marginRight: "15px",
+    // marginTop: "10px",
+    borderRadius: "3px",
     "& img": {
       width: "100%",
-      borderRadius: "6px",
+      borderRadius: "4px",
       pointerEvents: "none",
-      boxShadow:
-        "0 5px 15px -8px rgba(" +
-        hexToRgb(blackColor) +
-        ", 0.24), 0 8px 10px -5px rgba(" +
-        hexToRgb(blackColor) +
-        ", 0.2)",
+      objectFit: "cover",
+      // boxShadow:
+      //   "0 5px 15px -8px rgba(" +
+      //   hexToRgb(blackColor) +
+      //   ", 0.24), 0 8px 10px -5px rgba(" +
+      //   hexToRgb(blackColor) +
+      //   ", 0.2)",
     },
     "& a": {
       display: "block",
