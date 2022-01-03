@@ -80,7 +80,7 @@ const dangerColor = [
   '#f55a4e',
   '#f2dede',
   '#ebcccc',
-  'ef9a9a',
+  '#ef9a9a',
   '#ef5350'
 ]
 const successColor = [
@@ -392,6 +392,12 @@ const sectionDark = {
     ' 100%)'
 }
 
+const customCard = {
+  boxShadow: '-3px 3px 10px #d4d4d4, 3px -3px 10px #ffffff',
+  background: 'linear-gradient(225deg, #e6e6e6, #ffffff)'
+}
+
+
 const sectionDescription = {
   marginTop: '130px'
 }
@@ -490,5 +496,6 @@ export {
   mrAuto,
   btnLink,
   coloredShadow,
+  customCard,
   hexToRgb
 }

@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "stad",
+      "script": "npm",
+      "args" : "dev"
+    }
+  ]
+}

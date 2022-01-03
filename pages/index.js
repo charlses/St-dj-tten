@@ -48,9 +48,9 @@ export default function Index() {
               <div className={classes.brand}>
                 <h1 className={classes.title}>Städjätten</h1>
                 <h4>Hos oss är både din städning och flytt i trygga händer</h4>
+                <SectionForm/>
               </div>
             </GridItem>
-            <SectionForm/>
           </GridContainer>
         </div>
       </Parallax>

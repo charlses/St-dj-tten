@@ -6,14 +6,18 @@ import {
   infoColor,
   roseColor,
   grayColor,
-  title,
+  title, customCard,
 } from "styles/jss/nextjs-material-kit-pro.js";
 
 const infoStyle = {
   infoArea: {
     maxWidth: "360px",
-    margin: "0 auto",
-    padding: "70px 0 30px",
+    margin: "auto",
+    padding: "10px 25px 40px 25px",
+    height: '100%',
+    borderRadius: '25px',
+    background: customCard.background,
+    boxShadow: customCard.boxShadow
   },
   iconWrapper: {
     float: "left",
@@ -52,7 +56,7 @@ const infoStyle = {
   },
   title: {
     ...title,
-    margin: "1.75rem 0 0.875rem !important",
+    // margin: "1.75rem 0 0.875rem !important",
     minHeight: "unset",
   },
   description: {

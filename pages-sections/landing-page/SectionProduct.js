@@ -20,6 +20,7 @@ export default function SectionProduct() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
+
         <GridContainer justifyContent='center'>
           <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={150}>
             <GridItem xs={12} sm={8} md={8}>
@@ -41,7 +42,7 @@ export default function SectionProduct() {
         </GridContainer>
 
         <div>
-          <GridContainer>
+          <GridContainer style={{margin: '30px 0', userSelect: 'none'}}>
             <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
               <GridItem xs={12} sm={4} md={4}>
                 <InfoArea
@@ -75,13 +76,10 @@ export default function SectionProduct() {
                 />
               </GridItem>
             </Grow>
-
-            <GridItem xs={12} sm={12} md={12}>
-              <Button color='primary' round href='/om-oss'>
-                Läs mer om oss
-              </Button>
-            </GridItem>
           </GridContainer>
+          <Button color='primary' round href='/om-oss'>
+            Läs mer om oss
+          </Button>
         </div>
       </div>
     </div>
