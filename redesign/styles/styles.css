@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+header {
+  z-index: 100;
+}
+header .navbar {
+  background: transparent;
+}
+header .nav-link {
+  font-size: 16px;
+  color: #353535 !important;
+}
+
+.wave {
+  position: absolute;
+  width: 40vw;
+  max-width: 750px;
+  height: 80vh;
+  max-height: 800px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+}
+.hero .about-us {
+  display: flex;
+  padding-top: 100px;
+  position: relative;
+}
+.hero .about-us .splatter {
+  position: absolute;
+  width: 20vw;
+  max-width: 750px;
+  height: 40vh;
+  max-height: 800px;
+  left: -110px;
+  top: -12px;
+  z-index: -1;
+}
+.hero .about-us .right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.hero .about-us .right h1, .hero .about-us .right p {
+  text-align: center;
+}
+.hero .about-us .right h1 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 100px;
+  color: #089DE3;
+}
+.hero .about-us .right p {
+  color: #666666;
+}
+.hero .cleaner {
+  position: relative;
+  width: 400px;
+  top: -70px;
+}
+.hero img {
+  width: 50%;
+}
+
+.info {
+  position: relative;
+  margin-bottom: 30px;
+}
+.info .info-card {
+  font-family: "Playfair Display", serif;
+  border-radius: 6px;
+  box-shadow: 6px -6px 19px rgba(0, 0, 0, 0.1), -6px 6px 19px #ffffff;
+}
+.info .info-card .banner {
+  display: block;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+.info .info-card .banner-overlay {
+  position: absolute;
+  border-radius: 6px;
+  font-family: "Open Sans", serif;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  background-color: rgba(161, 209, 255, 0.9);
+  overflow: hidden;
+  width: calc(100% - 30px);
+  height: 0;
+  transition: 400ms ease;
+}
+.info .info-card:hover .banner-overlay {
+  height: 100%;
+}
+.info .info-card .text {
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  letter-spacing: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.way {
+  padding: 20px;
+  background: #D6EBFF;
+}
+.way .way-body {
+  padding: 60px 0 20px 0;
+  border-radius: 15px;
+  background: white;
+}
+.way .way-body .way-left {
+  margin: 40px 0;
+  padding: 20px;
+  display: flex;
+}
+.way .way-body .way-left img {
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.way .way-body .way-left p {
+  padding: 20px;
+  font-size: 22px;
+  color: #999999;
+  text-align: center;
+  height: 100%;
+  vertical-align: center;
+}
+.way .way-body .way-right {
+  margin: 40px 0;
+  padding: 20px;
+  display: flex;
+}
+.way .way-body .way-right p {
+  width: calc(100% - 300px);
+  padding: 20px;
+  font-size: 22px;
+  color: #999999;
+  text-align: center;
+  height: 100%;
+  vertical-align: center;
+}
+.way .way-body .way-right img {
+  width: 300px;
+  height: 300px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.way .way-body .test {
+  width: 30px;
+}
+.way .way-body .selling-points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.way .way-body .selling-points .lady {
+  width: 30%;
+  max-width: 200px;
+}
+.way .way-body .selling-points ul {
+  position: relative;
+  width: 70%;
+  display: block;
+  padding-left: 50px;
+}
+.way .way-body .selling-points ul li {
+  list-style: none;
+  margin: 10px 0;
+  color: #676767;
+  font-size: 16px;
+}
+.way .way-body .selling-points ul li::before {
+  content: url("/images/splatter-small.png");
+  position: relative;
+  left: -7px;
+  top: 7px;
+}
+
+.guarantee {
+  padding: 50px 0;
+}
+.guarantee p {
+  margin: 30px 20px;
+  text-align: center;
+  color: #999999;
+}
+.guarantee .guarantee-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.guarantee .guarantee-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 32%;
+  background: linear-gradient(225deg, #e6e6e6, #ffffff);
+  box-shadow: -3px 3px 10px #d4d4d4, 3px -3px 10px #ffffff;
+  border-radius: 25px;
+  padding: 20px;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.guarantee .guarantee-card:hover {
+  transform: scale(1.01);
+}
+.guarantee .guarantee-card img {
+  width: 80px;
+}
+.guarantee .guarantee-card-header {
+  font-family: "Playfair Display", serif;
+  color: #055980;
+  font-size: 24px;
+  margin: 15px 0 10px 0;
+}
+.guarantee .guarantee-card-body {
+  font-size: 18px;
+  min-height: 200px;
+  color: #000;
+}
+.guarantee .guarantee-card button {
+  background: #FFAC49;
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 8px;
+  color: white;
+  transition: all 200ms ease-in;
+}
+.guarantee .guarantee-card button:hover {
+  background: #fc8900;
+  box-shadow: 0 0 0 4px #F6F6F6, 0 0 0 6px #FFAC49;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+}
+.section-header h2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 35px;
+  color: #666666;
+  position: relative;
+  display: block;
+}
+.section-header h2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #e6e6e6;
+  bottom: -8px;
+}
+
+.wave-container {
+  position: relative;
+  background: #D6EBFF;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+.wave-container > svg {
+  display: block;
+}
+
+.wave-container-2 {
+  position: relative;
+  background: white;
+  color: #D6EBFF;
+  text-align: center;
+  overflow: hidden;
+}
+.wave-container-2 > svg {
+  display: block;
+}
+
+.hr {
+  display: block;
+  width: 100%;
+  height: 2px;
+  left: 50%;
+  border: none;
+  border-bottom: 2px dashed rgba(8, 157, 227, 0.25);
+}
+
+/*# sourceMappingURL=styles.css.map */
