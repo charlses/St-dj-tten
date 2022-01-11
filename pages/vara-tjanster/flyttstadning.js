@@ -14,6 +14,7 @@ import Parallax from 'components/Parallax/Parallax.js'
 import SectionTeam from 'pages-sections/vara-tjanster/flyttstadning/SectionTeam.js'
 import RotateCards from 'pages-sections/vara-tjanster/flyttstadning/RotateCards.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
+import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
 import SectionContact from 'pages-sections/vara-tjanster/flyttstadning/SectionContact.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
@@ -52,22 +53,36 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Flyttstädning</h1>
-              <h4>
-                Vi är en av de bästa flyttstädningsfirmor i Stockholm och
-                Göteborg som vet vad som behövs för att din bostad ska bli så
-                ren och fräsch som möjlig.
-              </h4>
+              <h1 className={classes.title} style={{ color: '#fefefe' }}>
+                Flyttstädning
+              </h1>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
-        <div className={classes.container}>
-          <SectionForm />
+        <GridContainer
+          md={8}
+          sm={12}
+          className={classNames(
+            classes.mlAuto,
+            classes.mrAuto,
+            classes.textCenter
+          )}
+        >
+          <GridItem>
+            <h4 style={{ margin: '50px 100px 0 100px' }}>
+              Vi är en av de bästa flyttstädningsfirmor i Stockholm och Göteborg
+              som vet vad som behövs för att din bostad ska bli så ren och
+              fräsch som möjlig.
+            </h4>
+          </GridItem>
+        </GridContainer>
+        <SectionForm />
+        <div className={classes.containerFluid}>
+          <SectionTestimonials />
           <SectionTeam />
           <RotateCards />
-          <SectionContact />
         </div>
       </div>
       <SectionPreFooter />

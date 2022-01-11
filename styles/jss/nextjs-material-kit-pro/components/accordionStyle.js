@@ -18,7 +18,8 @@ const accordionStyle = (theme) => ({
     boxShadow: 'none',
     '&:before': {
       display: 'none !important'
-    }
+    },
+    backgroundColor: 'transparent'
   },
   accordionExpanded: {
     margin: '0 !important'
@@ -125,7 +126,7 @@ const accordionStyle = (theme) => ({
   },
   accordionSummaryExpandIconExpanded: {},
   title: {
-    fontSize: '15px',
+    fontSize: '16px',
     fontWeight: 'bolder',
     marginTop: '0',
     marginBottom: '0',
@@ -134,7 +135,7 @@ const accordionStyle = (theme) => ({
   accordionDetails: {
     display: 'block',
     padding: '15px 0px 5px',
-    fontSize: '0.8rem'
+    fontSize: '15px'
   }
 })
 

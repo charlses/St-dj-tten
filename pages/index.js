@@ -1,9 +1,11 @@
 /*eslint-disable*/
-import React from 'react'
+import React, { useState } from 'react'
 // nodejs library that concatenates classes
 import classNames from 'classnames'
 // @material-ui/core components
-import {makeStyles} from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
+
+import { Button } from '@material-ui/core'
 
 // core components
 import Header from 'components/Header/Header.js'
@@ -30,10 +32,19 @@ export default function Index() {
     document.body.scrollTop = 0
   })
   const classes = useStyles()
+
+  const [showForm, setShowForm] = useState(false)
+
+  const onShow = () => {
+    setShowForm(true)
+  }
+  const onHide = () => {
+    setShowForm(false)
+  }
   return (
     <div>
       <Header
-        links={<HeaderLinks dropdownHoverColor='primary'/>}
+        links={<HeaderLinks dropdownHoverColor='primary' />}
         fixed
         color='transparent'
         changeColorOnScroll={{
@@ -48,7 +59,9 @@ export default function Index() {
               <div className={classes.brand}>
                 <h1 className={classes.title}>Städjätten</h1>
                 <h4>Hos oss är både din städning och flytt i trygga händer</h4>
-                <SectionForm/>
+                {!showForm && <Button onClick={onShow}>Show</Button>}
+                {showForm && <Button onClick={onHide}>Hide</Button>}
+                {showForm && <SectionForm />}
               </div>
             </GridItem>
           </GridContainer>
@@ -60,13 +73,13 @@ export default function Index() {
           classes.main + ' ' + classes.mainRaised + ' ' + classes.containerFluid
         )}
       >
-        <SectionProduct/>
-        <SectionProducts/>
-        <SectionTestimonials/>
-         {/*<SectionBlog />*/}
+        <SectionProduct />
+        <SectionProducts />
+        <SectionTestimonials />
+        {/*<SectionBlog />*/}
       </div>
-      <SectionPreFooter/>
-      <SectionFooter/>
+      <SectionPreFooter />
+      <SectionFooter />
     </div>
   )
 }

@@ -69,7 +69,7 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h4>
+              <h4 style={{ marginTop: '50px' }}>
                 Behöver du hjälp med endast vissa delar i flytten? Exempelvis
                 packhjälp, bärhjälp, själva transporten eller kanske bara
                 pianot?
