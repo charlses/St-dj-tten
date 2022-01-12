@@ -107,7 +107,7 @@ import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonial
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 import SectionServices from 'pages-sections/vara-tjanster/barhjalp/SectionServices'
 
-import SectionForm from 'pages-sections/sections-page/SectionForm'
+import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -150,6 +150,7 @@ export default function AboutUsPage() {
         </div>
       </Parallax>
       <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <SectionFormLandingPage />
         <GridContainer
           md={8}
           sm={12}
@@ -174,7 +175,6 @@ export default function AboutUsPage() {
           <div className={classes.container}>
             <SectionServices />
           </div>
-          <SectionForm />
 
           <SectionTeam />
           <SectionTestimonials />

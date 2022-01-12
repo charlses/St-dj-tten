@@ -2,21 +2,20 @@ import {
   title,
   description,
   mrAuto,
-  mlAuto,
-} from "styles/jss/nextjs-material-kit-pro.js";
+  mlAuto
+} from 'styles/jss/nextjs-material-kit-pro.js'
 
 const servicesStyle = {
   title,
   mrAuto,
   mlAuto,
-  services: {
-    paddingTop: "10px",
-    paddingBottom: "80px",
-  },
+  services: {},
   textCenter: {
-    textAlign: "center",
+    display: 'flex',
+    alignItems: 'center'
   },
-  description,
-};
+  itemsCenter: {},
+  description
+}
 
-export default servicesStyle;
+export default servicesStyle

@@ -17,14 +17,14 @@ export default function SectionServices() {
   const classes = useStyles()
   return (
     <div className={classes.services}>
-      <GridContainer style={{ paddingTop: '30px', alignItems: 'stretch' }}>
-        <GridItem md={4} sm={4}>
+      <GridContainer style={{ paddingTop: '30px' }}>
+        <GridItem md={4} sm={4} className={classes.textCenter}>
           <InfoArea title='Certiferade' icon={Check} iconColor='rose' />
         </GridItem>
-        <GridItem md={4} sm={4}>
+        <GridItem md={4} sm={4} className={classes.textCenter}>
           <InfoArea title='Miljövänliga' icon={Check} iconColor='rose' />
         </GridItem>
-        <GridItem md={4} sm={4}>
+        <GridItem md={4} sm={4} className={classes.textCenter}>
           <InfoArea title='Flexibla' icon={Check} iconColor='rose' />
         </GridItem>
       </GridContainer>

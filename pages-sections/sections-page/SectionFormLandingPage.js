@@ -13,7 +13,7 @@ import Card from 'components/Card/Card.js'
 import CardBody from 'components/Card/CardBody.js'
 import CustomInput from 'components/CustomInput/CustomInputWhite.js'
 import axios from 'axios'
-import headersStyle from 'styles/jss/nextjs-material-kit-pro/pages/sectionsSections/headersStyle.js'
+import headersStyle from 'styles/jss/nextjs-material-kit-pro/pages/sectionsSections/headersStyleLandingPage.js'
 
 const useStyles = makeStyles(headersStyle)
 

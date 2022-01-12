@@ -49,8 +49,10 @@ export default function SectionTeam() {
       <div className={classes.container}>
         <GridContainer>
           <GridItem
+            xl={5}
             md={9}
-            sm={11}
+            sm={9}
+            xs={10}
             className={classNames(
               classes.mrAuto,
               classes.mlAuto,

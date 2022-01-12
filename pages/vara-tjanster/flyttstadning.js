@@ -19,7 +19,7 @@ import SectionContact from 'pages-sections/vara-tjanster/flyttstadning/SectionCo
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 import SectionServices from 'pages-sections/vara-tjanster/flyttstadning/SectionServices'
 
-import SectionForm from 'pages-sections/sections-page/SectionForm'
+import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -46,8 +46,10 @@ export default function AboutUsPage() {
         <div className={classes.container}>
           <GridContainer justify='justifyContent'>
             <GridItem
-              md={8}
-              sm={8}
+              xl={5}
+              md={9}
+              sm={7}
+              xs={10}
               className={classNames(
                 classes.mlAuto,
                 classes.mrAuto,
@@ -62,9 +64,12 @@ export default function AboutUsPage() {
         </div>
       </Parallax>
       <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <SectionFormLandingPage />
         <GridContainer
+          xl={5}
           md={8}
-          sm={12}
+          sm={9}
+          xs={12}
           className={classNames(
             classes.mlAuto,
             classes.mrAuto,
@@ -79,12 +84,10 @@ export default function AboutUsPage() {
             </h4>
           </GridItem>
         </GridContainer>
-
         <div className={classes.containerFluid}>
           <div className={classes.container}>
             <SectionServices />
           </div>
-          <SectionForm />
 
           <SectionTeam />
           <SectionTestimonials />

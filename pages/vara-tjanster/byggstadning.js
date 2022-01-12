@@ -17,7 +17,8 @@ import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionContact from 'pages-sections/vara-tjanster/byggstadning/SectionContact.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
-import SectionForm from 'pages-sections/sections-page/SectionForm'
+import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
+import SectionServices from 'pages-sections/vara-tjanster/byggstadning/SectionServices'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -60,6 +61,7 @@ export default function AboutUsPage() {
         </div>
       </Parallax>
       <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <SectionFormLandingPage />
         <div className={classes.container}>
           <GridContainer>
             <GridItem
@@ -78,11 +80,14 @@ export default function AboutUsPage() {
               </h4>
             </GridItem>
           </GridContainer>
-          <SectionForm />
-          <SectionTeam />
-          <RotateCards />
-          <SectionContact />
         </div>
+        <div className={classes.container}>
+          <SectionServices />
+        </div>
+
+        <SectionTeam />
+        <RotateCards />
+        <SectionContact />
       </div>
       <SectionPreFooter />
       <SectionFooter />
