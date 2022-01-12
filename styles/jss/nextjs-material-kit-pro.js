@@ -63,6 +63,7 @@ const primaryColor = [
   '#099EE3'
 ]
 const secondaryColor = ['#fafafa']
+
 const warningColor = [
   '#ff9800',
   '#ffa726',
@@ -396,7 +397,6 @@ const customCard = {
   boxShadow: '-3px 3px 10px #d4d4d4, 3px -3px 10px #ffffff',
   background: 'linear-gradient(225deg, #e6e6e6, #ffffff)'
 }
-
 
 const sectionDescription = {
   marginTop: '130px'

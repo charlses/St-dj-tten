@@ -17,6 +17,7 @@ import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
 import SectionContact from 'pages-sections/vara-tjanster/flyttstadning/SectionContact.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
+import SectionServices from 'pages-sections/vara-tjanster/flyttstadning/SectionServices'
 
 import SectionForm from 'pages-sections/sections-page/SectionForm'
 
@@ -78,10 +79,15 @@ export default function AboutUsPage() {
             </h4>
           </GridItem>
         </GridContainer>
-        <SectionForm />
+
         <div className={classes.containerFluid}>
-          <SectionTestimonials />
+          <div className={classes.container}>
+            <SectionServices />
+          </div>
+          <SectionForm />
+
           <SectionTeam />
+          <SectionTestimonials />
           <RotateCards />
         </div>
       </div>

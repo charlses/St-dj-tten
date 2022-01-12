@@ -76,9 +76,7 @@ const headersSection = (theme) => ({
   textCenter: {
     textAlign: 'center'
   },
-  card: {
-    marginTop: '60px'
-  },
+
   formControl: {
     margin: '0',
     padding: '8px 0 0 0'

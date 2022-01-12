@@ -12,6 +12,10 @@ import Button from 'components/CustomButtons/Button.js'
 import { Grow } from '@material-ui/core'
 import Card from 'components/Card/Card.js'
 import CardBody from 'components/Card/CardBody.js'
+import { ChatTwoTone } from '@material-ui/icons'
+import { PhoneTwoTone } from '@material-ui/icons'
+import { EmailTwoTone } from '@material-ui/icons'
+import CustomInput from 'components/CustomInput/CustomInput.js'
 
 import productStyle from 'styles/jss/nextjs-material-kit-pro/pages/landingPageSections/productStyle.js'
 
@@ -25,23 +29,10 @@ export default function SectionProduct() {
         <GridContainer justifyContent='center'>
           <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={150}>
             <GridItem xs={12} sm={8} md={8}>
-              <h2 className={classes.title}>
-                Städtjänster med fokus på dig som kund
-              </h2>
-              <h5 className={classes.description}>
-                Städjätten erbjuder städ- och flytthjälp som är skräddarsydda
-                efter just dina behov och önskemål. Med oss kan du boka
-                helhetslösningar och vi finns i både Stockholm och Göteborg. Vi
-                hjälper dig med flyttstädning, hemstädning, storstädning,
-                byggstädning, visningsstädning, kontorsstädning, sanering,
-                trädgårdsskötsel, flytthjälp, bortforsling, packhjälp eller
-                bärhjälp. Städjätten finns här för att hjälpa dig och underlätta
-                din vardag – när du behöver det.
-              </h5>
+              <h2 className={classes.title}>Kom i kontakt med oss</h2>
             </GridItem>
           </Grow>
         </GridContainer>
-
         <div>
           <Card raised className={classes.card}>
             <CardBody formHorizontal>
@@ -53,9 +44,9 @@ export default function SectionProduct() {
                 >
                   <GridItem xs={12} sm={4} md={4}>
                     <InfoArea
-                      title='Nöjd-kund-garanti'
-                      description='Vi har genom åren lärt oss att den viktigaste marknadsföringen är nöjda kunder. Vi lämnar därför 7 dagars nöjd kundgaranti för vår flyttstädning, så att du som kund alltid ska ha möjlighet att vara 100% nöjd. '
-                      icon={Security}
+                      title='Chatta med oss'
+                      description=' '
+                      icon={ChatTwoTone}
                       iconColor='primary'
                       vertical
                     />
@@ -68,9 +59,9 @@ export default function SectionProduct() {
                 >
                   <GridItem xs={12} sm={4} md={4}>
                     <InfoArea
-                      title='Vår miljöpolicy'
-                      description='Städjätten lägger stor vikt vid miljöaspekter när vi arbetar med städ- och flytthjälp. Vi väljer alltid i första hand städprodukter och annat material som är miljömärkt. Våra transporter är alltid optimerade och planerade för att minska våra körsträckor.'
-                      icon={Public}
+                      title='Ring oss'
+                      description=' '
+                      icon={PhoneTwoTone}
                       iconColor='success'
                       vertical
                     />
@@ -83,18 +74,35 @@ export default function SectionProduct() {
                 >
                   <GridItem xs={12} sm={4} md={4}>
                     <InfoArea
-                      title='50% RUT-avdrag'
-                      description='När du anlitar oss kan du som privatperson använda dig av RUT-avdraget. Vi gör det enkelt för dig och sköter all administration. Genom RUT- avdraget har du möjlighet att dra av arbetskostnader upp till 75 000 kr per år efter nya regler 2021.'
-                      icon={Payment}
+                      title='Mejla oss'
+                      description=' '
+                      icon={EmailTwoTone}
                       iconColor='danger'
                       vertical
                     />
                   </GridItem>
                 </Grow>
               </GridContainer>
-              <Button color='primary' round href='/om-oss'>
-                Läs mer om oss
-              </Button>
+              <GridContainer justifyContent='center'>
+                <Grow
+                  in={true}
+                  style={{ transformOrigin: '0 0 0' }}
+                  timeout={150}
+                >
+                  <GridItem xs={12} sm={8} md={8}>
+                    <h5 className={classes.title}>Eller bli uppringd av oss</h5>
+                    <CustomInput
+                      id='float phone'
+                      labelText='Telefonnummer'
+                      required
+                      formControlProps={{
+                        fullWidth: true,
+                        className: classes.formControl
+                      }}
+                    />
+                  </GridItem>
+                </Grow>
+              </GridContainer>
             </CardBody>
           </Card>
         </div>
