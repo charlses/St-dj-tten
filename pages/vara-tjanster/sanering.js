@@ -16,8 +16,9 @@ import RotateCards from 'pages-sections/vara-tjanster/sanering/RotateCards.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionContact from 'pages-sections/vara-tjanster/sanering/SectionContact.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
-
-import SectionForm from 'pages-sections/sections-page/SectionForm'
+import SectionServices from 'pages-sections/vara-tjanster/packhjalp/SectionServices'
+import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
+import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
 const useStyles = makeStyles(aboutUsStyle)
@@ -51,8 +52,27 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Sanering</h1>
-              <h4>
+              <h1 className={classes.title} style={{ color: '#fefefe' }}>
+                Sanering
+              </h1>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <SectionFormLandingPage />
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem
+              d={8}
+              sm={8}
+              className={classNames(
+                classes.mlAuto,
+                classes.mrAuto,
+                classes.textCenter
+              )}
+            >
+              <h4 style={{ margin: '50px 100px 0 100px' }}>
                 Som saneringsexperter rycker vi ut när hus och byggnader drabbas
                 av olika typer av skador som mögel eller fukt. Vi tar hand om
                 alla typer av besvärliga saneringsjobb, allt ifrån
@@ -61,15 +81,17 @@ export default function AboutUsPage() {
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
-      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionForm />
-          <SectionTeam />
-          <RotateCards />
-          <SectionContact />
+          <SectionServices />
         </div>
+
+        <SectionTeam />
+        <SectionTestimonials />
+        <RotateCards />
+
+        <SectionContact />
       </div>
+
       <SectionPreFooter />
       <SectionFooter />
     </div>

@@ -16,8 +16,10 @@ import RotateCards from 'pages-sections/vara-tjanster/pianoflytt/RotateCards.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionContact from 'pages-sections/vara-tjanster/pianoflytt/SectionContact.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
+import SectionServices from 'pages-sections/vara-tjanster/pianoflytt/SectionServices'
+import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
 
-import SectionForm from 'pages-sections/sections-page/SectionForm'
+import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
 const useStyles = makeStyles(aboutUsStyle)
@@ -39,7 +41,7 @@ export default function AboutUsPage() {
           color: 'white'
         }}
       />
-      <Parallax image='/img/bg9.jpg' filter='dark' small>
+      <Parallax image='/img/pianoflytt.jpg' filter='dark' small>
         <div className={classes.container}>
           <GridContainer justifyContent='center'>
             <GridItem
@@ -51,8 +53,27 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Pianoflytt</h1>
-              <h4>
+              <h1 className={classes.title} style={{ color: '#fefefe' }}>
+                Pianoflytt
+              </h1>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <SectionFormLandingPage />
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem
+              d={8}
+              sm={8}
+              className={classNames(
+                classes.mlAuto,
+                classes.mrAuto,
+                classes.textCenter
+              )}
+            >
+              <h4 style={{ margin: '50px 100px 0 100px' }}>
                 Städjätten är specialiserade på pianoflytt och erbjuder alltid
                 en professionell och trygg transport av musikinstrument. Vi
                 flyttar alla typer av klaviaturinstrument med stor varsamhet -
@@ -63,14 +84,13 @@ export default function AboutUsPage() {
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
-      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionForm />
-          <SectionTeam />
-          <RotateCards />
-          <SectionContact />
+          <SectionServices />
         </div>
+        <SectionTeam />
+        <SectionTestimonials />
+        <RotateCards />
+        <SectionContact />
       </div>
       <SectionPreFooter />
       <SectionFooter />

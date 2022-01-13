@@ -54,7 +54,7 @@ export default function SectionProduct() {
                   <GridItem xs={12} sm={4} md={4}>
                     <InfoArea
                       title='Nöjd-kund-garanti'
-                      description='Vi har genom åren lärt oss att den viktigaste marknadsföringen är nöjda kunder. Vi lämnar därför 7 dagars nöjd kundgaranti för vår flyttstädning, så att du som kund alltid ska ha möjlighet att vara 100% nöjd. '
+                      description='Vi har genom åren lärt oss att den viktigaste marknadsföringen är nöjda kunder. Vi lämnar därför 7 dagars nöjd kundgaranti för vår flyttstädning, så att du som kund alltid ska vara 100% nöjd. '
                       icon={Security}
                       iconColor='primary'
                       vertical
@@ -69,7 +69,7 @@ export default function SectionProduct() {
                   <GridItem xs={12} sm={4} md={4}>
                     <InfoArea
                       title='Vår miljöpolicy'
-                      description='Städjätten lägger stor vikt vid miljöaspekter när vi arbetar med städ- och flytthjälp. Vi väljer alltid i första hand städprodukter och annat material som är miljömärkt. Våra transporter är alltid optimerade och planerade för att minska våra körsträckor.'
+                      description='Städjätten lägger stor vikt vid miljöaspekter när vi arbetar med städ- och flytthjälp. Vi väljer alltid i första hand städprodukter och annat material som är miljömärkt. Våra transporter är alltid planerade för att minska våra körsträckor och utsläpp.'
                       icon={Public}
                       iconColor='success'
                       vertical

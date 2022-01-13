@@ -18,6 +18,7 @@ import SectionContact from 'pages-sections/vara-tjanster/bortforsling/SectionCon
 import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 import SectionServices from 'pages-sections/vara-tjanster/bortforsling/SectionServices'
+import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -89,6 +90,7 @@ export default function AboutUsPage() {
         <SectionTeam />
         <RotateCards />
         <SectionContact />
+        <SectionTestimonials />
       </div>
       <SectionPreFooter />
       <SectionFooter />

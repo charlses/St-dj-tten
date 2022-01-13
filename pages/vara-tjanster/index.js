@@ -67,7 +67,7 @@ export default function AboutUsPage() {
               classes.textCenter
             )}
           >
-            <h4>
+            <h4 style={{ margin: '50px 100px 0 100px' }}>
               Behöver du hjälp med endast vissa delar i flytten? Exempelvis
               packhjälp, bärhjälp, själva transporten eller kanske bara pianot?
               Vi hjälper dig även med sanering, bortforsling, storstädning,
@@ -79,9 +79,8 @@ export default function AboutUsPage() {
           </GridItem>
         </GridContainer>
         <SectionForm />
-        <div className={classes.container}>
-          <SectionPills />
-        </div>
+
+        <SectionPills />
       </div>
       <SectionPreFooter />
       <SectionFooter />

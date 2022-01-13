@@ -16,6 +16,7 @@ import RotateCards from 'pages-sections/vara-tjanster/byggstadning/RotateCards.j
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionContact from 'pages-sections/vara-tjanster/byggstadning/SectionContact.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
+import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
 
 import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 import SectionServices from 'pages-sections/vara-tjanster/byggstadning/SectionServices'
@@ -86,6 +87,7 @@ export default function AboutUsPage() {
         </div>
 
         <SectionTeam />
+        <SectionTestimonials />
         <RotateCards />
         <SectionContact />
       </div>

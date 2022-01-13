@@ -16,8 +16,10 @@ import RotateCards from 'pages-sections/vara-tjanster/kontorsflytt/RotateCards.j
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionContact from 'pages-sections/vara-tjanster/kontorsflytt/SectionContact.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
+import SectionServices from 'pages-sections/vara-tjanster/kontorsflytt/SectionServices'
+import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
 
-import SectionForm from 'pages-sections/sections-page/SectionForm'
+import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
 const useStyles = makeStyles(aboutUsStyle)
@@ -51,30 +53,43 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Kontorsflytt</h1>
-              <h4>
-                Vi på Städjätten har utfört flyttar åt företag i över 10 år,
-                vilket gör att vi kan stolt säga att vi är experter på kontors-
-                och företagsflyttar. Vi är flexibla och finns tillgängliga på
-                helger och vardagar efter kontorstider. För oss är det viktigt
-                att flytten ska gå så smidigt som möjligt för er som företag.{' '}
-                <br />
-                Vill ni att vi hjälper er packa eller montera upp möbler och
-                förvara de tryggt? Det kan vi självklart hjälpa er med! Ni
-                väljer själva – Vi hjälper er.
-              </h4>
+              <h1 className={classes.title} style={{ color: '#fefefe' }}>
+                Kontorsflytt
+              </h1>
             </GridItem>
-            s
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <SectionFormLandingPage />
         <div className={classes.container}>
-          <SectionForm />
-          <SectionTeam />
-          <RotateCards />
-          <SectionContact />
+          <GridContainer>
+            <GridItem
+              md={8}
+              sm={8}
+              className={classNames(
+                classes.mlAuto,
+                classes.mrAuto,
+                classes.textCenter
+              )}
+            >
+              <h4 style={{ margin: '50px 100px 0 100px' }}>
+                Vi på Städjätten har utfört flyttar åt företag i över 10 år,
+                vilket gör att vi kan stolt säga att vi är experter på kontors-
+                och företagsflyttar. Vi är flexibla och finns tillgängliga på
+                helger och vardagar efter kontorstider. För oss är det viktigt
+                att flytten ska gå så smidigt som möjligt för er som företag.
+              </h4>
+            </GridItem>
+          </GridContainer>
         </div>
+        <div className={classes.container}>
+          <SectionServices />
+        </div>
+        <SectionTeam />
+        <SectionTestimonials />
+        <RotateCards />
+        <SectionContact />
       </div>
 
       <SectionPreFooter />

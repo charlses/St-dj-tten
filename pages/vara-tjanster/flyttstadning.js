@@ -15,7 +15,6 @@ import SectionTeam from 'pages-sections/vara-tjanster/flyttstadning/SectionTeam.
 import RotateCards from 'pages-sections/vara-tjanster/flyttstadning/RotateCards.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
-import SectionContact from 'pages-sections/vara-tjanster/flyttstadning/SectionContact.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 import SectionServices from 'pages-sections/vara-tjanster/flyttstadning/SectionServices'
 

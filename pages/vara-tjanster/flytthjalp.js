@@ -17,7 +17,7 @@ import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionContact from 'pages-sections/vara-tjanster/flytthjalp/SectionContact.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 import SectionServices from 'pages-sections/vara-tjanster/flytthjalp/SectionServices'
-
+import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
 import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
@@ -92,6 +92,7 @@ export default function AboutUsPage() {
           <SectionServices />
         </div>
         <SectionTeam />
+        <SectionTestimonials />
         <RotateCards />
         <SectionContact />
       </div>
