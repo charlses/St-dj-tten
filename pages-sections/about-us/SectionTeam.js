@@ -27,19 +27,18 @@ export default function SectionTeam() {
         >
           <h2 className={classes.title}>Om oss & vårt arbetssätt</h2>
           <h5 className={classes.description}>
-            Vårt fokus är effektivitet och service, därför använder vi sedan
-            flera år tillbaka tekniska verktyg som ger oss möjlighet att
-            utnyttja våra resurser optimalt. Det som skiljer oss från många
-            andra är vår välstrukturerade planering och flexibla arbetssätt som
-            gör att vi kan hålla mycket konkurrenskraftiga priser på både städ-
-            och flytthjälp.
+            Vårt fokus är effektivitet och service. Vi använder sedan flera år
+            tillbaka tekniska verktyg som ger oss möjlighet att utnyttja våra
+            resurser optimalt. Det som skiljer oss från många andra är vår
+            välstrukturerade planering och flexibla arbetssätt. Det gör att vi
+            kan hålla mycket konkurrenskraftiga priser på både städ- och
+            flytthjälp.
           </h5>
           <h5 className={classes.description}>
             Vi har en familjär företagskultur där personalen är vald med omsorg.
             Dessa är skickliga yrkesmänniskor, med både lång erfarenhet och hög
-            servicekänsla. Vi har certifierad personal & SRY-yrkesbevis.
-            Självklart är vi ansvarsförsäkrade för att du som kund ska känna dig
-            trygg med att anlita oss.
+            servicekänsla. Självklart är vi ansvarsförsäkrade för att du som
+            kund ska känna dig trygg med att anlita oss.
           </h5>
           <h5 className={classes.description}>
             Vi strävar alltid efter att förbättra och utveckla oss så att du som
@@ -53,7 +52,7 @@ export default function SectionTeam() {
             göras fläckfritt och utifrån kundens behov och önskemål. Du som
             kund, oavsett privatperson eller företag, ska känna dig trygg med
             oss som leverantör – oavsett om du har beställt en enskild tjänst
-            eller en helhetslösning med allt från packning till transport och
+            eller en helhetslösning med allt ifrån packning till transport och
             flyttstädning.
           </h5>
         </GridItem>

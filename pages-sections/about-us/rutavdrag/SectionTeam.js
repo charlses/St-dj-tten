@@ -31,8 +31,8 @@ export default function SectionTeam() {
           <h5 className={classes.description}>
             För att ta del av RUT- avdraget behöver du minst vara 18 år och
             varit obegränsat skattskyldig under året. Om du som kund vill
-            använda dig av rut-avdraget behöver du endast kryssa i rutan i våra
-            formulär “Ja, jag vill använda mig av rut-avdraget för
+            använda dig av RUT-avdraget behöver du endast kryssa i rutan i våra
+            formulär “Ja, jag vill använda mig av RUT-avdraget för
             privatpersoner så ansöker vi som företag om detta åt dig”.
             <p>
               På följande länk hittar du mer information om Skatteverkets

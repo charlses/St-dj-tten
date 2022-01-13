@@ -22,14 +22,11 @@ export default function SectionTeam() {
   return (
     <div className={classes.team}>
       <SectionImageLeft image='/img/tjejen.png' alt='Lokalv[rdare'>
-        <h2 className={classes.title}>
-          Ansvarsförsäkrade och certifierad personal
-        </h2>
+        <h2 className={classes.title}>Ansvarsförsäkrade</h2>
         <h5 className={classes.description}>
-          Vi på Städjätten är måna om våra anställda och våra kunder, därför är
-          vi ansvarsförsäkrade och vår personal är utbildade i lyftteknik för
-          att kunna bära ergonomiskt och lasta på ett säkert sätt. Städjätten
-          har personal som är certifierad och har SRY-yrkesbevis. <br /> <br />
+          Vi på Städjätten är måna om våra anställda och våra kunder. Vår
+          personal är utbildade i lyftteknik för att kunna bära ergonomiskt och
+          lasta på ett säkert sätt. <br /> <br />
           <Button color='primary' href='/offert'>
             Skicka en offertförfrågan nu!
           </Button>

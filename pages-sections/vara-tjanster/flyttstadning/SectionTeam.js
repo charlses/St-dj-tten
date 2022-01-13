@@ -33,7 +33,7 @@ export default function SectionTeam() {
               Rengöring av diskbänk, diskbänkskåp och kranar
             </li>
             <li>Rengöring av kyl/frys (ska avfrostas i förväg)</li>
-            <li>Rengöring av tömning av golvbrunn</li>
+            <li>Rengöring och tömning av golvbrunn</li>
             <li>Rengöring av handfat</li>
             <li>
               Avtorkning av skåp och inbyggda garderober in- och utvändigt

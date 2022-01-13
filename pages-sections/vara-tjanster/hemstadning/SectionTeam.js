@@ -23,17 +23,15 @@ export default function SectionTeam() {
     <div className={classes.team}>
       <SectionImageLeft image='/img/tjejen.png' alt='Lokalv[rdare'>
         <h2 className={classes.title + ' ' + classes.textCenter}>
-          Hemstädning efter dina önskemål
+          Vad ingår i hemstädning
         </h2>
         <h5 className={classes.description}>
-          För oss är det viktigt att våra kunder är 100% nöjda, vi utför därför
-          städning helt enligt dina önskemål. Oavsett behov finns vi där för dig
-          när du behöver städhjälp. Vi erbjuder flexibla lösningar utifrån dina
-          krav, oavsett om det är städning en gång i veckan eller en gång i
-          månaden. Vi erbjuder även tilläggstjänster till din hemstädning för en
-          komplett lösning för din vardag. Städjätten hjälper dig bland annat
-          med att handla mat, apoteksärenden, plocka ur tvätt, stryka, köra iväg
-          sopor eller passa hunden.
+          Vi på Städjätten finns för dig som vill förenkla vardagen. Därför
+          låter vi dig bestämma hur din städning ska utföras tillsammans med
+          våra experter. Vi har tagit fram en standardlista för vad som ingår i
+          en hemstädning, men självklart anpassar vi den efter just dina behov
+          och önskemål. Listan över vad som ingår i en hemstädning finner du
+          nedan.
         </h5>
         <h5 className={classes.description}>
           <ul
@@ -55,7 +53,35 @@ export default function SectionTeam() {
           </Button>
         </h5>
       </SectionImageLeft>
-
+      <div className={classes.container}>
+        <GridContainer>
+          <GridItem
+            xl={5}
+            md={9}
+            sm={9}
+            xs={10}
+            className={classNames(
+              classes.mrAuto,
+              classes.mlAuto,
+              classes.textCenter
+            )}
+          >
+            <h2 className={classes.title}>Hemstädning efter dina önskemål</h2>
+            <h5 className={classes.description}>
+              För oss är det viktigt att våra kunder är 100 % nöjda. Vi utför
+              därför städning helt enligt dina önskemål. Oavsett behov finns vi
+              där för dig när du behöver städhjälp. Vi erbjuder flexibla
+              lösningar utifrån dina krav, oavsett om det är städning en gång i
+              veckan eller en gång i månaden. Vi erbjuder även tilläggstjänster
+              till din hemstädning för en komplett lösning för din vardag.{' '}
+              <br /> <br />
+              <Button color='primary' href='/offert'>
+                Skicka en offertförfrågan nu!
+              </Button>
+            </h5>
+          </GridItem>
+        </GridContainer>
+      </div>
       <SectionNoImage>
         <h2 className={classes.title}>FAQ?</h2>
         <Accordion

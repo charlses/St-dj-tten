@@ -15,8 +15,10 @@ import SectionTeam from 'pages-sections/vara-tjanster/visningsstadning/SectionTe
 import RotateCards from 'pages-sections/vara-tjanster/visningsstadning/RotateCards.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionContact from 'pages-sections/vara-tjanster/visningsstadning/SectionContact.js'
+import SectionServices from 'pages-sections/vara-tjanster/packhjalp/SectionServices'
+import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
 
-import SectionForm from 'pages-sections/sections-page/SectionForm'
+import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
@@ -51,8 +53,28 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Visningsstädning</h1>
-              <h4>
+              <h1 className={classes.title} style={{ color: '#fefefe' }}>
+                Visningsstädning
+              </h1>
+              <h4></h4>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <SectionFormLandingPage />
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem
+              d={8}
+              sm={8}
+              className={classNames(
+                classes.mlAuto,
+                classes.mrAuto,
+                classes.textCenter
+              )}
+            >
+              <h4 style={{ margin: '50px 100px 0 100px' }}>
                 Har du planer på att sälja din bostad eller lokal inom en snar
                 framtid? Då har du en hel del att tänka på. Visningsdagen är en
                 viktig dag i säljprocessen, när potentiella köpare kommer för
@@ -62,14 +84,13 @@ export default function AboutUsPage() {
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
-      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionForm />
-          <SectionTeam />
-          <RotateCards />
-          <SectionContact />
+          <SectionServices />
         </div>
+        <SectionTeam />
+        <SectionTestimonials />
+        <RotateCards />
+        <SectionContact />
       </div>
       <SectionPreFooter />
       <SectionFooter />

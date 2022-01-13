@@ -42,7 +42,7 @@ export default function SectionTeam() {
               av musikinstrument. Vi flyttar alla typer av klaviaturinstrument,
               allt från piano, flyglar till hammondorglar. Vissa instrument kan
               vara känsliga vilket kräver stor varsamhet. En faktor som är
-              viktig under pianoflytt är goda transportmöjligheter, våra
+              viktig under pianoflytt är goda transportmöjligheter. Våra
               lastbilar är rymliga och säkra för att dina musikinstrument ska
               vara i trygga händer. <br />
               Anlita oss på Städjätten så kan du känna dig trygg med att ditt

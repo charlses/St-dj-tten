@@ -74,11 +74,11 @@ export default function AboutUsPage() {
               )}
             >
               <h4>
-                Står du inför en flytt och har ont om tid, eller vill vara säker
-                på att dina saker hamnar tryggt i lådorna? Det finns många
-                fördelar med att hyra oss på Städjätten som flytthjälp. Vi
+                Står du inför en flytt och har ont om tid, eller vill du vara
+                säker på att dina saker hamnar tryggt i lådorna? Det finns många
+                fördelar med att anlita oss på Städjätten som flytthjälp. Vi
                 sköter allt det praktiska åt dig på ett effektivt sätt, allt
-                från att ordna med flyttkartonger, packmaterial till att
+                ifrån att ordna med flyttkartonger, packmaterial till att
                 transportera till den nya adressen. Vi på Städjätten vet hur en
                 snabb och smidig flytt ska gå till, vi har rätt verktyg och
                 kunskap för en säker flytt. <br /> Städjätten är

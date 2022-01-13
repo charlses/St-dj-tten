@@ -35,7 +35,7 @@ export default function SectionServices() {
             Vi har genom åren lärt oss att den viktigaste marknadsföringen är
             nöjda kunder. Vi lämnar till och med nöjd kundgaranti för vår
             flyttstädning vilket innebär att vi åtgärdar eventuella synpunkter
-            inom sju (7) dagar kostnadsfritt.
+            inom sju dagar kostnadsfritt.
           </h5>
         </GridItem>
       </GridContainer>

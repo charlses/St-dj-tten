@@ -78,12 +78,14 @@ export default function SectionTeam() {
               Packhjälp som spar tid och kraft
             </h2>
             <h5 className={classes.description}>
-              Vi på Städjätten finns för dig som vill förenkla vardagen, därför
-              låter vi dig bestämma hur din städning ska utföras tillsammans med
-              våra experter. Vi har tagit fram en standardlista för vad som
-              ingår i en hemstädning, men självklart anpassar vi den efter just
-              dina behov och önskemål. Listan över vad som ingår i en
-              hemstädning finner du nedan. <br /> <br />
+              Att större möbler är svåra att hantera under en flytt är ett
+              faktum. För att undvika att skada sig själv eller skador i hemmet
+              är det bäst att lämna över packhjälpen till oss. Vi monterar ner
+              tunga och komplicerade möbler för att göra din flytt så smidig som
+              möjligt. Det är viktigt att ha rätt verktyg under monteringen
+              annars är det lätt att man gör mer skada än nytta. Passa också på
+              att boka in flytthjälp om du är ute efter en helhetslösning och
+              behöver hjälp med hela flyttprocessesen. <br /> <br />
               <Button color='primary' href='/offert'>
                 Skicka en offertförfrågan nu!
               </Button>

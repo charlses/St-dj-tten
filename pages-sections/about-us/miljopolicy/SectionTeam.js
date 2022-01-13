@@ -49,9 +49,9 @@ export default function SectionTeam() {
           <h2 className={classes.title}>Transporter</h2>
           <h5 className={classes.description}>
             Vår främsta miljöpåverkan sker genom de resor och transporter som vi
-            genomför när vi besöker kunder, utmaningen ligger därför i att
-            minska våra utsläpp samtidigt som vi fortsätter att expandera. För
-            att minska vår klimatpåverkan finns det ett antal andra åtgärder vi
+            genomför när vi besöker kunde. Utmaningen ligger därför i att minska
+            våra utsläpp samtidigt som vi fortsätter att expandera. För att
+            minska vår klimatpåverkan finns det ett antal andra åtgärder vi
             arbetar efter:
             <ul>
               <li>

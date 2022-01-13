@@ -63,11 +63,11 @@ export default function SectionTeam() {
             <h2 className={classes.title}>Effektiva & ansvarsförsäkrade</h2>
             <h5 className={classes.description}>
               Vi erbjuder en effektiv kontorsstädning. Ni inhandlar de produkter
-              ni vill att vi ska använda, vi rekommenderar och uppmuntrar till
-              att de ska vara miljömärkta. Fråga oss gärna! Verksamheten är
-              försäkrad för din trygghet och ansvarsförsäkringen täcker
-              eventuella skador för att du som kund ska känna sig säker. Se vår
-              checklista för kontorsstädning! <br /> <br />
+              ni vill att vi ska använda., Vvi rekommenderar er att de ska vara
+              miljömärkta. Fråga oss gärna! Verksamheten är försäkrad för din
+              trygghet och ansvarsförsäkringen täcker eventuella skador för att
+              du som kund ska känna sig säker. Se vår checklista för
+              kontorsstädning! <br /> <br />
               <Button color='primary' href='/offert'>
                 Skicka en offertförfrågan nu!
               </Button>
@@ -85,11 +85,6 @@ export default function SectionTeam() {
             {
               title: 'Vad kostar kontorsstädning?',
               content: 'Pris för kontorsstädning är från 358 kr/h'
-            },
-            {
-              title: 'Är er personal certifierade?',
-              content:
-                ' När ni bokar kontorsstädning så är ni alltid i trygga händer. Vi har personal som innehar ett SRY-yrkesbevis och som är certifierade vilket innebär att de besitter på en kompetensutveckling inom städ- och servicebranschen.'
             },
             {
               title: 'Gäller RUT-avdrag även för företag?',

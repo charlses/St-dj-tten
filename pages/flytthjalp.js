@@ -13,7 +13,7 @@ import Parallax from 'components/Parallax/Parallax.js'
 // sections for this page
 import SectionPills from 'pages-sections/flytthjalp/SectionPills.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
-import SectionForm from 'pages-sections/sections-page/SectionForm'
+import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 import SectionPreFooter from '../pages-sections/components/SectionPreFooter'
@@ -57,6 +57,7 @@ export default function AboutUsPage() {
         </div>
       </Parallax>
       <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <SectionFormLandingPage />
         <GridContainer
           md={8}
           sm={8}
@@ -67,19 +68,18 @@ export default function AboutUsPage() {
           )}
         >
           <GridItem>
-            <h4 style={{ margin: '50px 100px 0 100px' }}>
-              Behöver du hjälp med endast vissa delar i flytten? Exempelvis
-              packhjälp, bärhjälp, själva transporten eller kanske bara pianot?
-              Vi hjälper dig även med sanering, bortforsling, storstädning,
-              hemstädning och till och med din trädgårdsskötsel! Alla våra
-              priser är inklusive RUT-avdraget. Genom RUT- avdraget har du som
-              privatperson möjlighet att dra av arbetskostnader upp till 75 000
-              kr per år efter nya regler 2021. <br />
+            <h4 style={{ margin: '50px 100px 50px 100px' }}>
+              Behöver du hjälp med endast vissa delar i flytten? Vi bistår med
+              packhjälp, bärhjälp, transport av möbler eller ditt piano Vi
+              hjälper dig även med sanering, bortforsling, storstädning,
+              hemstädning! Alla våra priser är inklusive RUT-avdraget. Genom
+              RUT- avdraget har du som privatperson möjlighet att dra av
+              arbetskostnader upp till 75 000 kr per år efter nya regler 2021.{' '}
+              <br />
             </h4>
           </GridItem>
         </GridContainer>
         <div className={classes.containerFluid}>
-          <SectionForm />
           <SectionPills />
         </div>
       </div>
