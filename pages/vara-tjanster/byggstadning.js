@@ -74,6 +74,9 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
+              <h2 className={classes.title}>
+                Få hjälp med byggstädning efter renoveringen hemma
+              </h2>
               <h4>
                 Byggstädning går hand i hand med byggprojekt, alla som har
                 genomfört en ombyggnation hemma eller på kontoret vet hur mycket

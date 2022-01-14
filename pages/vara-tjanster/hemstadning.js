@@ -74,7 +74,8 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h4 style={{ margin: '50px 100px 0 100px' }}>
+              <h2 className={classes.title}>Står du inför en flytt?</h2>
+              <h4>
                 Vi hjälper dig med regelbunden hemstädning så att du kan
                 fokusera på andra prioriteringar. Vi erbjuder alltid en
                 kostnadsfri offert för att kunna anpassa hemstädningen efter

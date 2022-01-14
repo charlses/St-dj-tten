@@ -73,7 +73,10 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h4 style={{ margin: '50px 100px 0 100px' }}>
+              <h2 className={classes.title}>
+                Vi tar varsamt hand om dina ägodelar
+              </h2>
+              <h4>
                 Låt oss professionella ta hand om din packhjälp vid flytt, vi
                 vet hur man emballerar och packar på ett säkert sätt. Till
                 ömtåliga ägodelar som till exempel porslin och glas använder vi

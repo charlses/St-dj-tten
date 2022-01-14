@@ -99,25 +99,9 @@ export default function SectionPills() {
               classes.textCenter
             )}
           >
-            <Card>
-              <CardHeader image>
-                <a href='/vara-tjanster'>
-                  <img
-                    src='/img/alla-vara-tjanster.jpg'
-                    alt='Alla våra tjänster'
-                    style={{ maxHeight: '250px' }}
-                  />
-                </a>
-              </CardHeader>
-              <CardBody>
-                <h3 className={classes.cardTitle}>
-                  <a href='/vara-tjanster'>Alla våra tjänster</a>
-                </h3>
-                <Button round href='/vara-tjanster' color='primary'>
-                  Läs mer
-                </Button>
-              </CardBody>
-            </Card>
+            <Button round href='/vara-tjanster' color='primary'>
+              Alla våra tjänster
+            </Button>
           </GridItem>
         </GridContainer>
       </div>

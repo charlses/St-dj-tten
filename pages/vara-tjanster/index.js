@@ -15,7 +15,7 @@ import SectionPills from 'pages-sections/vara-tjanster/index/SectionPills.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
-import SectionForm from 'pages-sections/sections-page/SectionForm'
+import SectionFormLandingPage from 'pages-sections/sections-page/SectionFormLandingPage'
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
 const useStyles = makeStyles(aboutUsStyle)
@@ -57,7 +57,8 @@ export default function AboutUsPage() {
         </div>
       </Parallax>
       <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
-        <GridContainer style={{ marginTop: '50px' }}>
+        <SectionFormLandingPage />
+        <GridContainer>
           <GridItem
             d={8}
             sm={8}
@@ -67,7 +68,7 @@ export default function AboutUsPage() {
               classes.textCenter
             )}
           >
-            <h4 style={{ margin: '50px 100px 0 100px' }}>
+            <h4>
               Behöver du hjälp med endast vissa delar i flytten? Exempelvis
               packhjälp, bärhjälp, själva transporten eller kanske bara pianot?
               Vi hjälper dig även med sanering, bortforsling, storstädning,
@@ -78,8 +79,6 @@ export default function AboutUsPage() {
             </h4>
           </GridItem>
         </GridContainer>
-        <SectionForm />
-
         <SectionPills />
       </div>
       <SectionPreFooter />

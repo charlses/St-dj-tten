@@ -15,6 +15,8 @@ import SectionDescription from 'pages-sections/about-us/SectionDescription.js'
 import SectionTeam from 'pages-sections/about-us/SectionTeam.js'
 import SectionServices from 'pages-sections/about-us/SectionServices.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
+import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
+import SectionTestimonials from 'pages-sections/sections-page/SectionTestimonials'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -50,19 +52,22 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Om Oss</h1>
-              <h4>Städ- och flyttjänster med fokus på dig som kund</h4>
+              <h1 className={classes.title} style={{ color: '#fefefe' }}>
+                Om Oss
+              </h1>
+              <h4 style={{ margin: '50px 100px 50px 100px', color: '#fefefe' }}>
+                Städ- och flyttjänster med fokus på dig som kund
+              </h4>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main)}>
-        <div className={classes.container}>
-          <SectionDescription />
-          <SectionTeam />
-          <SectionServices />
-        </div>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
+        <SectionTeam />
+        <SectionTestimonials />
+        <SectionServices />
       </div>
+      <SectionPreFooter />
       <SectionFooter />
     </div>
   )

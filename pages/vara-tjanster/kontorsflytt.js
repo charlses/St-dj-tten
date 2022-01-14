@@ -73,7 +73,8 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h4 style={{ margin: '50px 100px 0 100px' }}>
+              <h2 className={classes.title}>Vi hjälper företag att flytta</h2>
+              <h4>
                 Vi på Städjätten har utfört flyttar åt företag i över 10 år,
                 vilket gör att vi kan stolt säga att vi är experter på kontors-
                 och företagsflyttar. Vi är flexibla och finns tillgängliga på

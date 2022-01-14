@@ -13,6 +13,7 @@ import Parallax from 'components/Parallax/Parallax.js'
 // sections for this page
 import SectionTeam from 'pages-sections/about-us/rutavdrag/SectionTeam.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
+import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -61,11 +62,12 @@ export default function AboutUsPage() {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main)}>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <div className={classes.container}>
           <SectionTeam />
         </div>
       </div>
+      <SectionPreFooter />
       <SectionFooter />
     </div>
   )

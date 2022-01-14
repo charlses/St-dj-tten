@@ -22,9 +22,7 @@ export default function SectionTeam() {
   return (
     <div className={classes.team}>
       <SectionImageLeft image='/img/tjejen.png' alt='Lokalv[rdare'>
-        <h2 className={classes.title + ' ' + classes.textCenter}>
-          Vad ingår i en kontorsstädning?
-        </h2>
+        <h2 className={classes.title}>Vad ingår i en kontorsstädning?</h2>
         <h5 className={classes.description}>
           <ul
             style={{

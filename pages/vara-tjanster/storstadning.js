@@ -73,7 +73,8 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h4 style={{ margin: '50px 100px 0 100px' }}>
+              <h2 className={classes.title}>Få ett dammfritt hem</h2>
+              <h4>
                 Trots regelbunden städning kan hemmet upplevas smutsigt. Vi på
                 Städjätten hjälper dig med storstädningen som annars lätt skjuts
                 upp. Vi har 15 års erfarenhet och använder oss av miljövänliga

@@ -14,6 +14,7 @@ import Parallax from 'components/Parallax/Parallax.js'
 import SectionTeam from 'pages-sections/about-us/samarbetspartners/SectionTeam.js'
 import SectionFooter from 'pages-sections/components/SectionFooter.js'
 import SectionRotate from 'pages-sections/about-us/samarbetspartners/SectionRotate'
+import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
 import aboutUsStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js'
 
@@ -53,15 +54,13 @@ export default function AboutUsPage() {
           </GridContainer>
         </div>
       </Parallax>
-      <div
-        className={classNames(classes.main)}
-        style={{ paddingBottom: '50px' }}
-      >
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <div className={classes.container}>
           <SectionTeam />
           <SectionRotate />
         </div>
       </div>
+      <SectionPreFooter />
       <SectionFooter />
     </div>
   )

@@ -73,6 +73,7 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
+              <h2 className={classes.title}>Står du inför en flytt?</h2>
               <h4>
                 Står du inför en flytt och har ont om tid, eller vill du vara
                 säker på att dina saker hamnar tryggt i lådorna? Det finns många

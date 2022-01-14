@@ -74,7 +74,7 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h4 style={{ margin: '50px 100px 0 100px' }}>
+              <h4>
                 Har du planer på att sälja din bostad eller lokal inom en snar
                 framtid? Då har du en hel del att tänka på. Visningsdagen är en
                 viktig dag i säljprocessen, när potentiella köpare kommer för

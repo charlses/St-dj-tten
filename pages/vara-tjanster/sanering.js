@@ -61,6 +61,7 @@ export default function AboutUsPage() {
       </Parallax>
       <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <SectionFormLandingPage />
+
         <div className={classes.container}>
           <GridContainer>
             <GridItem
@@ -72,7 +73,10 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h4 style={{ margin: '50px 100px 0 100px' }}>
+              <h2 className={classes.title}>
+                Trygg och säker transport av musikinstrument
+              </h2>
+              <h4>
                 Som saneringsexperter rycker vi ut när hus och byggnader drabbas
                 av olika typer av skador som mögel eller fukt. Vi tar hand om
                 alla typer av besvärliga saneringsjobb, allt ifrån

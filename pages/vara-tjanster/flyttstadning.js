@@ -76,10 +76,13 @@ export default function AboutUsPage() {
           )}
         >
           <GridItem>
-            <h4 style={{ margin: '50px 100px 0 100px' }}>
+            <h2 className={classes.title}>Står du inför en flytt?</h2>
+            <h4>
               Vi är en av de bästa flyttstädningsfirmor i Stockholm och Göteborg
               som vet vad som behövs för att din bostad ska bli så ren och
-              fräsch som möjlig.
+              fräsch som möjlig. Bokar du flyttstädning med städjätten så får du
+              alltid sju dagars nöjdkundgaranti. <br /> Boka din offert idag &
+              få ett svar inom en timme!
             </h4>
           </GridItem>
         </GridContainer>

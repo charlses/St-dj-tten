@@ -15,6 +15,7 @@ import CardBody from 'components/Card/CardBody.js'
 import { ChatTwoTone } from '@material-ui/icons'
 import { PhoneTwoTone } from '@material-ui/icons'
 import { EmailTwoTone } from '@material-ui/icons'
+import { Assignment } from '@material-ui/icons'
 import CustomInput from 'components/CustomInput/CustomInput.js'
 
 import productStyle from 'styles/jss/nextjs-material-kit-pro/pages/landingPageSections/productStyle.js'
@@ -74,9 +75,9 @@ export default function SectionProduct() {
                 >
                   <GridItem xs={12} sm={4} md={4}>
                     <InfoArea
-                      title='Mejla oss'
+                      title='Boka offert på en gång'
                       description=' '
-                      icon={EmailTwoTone}
+                      icon={Assignment}
                       iconColor='danger'
                       vertical
                     />
@@ -90,7 +91,10 @@ export default function SectionProduct() {
                   timeout={150}
                 >
                   <GridItem xs={12} sm={8} md={8}>
-                    <h5 className={classes.title}>Eller bli uppringd av oss</h5>
+                    <h2 className={classes.title}>
+                      Vill du att vi ringer upp dig?
+                    </h2>
+
                     <CustomInput
                       id='float phone'
                       labelText='Telefonnummer'

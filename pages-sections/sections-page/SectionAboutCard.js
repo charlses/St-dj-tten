@@ -8,6 +8,7 @@ import { Public, Security, Payment } from '@material-ui/icons'
 import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
 import InfoArea from 'components/InfoArea/InfoArea.js'
+import Button from 'components/CustomButtons/Button.js'
 import { Grow } from '@material-ui/core'
 import Card from 'components/Card/Card.js'
 import CardBody from 'components/Card/CardBody.js'
@@ -22,11 +23,26 @@ export default function SectionProduct() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
+        <GridContainer justifyContent='center'>
+          <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={150}>
+            <GridItem xs={12} sm={8} md={8}>
+              <h2 className={classes.title}>Kom i kontakt med oss</h2>
+            </GridItem>
+          </Grow>
+        </GridContainer>
         <div>
-          <Card raised className={classes.card} style={{ padding: '50px' }}>
+          <Card raised className={classes.card}>
             <CardBody formHorizontal>
               <GridContainer>
-                <GridItem md={12} sm={12}>
+                <GridItem
+                  md={8}
+                  sm={8}
+                  className={classNames(
+                    classes.mlAuto,
+                    classes.mrAuto,
+                    classes.textCenter
+                  )}
+                >
                   <h2 className={classes.title}>Nöjd-kund-garanti</h2>
                   <h5 className={classes.description}>
                     Vi har genom åren lärt oss att den viktigaste

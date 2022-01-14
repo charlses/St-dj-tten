@@ -73,6 +73,9 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
+              <h2 className={classes.title}>
+                Vi forslar bort skräp och grovavfall i hela Stockholm & Göteborg
+              </h2>
               <h4>
                 Har du varit uppe på vinden, nere i källaren eller i trädgården
                 och rensat? Har du samlat på dig skräp, trädgårds- eller

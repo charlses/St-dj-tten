@@ -73,7 +73,8 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h4 style={{ margin: '50px 100px 0 100px' }}>
+              <h2 className={classes.title}>Vi hjälper företag att flytta</h2>
+              <h4>
                 Självklart utför vi också städning av kontor. Det kan ske både
                 under dagtid eller kvällstid, ni väljer – vi utför. Vi är vana
                 vid båda delarna och är närmast osynliga om ni vill ha

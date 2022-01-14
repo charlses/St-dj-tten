@@ -7,6 +7,7 @@ import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
 import Favorite from '@material-ui/icons/Favorite'
 // core components
+import classNames from 'classnames'
 import Header from 'components/Header/Header.js'
 import HeaderLinks from 'components/Header/HeaderLinks.js'
 import Footer from 'components/Footer/Footer.js'
@@ -18,6 +19,8 @@ import SectionPills from 'pages-sections/blog-posts/SectionPills.js'
 import SectionInterested from 'pages-sections/blog-posts/SectionInterested.js'
 import SectionImage from 'pages-sections/blog-posts/SectionImage.js'
 import SubscribeLine from 'pages-sections/blog-posts/SubscribeLine.js'
+import SectionFooter from 'pages-sections/components/SectionFooter.js'
+import SectionPreFooter from 'pages-sections/components/SectionPreFooter'
 
 import blogPostsPageStyle from 'styles/jss/nextjs-material-kit-pro/pages/blogPostsPageStyle.js'
 
@@ -52,70 +55,15 @@ export default function BlogPostsPage() {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classes.main}>
+      <div className={classNames(classes.main + ' ' + classes.mainRaised)}>
         <div className={classes.container}>
           <SectionPills />
           <SectionInterested />
         </div>
         <SectionImage />
-        <SubscribeLine />
       </div>
-      <Footer
-        content={
-          <div>
-            <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href='https://www.creative-tim.com/?ref=njsmkp-blog-posts'
-                    target='_blank'
-                    className={classes.block}
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href='https://www.creative-tim.com/presentation?ref=njsmkp-blog-posts'
-                    target='_blank'
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href='http://blog.creative-tim.com/?ref=njsmkp-blog-posts'
-                    className={classes.block}
-                  >
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href='https://www.creative-tim.com/license?ref=njsmkp-blog-posts'
-                    target='_blank'
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{' '}
-              <Favorite className={classes.icon} /> by{' '}
-              <a
-                href='https://www.creative-tim.com?ref=njsmkp-blog-posts'
-                target='_blank'
-              >
-                Creative Tim
-              </a>{' '}
-              for a better web.
-            </div>
-          </div>
-        }
-      />
+      <SectionPreFooter />
+      <SectionFooter />
     </div>
   )
 }

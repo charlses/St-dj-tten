@@ -73,7 +73,10 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h4 style={{ margin: '50px 100px 0 100px' }}>
+              <h2 className={classes.title}>
+                Trygg och säker transport av musikinstrument
+              </h2>
+              <h4>
                 Städjätten är specialiserade på pianoflytt och erbjuder alltid
                 en professionell och trygg transport av musikinstrument. Vi
                 flyttar alla typer av klaviaturinstrument med stor varsamhet -
