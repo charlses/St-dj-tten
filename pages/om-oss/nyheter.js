@@ -41,7 +41,7 @@ export default function BlogPostsPage() {
           color: 'white'
         }}
       />
-      <Parallax image='/img/bg10.jpg' filter='dark' small>
+      <Parallax image='/img/news.jpg' filter='dark' small>
         <div className={classes.container}>
           <GridContainer justifyContent='center'>
             <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
