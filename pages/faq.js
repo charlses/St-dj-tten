@@ -51,15 +51,13 @@ export default function AboutUsPage() {
               )}
             >
               <h1 className={classes.title}>FAQ</h1>
-              <h4>Frågor och svar</h4>
+              <h4 className={classes.subHeader}>Frågor och svar</h4>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main)}>
-        <div className={classes.container}>
           <SectionTeam />
-        </div>
       </div>
       <SectionFooter />
     </div>
