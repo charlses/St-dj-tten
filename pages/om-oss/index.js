@@ -57,7 +57,7 @@ export default function AboutUsPage() {
         </div>
       </Parallax>
 
-      <div className={classNames(classes.main  + ' ' + classes.mainRaised)}>
+      <div className={classNames(classes.main)}>
           <SectionDescription />
           <SectionTeam />
           <SectionServices />
