@@ -21,25 +21,6 @@ export default function SectionServices() {
   return (
     <div className={classes.services}>
       <GridContainer>
-        <GridItem
-          md={8}
-          sm={8}
-          className={classNames(
-            classes.mlAuto,
-            classes.mrAuto,
-            classes.textCenter
-          )}
-        >
-          <h2 className={classes.title}>Nöjd-kund-garanti</h2>
-          <h5 className={classes.description}>
-            Vi har genom åren lärt oss att den viktigaste marknadsföringen är
-            nöjda kunder. Vi lämnar till och med nöjd kundgaranti för vår
-            flyttstädning vilket innebär att vi åtgärdar eventuella synpunkter
-            inom sju dagar kostnadsfritt.
-          </h5>
-        </GridItem>
-      </GridContainer>
-      <GridContainer>
         <GridItem md={4} sm={4}>
           <InfoArea
             title='Samarbetspartners'

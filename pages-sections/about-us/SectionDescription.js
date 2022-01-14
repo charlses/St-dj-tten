@@ -17,17 +17,17 @@ export default function SectionDescription() {
     <div className={classNames(classes.aboutDescription, classes.textCenter)}>
       <GridContainer>
         <GridItem
-          md={8}
+          d={8}
           sm={8}
-          className={classNames(classes.mrAuto, classes.mlAuto)}
+          className={classNames(
+            classes.mlAuto,
+            classes.mrAuto,
+            classes.textCenter
+          )}
         >
-          <h5 className={classes.description}>
-            Vi är ett medelstort företag som erbjuder städ- och flytthjälp. Vi
-            finns i både Stockholm och Göteborg för flyttstädning, hemstädning,
-            storstädning, byggstädning, visningsstädning, kontorsstädning,
-            sanering, trädgårdsskötsel, flytthjälp, bortforsling, packhjälp
-            eller bärhjälp.
-          </h5>
+          <h4 style={{ margin: '50px 100px 0 100px' }}>
+            Vi är ett medelstort företag som erbjuder städ- och flytthjälp. Vi finns i både Stockholm och Göteborg för flyttstädning, hemstädning, storstädning, byggstädning, visningsstädning, kontorsstädning, sanering, trädgårdsskötsel, flytthjälp, bortforsling, packhjälp eller bärhjälp.
+          </h4>
         </GridItem>
       </GridContainer>
     </div>

@@ -49,19 +49,18 @@ export default function AboutUsPage() {
                 classes.mrAuto,
                 classes.textCenter
               )}
-            >
+              >
               <h1 className={classes.title}>Om Oss</h1>
-              <h4>Städ- och flyttjänster med fokus på dig som kund</h4>
+              <h4 className={classes.omOssH4}>Städ- och flyttjänster med fokus på dig som kund</h4>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main)}>
-        <div className={classes.container}>
+
+      <div className={classNames(classes.main  + ' ' + classes.mainRaised)}>
           <SectionDescription />
           <SectionTeam />
           <SectionServices />
-        </div>
       </div>
       <SectionFooter />
     </div>

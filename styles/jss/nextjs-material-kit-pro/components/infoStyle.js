@@ -12,11 +12,19 @@ import {
 const infoStyle = {
   infoArea: {
     maxWidth: '360px',
-    margin: '0 auto'
+    minHeight: '400px',
+    margin: '30px auto',
+    padding: '15px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    borderRadius: '6px',
+    boxShadow: '-7px 7px 10px #ededed, 7px -7px 10px #ffffff;'
   },
   iconWrapper: {
     float: 'left',
-    marginTop: '24px',
+    marginTop: '10px',
     marginRight: '10px'
   },
   primary: {
@@ -41,9 +49,9 @@ const infoStyle = {
     color: grayColor[0]
   },
   icon: {
-    width: '2.25rem',
-    height: '2.25rem',
-    fontSize: '2.25rem'
+    width: '2.5rem',
+    height: '2.5rem',
+    fontSize: '2.5rem'
   },
   descriptionWrapper: {
     color: grayColor[0],
@@ -51,7 +59,8 @@ const infoStyle = {
   },
   title: {
     ...title,
-    margin: '1.75rem 0 0.875rem !important',
+    textAlign: 'center',
+    margin: '0.5rem 0 !important',
     minHeight: 'unset'
   },
   description: {

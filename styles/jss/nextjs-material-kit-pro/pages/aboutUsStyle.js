@@ -4,7 +4,7 @@ import {
   main,
   mainRaised,
   mrAuto,
-  whiteColor,
+  grayColor,
   mlAuto
 } from 'styles/jss/nextjs-material-kit-pro.js'
 
@@ -18,7 +18,11 @@ const aboutUsStyle = {
     zIndex: 1
   },
   title: {
-    ...title
+    ...title,
+    color: '#079CE0'
+  },
+  omOssH4: {
+    color: grayColor[2]
   },
   textCenter: {
     textAlign: 'center'
