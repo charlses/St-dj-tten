@@ -19,7 +19,10 @@ const aboutUsStyle = {
   },
   title: {
     ...title,
-    color: '#079CE0'
+    color: '#cee5f5'
+  },
+  subHeader: {
+    color: '#cee5f5'
   },
   omOssH4: {
     color: grayColor[2]

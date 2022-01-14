@@ -36,7 +36,7 @@ export default function AboutUsPage() {
           color: 'white'
         }}
       />
-      <Parallax image='/img/bg9.jpg' filter='dark' small>
+      <Parallax image='/img/tax-deduction.jpg' filter='dark' small>
         <div className={classes.container}>
           <GridContainer justifyContent='center'>
             <GridItem
@@ -49,13 +49,8 @@ export default function AboutUsPage() {
               )}
             >
               <h1 className={classes.title}>RUT-avdrag</h1>
-              <h4>
-                När du anlitar oss kan du använda dig av RUT-avdraget. Vi gör
-                det enkelt för dig och sköter all administration. Genom RUT-
-                avdraget har du som privatperson möjlighet att dra av
-                arbetskostnader upp till 75 000 kr per år efter nya regler 2021.
-                Det gör att du kan få 50 % skatteavdrag på våra tjänster som
-                exempelvis flytthjälp, flyttstädning och hemstädning.
+              <h4 className={classes.subHeader}>
+                När du anlitar oss kan du använda dig av RUT-avdraget.
               </h4>
             </GridItem>
           </GridContainer>

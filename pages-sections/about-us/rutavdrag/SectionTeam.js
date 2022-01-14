@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles'
+import {makeStyles} from '@material-ui/core/styles'
 
 import teamStyle from 'styles/jss/nextjs-material-kit-pro/pages/aboutUsSections/teamStyle.js'
 
@@ -34,12 +34,15 @@ export default function SectionTeam() {
             använda dig av RUT-avdraget behöver du endast kryssa i rutan i våra
             formulär “Ja, jag vill använda mig av RUT-avdraget för
             privatpersoner så ansöker vi som företag om detta åt dig”.
+            <br/>
+            <br/>
             <p>
               På följande länk hittar du mer information om Skatteverkets
               riktlinjer för RUT-avdrag{' '}
               <a
                 href='https://www.skatteverket.se/privat/fastigheterochbostad/rotochrutarbete/gerarbetetratttillrutavdrag.106.5c1163881590be297b53de7.html'
                 target='_blank'
+                style={{color: '#089DE3'}}
               >
                 {' '}
                 skatteverket.se
