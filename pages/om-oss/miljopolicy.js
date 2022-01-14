@@ -36,7 +36,7 @@ export default function AboutUsPage() {
           color: 'white'
         }}
       />
-      <Parallax image='/img/bg9.jpg' filter='dark' small>
+      <Parallax image='/img/envf.jpg' filter='dark' small>
         <div className={classes.container}>
           <GridContainer justifyContent='center'>
             <GridItem
@@ -49,10 +49,8 @@ export default function AboutUsPage() {
               )}
             >
               <h1 className={classes.title}>Städjättens miljöpolicy</h1>
-              <h4>
-                Städjätten lägger stor vikt vid miljöaspekter när vi arbetar med
-                städ- och flytthjälp. Vi har som målsättningen att minimera vår
-                miljöpåverkan i alla våra led för att främja en grönare värld.
+              <h4 className={classes.subHeader}>
+                Vi lägger stor vikt vid miljöaspekter.
               </h4>
             </GridItem>
           </GridContainer>
